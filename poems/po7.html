@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Стихи</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+article h1{
+       margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      background: #f9f5f2;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #fffaf8;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      filter: brightness(0.85);
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+      font-family: 'Georgia', serif;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #555;
+      font-family: 'Georgia', serif;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #6b3e26;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+      font-family: 'Georgia', serif;
+    }
+    .next-page:hover {
+      background-color: #8b5e3c;
+    }
+        .card a {
+  text-decoration: none;
+  color: inherit;
+}
+    footer {
+      background: #6b3e26;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+      font-family: 'Georgia', serif;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Стихи</h1>
+  <p>«Поэзия — это дыхание души, превращённое в слова.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Детская поэзия: волшебство слов для маленьких читателей</h1>
+
+  <section>
+    <h2>Что такое детская поэзия?</h2>
+    <p>Детская поэзия — это особый жанр литературы, созданный специально для детей. Она объединяет в себе ритмичные, яркие и легко запоминающиеся стихотворения, которые помогают детям познакомиться с языком, развивают воображение и пробуждают интерес к чтению.</p>
+  </section>
+
+  <section>
+    <h2>Задачи и особенности</h2>
+    <p>Основные цели детской поэзии — развивать речевые навыки, прививать любовь к литературе, а также воспитывать моральные и эстетические чувства. Для этого поэты используют простые слова, повторения, рифмы и забавные образы.</p>
+  </section>
+
+  <section>
+    <h2>Типичные темы</h2>
+    <ul>
+      <li>Природа и животные — яркие и живые описания мира вокруг.</li>
+      <li>Игры и забавы — весёлые сюжеты, вызывающие улыбку и смех.</li>
+      <li>Сказочные персонажи и фантазии — волшебство и приключения.</li>
+      <li>Дружба, добро и взаимопомощь — важные нравственные уроки.</li>
+      <li>Познание себя и окружающего мира.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Язык и стиль</h2>
+    <p>Детская поэзия отличается:</p>
+    <ul>
+      <li>Простотой и ясностью изложения.</li>
+      <li>Ритмичностью и мелодичностью.</li>
+      <li>Частым использованием повторов и звуковых игр.</li>
+      <li>Весёлыми, добрыми и позитивными образами.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Известные детские поэты</h2>
+    <p>Многие поэты прославились благодаря своим произведениям для детей:</p>
+    <ul>
+      <li><strong>Корней Чуковский:</strong> автор популярных сказок и стихов, таких как «Мойдодыр» и «Телефон».</li>
+      <li><strong>Агния Барто:</strong> писала стихи, близкие детскому восприятию и эмоциям.</li>
+      <li><strong>Самуил Маршак:</strong> мастер детской лирики и переводчик классики.</li>
+      <li><strong>Джоан Роулинг:</strong> хоть и не поэт, но её рассказы и стихи из мира Гарри Поттера полюбились детям.</li>
+      <li><strong>Александр Пушкин:</strong> благодаря сказкам в стихах также очень популярен среди детей.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Значение детской поэзии</h2>
+    <p>Она играет ключевую роль в развитии речи и мышления ребёнка, способствует формированию эстетического вкуса и эмоционального интеллекта, а также помогает создавать первые положительные впечатления о литературе и чтении.</p>
+  </section>
+
+  <section>
+    <h2>Как писать детскую поэзию</h2>
+    <ul>
+      <li>Используйте простой и понятный язык.</li>
+      <li>Обращайте внимание на ритм и рифму, чтобы стихи легко запоминались.</li>
+      <li>Включайте образы, которые вызывают интерес и радость у детей.</li>
+      <li>Учтите возрастные особенности читателей.</li>
+      <li>Старайтесь воспитывать добро и дружелюбие через тексты.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Детская поэзия — это первый шаг ребёнка в удивительный мир литературы и творчества, который открывает перед ним двери воображения, учит чувствовать и выражать свои мысли с помощью слов.</p>
+  </section>
+</article>
+
+
+  <div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #6b3e26;">Павел Морозов</p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель литературы, прекрасно пишет стихи и его любимая книга "Поэтический словарь" Квятковского</p>
+  </div>
+</div>
+
+</main>
+</main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+</body>
+</html>

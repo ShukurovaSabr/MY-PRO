@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Английский язык</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+    }
+    header {
+      background: url('https://plus.unsplash.com/premium_photo-1670552850996-e3b47528ffc0?q=80&w=1615&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.35);
+    }
+    article h1{
+       margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #FF4500;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color: #FF4500;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+    footer {
+      background:#FF4500;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Английский язык</h1>
+  <p>«Английский — ключ к международному общению и новым возможностям.»</p>
+</header>
+<main>
+<article>
+  <h2>Идиомы в английском языке: как понимать и использовать живую речь</h2>
+
+  <p>Идиомы — это устойчивые выражения, смысл которых не выводится напрямую из значений отдельных слов. Они делают речь живой, яркой и помогают звучать как настоящий носитель языка.</p>
+
+  <p>Например, фраза <em>“to kick the bucket”</em> дословно означает «пнуть ведро», но на самом деле это идиома, которая значит «умереть».</p>
+
+  <h3>1. Почему важно учить идиомы?</h3>
+  <ul>
+    <li>Они часто встречаются в разговорной речи, фильмах, книгах и песнях.</li>
+    <li>Помогают понять смысл сказанного, который нельзя перевести дословно.</li>
+    <li>Придают речи выразительность и эмоциональность.</li>
+  </ul>
+
+  <h3>2. Как устроены идиомы?</h3>
+  <p>Идиомы обычно состоят из нескольких слов, которые вместе образуют новое значение. Часто это метафоры или выражения, пришедшие из истории, культуры или повседневной жизни.</p>
+
+  <h3>3. Примеры популярных английских идиом</h3>
+  <ul>
+    <li><strong>Break the ice</strong> — начать разговор, растопить напряжение.<br />
+      Пример: <em>At the party, he told a joke to break the ice.</em></li>
+
+    <li><strong>Piece of cake</strong> — что-то очень лёгкое.<br />
+      Пример: <em>That exam was a piece of cake!</em></li>
+
+    <li><strong>Hit the sack</strong> — пойти спать.<br />
+      Пример: <em>I'm tired, so I'm going to hit the sack.</em></li>
+
+    <li><strong>Costs an arm and a leg</strong> — очень дорого.<br />
+      Пример: <em>This car costs an arm and a leg.</em></li>
+
+    <li><strong>Under the weather</strong> — плохо себя чувствовать.<br />
+      Пример: <em>I'm feeling under the weather today.</em></li>
+
+    <li><strong>Let the cat out of the bag</strong> — выдать секрет.<br />
+      Пример: <em>She let the cat out of the bag about the surprise party.</em></li>
+  </ul>
+
+  <h3>4. Как учить и запоминать идиомы</h3>
+  <ul>
+    <li>Учите идиомы в контексте — с предложениями и ситуациями.</li>
+    <li>Используйте их в своих разговорах или письмах.</li>
+    <li>Читайте книги, смотрите фильмы и слушайте подкасты с живой речью.</li>
+    <li>Создавайте свои примеры и ассоциации.</li>
+  </ul>
+
+  <h3>5. Ошибки при использовании идиом</h3>
+  <p>Будьте внимательны — идиомы нельзя менять или переводить дословно. Например, <em>“kick the bucket”</em> нельзя использовать вместо <em>“kick the ball”</em> (пнуть мяч) — это разные выражения.</p>
+
+  <h3>6. Итог</h3>
+  <p>Идиомы — это ключ к живому, естественному английскому. Они делают речь интересной и помогают лучше понимать носителей языка. Начните с самых популярных, и постепенно ваш словарный запас будет расти.</p>
+</article>
+
+
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="author-photo.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #FF4500;">Сабрина Шукурова</p>
+    <p style="font-size: 0.9rem; color: #555;">Основатель клуба «Всесторонних людей». Я создаю эти материалы, чтобы учёба стала для Вас вдохновляющим и интересным путешествием. Добро пожаловать в наш клуб!</p>
+  </div>
+</main>
+
+ 
+</body>
+<footer>
+  &copy; Клуб всесторонних людей 2025
+</footer>
+</html>

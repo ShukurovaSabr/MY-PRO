@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Стихи</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Georgia', serif;
+      background: #f9f5f2;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #fffaf8;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      filter: brightness(0.85);
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+      font-family: 'Georgia', serif;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #555;
+      font-family: 'Georgia', serif;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #6b3e26;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+      font-family: 'Georgia', serif;
+    }
+    .next-page:hover {
+      background-color: #8b5e3c;
+    }
+        .card a {
+  text-decoration: none;
+  color: inherit;
+}
+    footer {
+      background: #6b3e26;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+      font-family: 'Georgia', serif;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Стихи</h1>
+  <p>«Поэзия — это дыхание души, превращённое в слова.»</p>
+</header>
+
+<main>
+  <a href="po1.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Романтическая лирика" />
+    <div class="card-content">
+      <h3>Романтическая лирика</h3>
+      <p>Строки о любви, чувствах и вдохновении.</p>
+    </div>
+  </div>
+</a>
+
+<a href="po2.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Современная поэзия" />
+    <div class="card-content">
+      <h3>Современная поэзия</h3>
+      <p>Свежие голоса и актуальные темы.</p>
+    </div>
+  </div>
+</a>
+
+<a href="po3.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Классическая поэзия" />
+    <div class="card-content">
+      <h3>Классическая поэзия</h3>
+      <p>Вечные произведения великих поэтов.</p>
+    </div>
+  </div>
+</a>
+
+<a href="po4.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80" alt="Поэзия природы" />
+    <div class="card-content">
+      <h3>Поэзия природы</h3>
+      <p>Образы и чувства, вдохновлённые природой.</p>
+    </div>
+  </div>
+</a>
+
+<a href="po5.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Философская поэзия" />
+    <div class="card-content">
+      <h3>Философская поэзия</h3>
+      <p>Размышления о жизни и бытии.</p>
+    </div>
+  </div>
+</a>
+
+<a href="po6.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=400&q=80" alt="Поэзия чувств" />
+    <div class="card-content">
+      <h3>Поэзия чувств</h3>
+      <p>Глубокие эмоции и переживания.</p>
+    </div>
+  </div>
+</a>
+
+<a href="po7.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNoaWxkcmVufGVufDB8fDB8fHww" alt="Детская поэзия" />
+    <div class="card-content">
+      <h3>Детская поэзия</h3>
+      <p>Весёлые и лёгкие стихи для детей.</p>
+    </div>
+  </div>
+</a>
+
+<a href="po8.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1519682577862-22b62b24e493?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9lbXN8ZW58MHx8MHx8fDA%3D" alt="" />
+    <div class="card-content">
+      <h3>Мои стихи</h3>
+      <p>Стихи создателя клуба</p>
+    </div>
+  </div>
+</a>
+
+  <div class="next-page" title="Следующая страница">
+    Следующая страница →
+  </div>
+</main>
+</main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+</body>
+</html>

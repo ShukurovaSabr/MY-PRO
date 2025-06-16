@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Геометрия</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1727522974621-c64b5ea90c0b?q=80&w=1492&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 128, 128, 0.7);
+    }
+   article h1{
+       margin-bottom: 0.5em;
+      color: #40E0D0;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #40E0D0;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #40E0D0;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #008080;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #008080;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color: #008080;
+    }
+    footer {
+      background: #008080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Геометрия</h1>
+  <p>«Геометрия — это мост между формой и пространством.»</p>
+</header>
+
+<article>
+ <section class="article">
+  <h2>Что такое многоугольники?</h2>
+  <p>Многоугольники — это плоские геометрические фигуры, которые состоят из конечного числа отрезков, соединённых в замкнутую ломаную. Эти отрезки называются сторонами, а точки их пересечения — вершинами. Многоугольники окружают нас в повседневной жизни — от форм окон до разметки на дорогах и конструкций зданий. Понимание их свойств помогает решать множество задач в геометрии, архитектуре, инженерии и даже в биологии.</p>
+
+  <h2>Классификация многоугольников</h2>
+  <p>Многоугольники можно классифицировать по нескольким признакам:</p>
+  <ul>
+    <li><strong>По количеству сторон:</strong>
+      <ul>
+        <li>3 стороны — треугольник</li>
+        <li>4 стороны — четырёхугольник</li>
+        <li>5 сторон — пятиугольник</li>
+        <li>6 сторон — шестиугольник</li>
+        <li>... и так далее, вплоть до многоугольников с сотнями сторон</li>
+      </ul>
+    </li>
+    <li><strong>По форме:</strong>
+      <ul>
+        <li><em>Правильные</em> — все стороны и углы равны</li>
+        <li><em>Неправильные</em> — стороны и/или углы не равны</li>
+      </ul>
+    </li>
+    <li><strong>По выпуклости:</strong>
+      <ul>
+        <li><em>Выпуклый</em> — все углы меньше 180°, все точки диагоналей находятся внутри</li>
+        <li><em>Вогнутый</em> — есть угол больше 180°, и диагональ может выходить за пределы фигуры</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Сумма углов многоугольника</h2>
+  <p>Формула для вычисления суммы внутренних углов многоугольника с n сторонами:</p>
+  <p><code>Сумма углов = (n - 2) × 180°</code></p>
+  <p>Например, для шестиугольника (n = 6):</p>
+  <p><code>(6 - 2) × 180° = 4 × 180° = 720°</code></p>
+  <p>Каждый угол правильного n-угольника равен:</p>
+  <p><code>Внутренний угол = ((n - 2) × 180°) / n</code></p>
+
+  <h2>Формулы площади многоугольников</h2>
+  <p>Формулы зависят от типа фигуры:</p>
+  <ul>
+    <li><strong>Квадрат:</strong> <code>S = a²</code></li>
+    <li><strong>Прямоугольник:</strong> <code>S = a × b</code></li>
+    <li><strong>Ромб:</strong> <code>S = (d₁ × d₂) / 2</code></li>
+    <li><strong>Параллелограмм:</strong> <code>S = a × h</code></li>
+    <li><strong>Трапеция:</strong> <code>S = ((a + b) × h) / 2</code></li>
+    <li><strong>Правильный n-угольник:</strong> <code>S = (n × a²) / (4 × tg(π / n))</code></li>
+  </ul>
+
+  <h2>Правильные многоугольники</h2>
+  <p>Правильный многоугольник — это фигура, у которой все стороны и углы равны. Такие фигуры могут быть вписаны в окружность, и у них существует центральный угол, равный:</p>
+  <p><code>Центральный угол = 360° / n</code></p>
+  <p>Примеры правильных многоугольников: правильный треугольник, квадрат, правильный пятиугольник и так далее. Интересно, что правильный треугольник, квадрат и правильный шестиугольник — единственные правильные многоугольники, которыми можно полностью покрыть плоскость без зазоров.</p>
+
+  <h2>Применение многоугольников в жизни</h2>
+  <p>Многоугольники часто встречаются в окружающем мире:</p>
+  <ul>
+    <li>Пчелиные соты состоят из правильных шестиугольников — они идеально заполняют пространство и минимизируют расход воска</li>
+    <li>В архитектуре используются треугольники для придания прочности конструкциям</li>
+    <li>В графическом дизайне и моделировании применяются сетки из многоугольников</li>
+    <li>Дорожные знаки часто имеют форму правильных многоугольников</li>
+  </ul>
+
+  <h2>Интересные факты</h2>
+  <ul>
+    <li>У правильного многоугольника с большим числом сторон фигура становится визуально похожей на круг.</li>
+    <li>Чем больше сторон у правильного многоугольника, тем ближе его площадь к площади окружности, вписанной в него.</li>
+    <li>Слово "многоугольник" происходит от греческого "polygonos", что означает "много углов".</li>
+  </ul>
+
+  <h2>Заключение</h2>
+  <p>Многоугольники — это удивительно простые и одновременно невероятно разнообразные фигуры. Они являются основой как школьной геометрии, так и сложных научных расчётов. Изучая многоугольники, мы открываем для себя язык формы, симметрии и логики. Каждая сторона — это не просто линия, а часть сложной и красивой системы, которая строит наш мир.</p>
+</section>
+
+</article>
+ <div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="author-photo.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #008080;">Марина Беляева</p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель геометрии, умеющий находить индивидуальный подход к каждому ученику. Объясняет фундаментальные концепции, помогает подготовиться к экзаменам и развивает любовь к математике через практические задачи и творчество.</p>
+  </div>
+</div>
+</main>
+
+<footer>
+  &copy; 2025 Геометрия. Все права защищены.
+</footer>
+
+</body>
+</html>

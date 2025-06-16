@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Танцы</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+ #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff4f4;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1540324155974-7523202daa3f?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #ffe6e6;
+    }
+        a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: 	#FF1493;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background:	#FF1493;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:	#FF1493;
+    }
+    footer {
+      background:	#FF1493;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Танцы</h1>
+  <p>«Танец — язык души, выраженный через движение и ритм.»</p>
+</header>
+
+<main>
+  <a href="dan1.html">
+  <div class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1664302558859-3e7865d4343b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFsbGV0fGVufDB8fDB8fHww" alt="Балет" />
+    <div class="card-content">
+      <h3>Балет</h3>
+      <p>Изысканный классический танец с выразительной техникой.</p>
+    </div>
+  </div>
+</a>
+<a href="dan2.html">
+  <div class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1710064217185-8351ee74d564?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGlwJTIwaG9wfGVufDB8fDB8fHww" alt="Хип-хоп" />
+    <div class="card-content">
+      <h3>Хип-хоп</h3>
+      <p>Современный уличный танец с акцентом на ритм и свободу движений.</p>
+    </div>
+  </div>
+</a>
+<a href="dan3.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1575448913281-98e9e5d3f193?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2Fsc2F8ZW58MHx8MHx8fDA%3D" alt="Сальса" />
+    <div class="card-content">
+      <h3>Сальса</h3>
+      <p>Энергичный парный латинский танец с живой музыкой.</p>
+    </div>
+  </div>
+</a>
+<a href="dan4.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1726616297855-d7cc1ec63f2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmVsbHklMjBkYW5jaW5nfGVufDB8fDB8fHww" alt="Танец живота" />
+    <div class="card-content">
+      <h3>Танец живота</h3>
+      <p>Грациозный танец с акцентом на движения бедер и корпуса.</p>
+    </div>
+  </div>
+</a>
+<a href="dan5.html">
+  <div class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1661326461332-54da72406608?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGFuZ298ZW58MHx8MHx8fDA%3D" alt="Танго" />
+    <div class="card-content">
+      <h3>Танго</h3>
+      <p>Страстный аргентинский танец с выразительной хореографией.</p>
+    </div>
+  </div>
+</a>
+<a href="dan6.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1563569612557-0d859f692b1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW1wcm92aXNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Джаз" />
+    <div class="card-content">
+      <h3>Импровизация</h3>
+      <p>Отличный приём, который можно описать как эксперимент для танцев</p>
+    </div>
+  </div>
+</a>
+<a href="dan7.html">
+  <div class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1689885430775-ad2d484d41e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXAlMjB0byUyMGRhdGUlMjBkYW5jZXxlbnwwfHwwfHx8MA%3D%3D" alt="Современный танец" />
+    <div class="card-content">
+      <h3>Современный танец</h3>
+      <p>Свободные движения и нестандартные техники выражения.</p>
+    </div>
+  </div>
+</a>
+<a href="dan8.html">
+  <div class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1684958030228-b8db76185304?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmxhbWVuY298ZW58MHx8MHx8fDA%3D" alt="Фламенко" />
+    <div class="card-content">
+      <h3>Фламенко</h3>
+      <p>Испанский танец с выразительными движениями и музыкой.</p>
+    </div>
+  </div>
+</a>
+
+
+  <div class="next-page" title="Следующая страница">
+    Следующая страница →
+
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Танцы. Все права защищены.
+</footer>
+
+</body>
+</html>

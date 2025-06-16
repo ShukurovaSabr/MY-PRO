@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Английский язык</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+    }
+    header {
+      background: url('https://plus.unsplash.com/premium_photo-1670552850996-e3b47528ffc0?q=80&w=1615&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.35);
+    }
+    article h1{
+       margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #FF4500;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color: #FF4500;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+    footer {
+      background:#FF4500;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Английский язык</h1>
+  <p>«Английский — ключ к международному общению и новым возможностям.»</p>
+</header>
+<main>
+<article>
+  <h2>Чтение на английском: как сделать процесс лёгким и увлекательным</h2>
+
+  <p>Чтение — одна из главных основ изучения английского языка. Оно не только помогает расширять словарный запас и лучше понимать грамматику, но и даёт возможность погружаться в культуру и мышление носителей языка. Однако у многих возникает вопрос: <strong>как читать на английском так, чтобы это было интересно и полезно?</strong> В этой статье я расскажу, как развить навык чтения, как выбрать подходящие тексты и какие методы помогут Вам стать настоящим мастером английского чтения.</p>
+
+  <h3>Почему чтение важно для изучения языка?</h3>
+  <p>Чтение — это не просто распознавание слов. Это активное взаимодействие с текстом, которое развивает навыки восприятия, понимания и анализа. Читая на английском, Вы:</p>
+  <ul>
+    <li>Расширяете словарный запас, сталкиваясь с новыми словами в контексте.</li>
+    <li>Улучшаем понимание структуры предложений и правил грамматики.</li>
+    <li>Повышаете скорость восприятия языка и тренируете мозг думать на английском.</li>
+    <li>Получаете знания о культуре и жизни англоязычных стран.</li>
+  </ul>
+
+  <h3>Как выбрать подходящий текст для чтения?</h3>
+  <p>Очень важно подобрать материалы, которые подходят именно Вам. Вот несколько советов:</p>
+  <ul>
+    <li><strong>Уровень сложности:</strong> выбирайте тексты, которые на 70–80% понятны Вам без словаря. Если текст слишком сложный, Вы быстро устанете и потеряете интерес.</li>
+    <li><strong>Интересы:</strong> читайте то, что Вам нравится — будь то статьи о науке, рассказы, новости или блоги. Интересный материал мотивирует продолжать учиться.</li>
+    <li><strong>Жанр и формат:</strong> попробуйте разные жанры: рассказы, статьи, диалоги, стихи, комиксы — разнообразие обогатит восприятие языка.</li>
+  </ul>
+
+  <h3>Методы эффективного чтения</h3>
+  <p>Чтобы чтение приносило максимальную пользу, важно правильно подходить к процессу:</p>
+  <ol>
+    <li><strong>Предварительный просмотр (сканирование):</strong> пробегитесь глазами по заголовкам, подзаголовкам, изображениям и выделенным словам, чтобы понять общую тему текста.</li>
+    <li><strong>Активное чтение:</strong> читайте текст медленно и внимательно, стараясь понять смысл каждого предложения. Если встречаете незнакомое слово, попытайтесь угадать значение по контексту, прежде чем смотреть в словарь.</li>
+    <li><strong>Выписывание новых слов:</strong> записывайте интересные или сложные слова вместе с переводом и примерами использования.</li>
+    <li><strong>Чтение вслух:</strong> это помогает улучшить произношение и запомнить структуру предложений.</li>
+    <li><strong>Повторное чтение:</strong> возвращайтесь к тексту через несколько дней, чтобы закрепить материал и увидеть новые детали.</li>
+  </ol>
+
+  <h3>Как не терять мотивацию при чтении?</h3>
+  <p>Изучение языка — это марафон, а не спринт. Иногда чтение кажется сложным и утомительным. Вот что поможет сохранить интерес:</p>
+  <ul>
+    <li>Выбирайте короткие тексты или главы — маленькие победы вдохновляют на продолжение.</li>
+    <li>Читайте вместе с друзьями или в клубе — обмен впечатлениями делает процесс живым.</li>
+    <li>Ставьте конкретные цели — например, прочитать статью на любимую тему за 20 минут.</li>
+    <li>Используйте аудиокниги вместе с текстом — так Вы будете слышать правильное произношение.</li>
+  </ul>
+
+  <h3>Полезные ресурсы для чтения на английском</h3>
+  <p>Для эффективного чтения важно иметь под рукой проверенные и интересные источники:</p>
+  <ul>
+    <li><strong>Adapted Readers:</strong> книги, специально адаптированные для разных уровней изучающих английский.</li>
+    <li><strong>Новостные сайты:</strong> BBC Learning English, VOA Learning English — простые новости с объяснениями.</li>
+    <li><strong>Онлайн-библиотеки:</strong> Project Gutenberg — тысячи бесплатных классических книг.</li>
+    <li><strong>Приложения:</strong> LingQ, Readlang — помогают учить слова прямо во время чтения.</li>
+  </ul>
+
+  <h3>Советы от меня, Сабрины, создателя «Клуба всесторонних людей»</h3>
+  <p>Чтение — это удивительный путь к свободному владению английским. Главное — начать и не бояться ошибок. Я советую Вам ежедневно выделять хотя бы 15 минут на чтение, выбирать разнообразные темы и не останавливаться на сложностях. Помните, каждый прочитанный текст приближает Вас к цели!</p>
+
+  <p>Желаю Вам успехов и вдохновения! Помните, что «Клуб всесторонних людей» всегда рядом и готов поддержать Ваши стремления.</p>
+
+</article>
+
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="author-photo.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #FF4500;">Сабрина Шукурова</p>
+    <p style="font-size: 0.9rem; color: #555;">Основатель клуба «Всесторонних людей». Я создаю эти материалы, чтобы учёба стала для Вас вдохновляющим и интересным путешествием. Добро пожаловать в наш клуб!</p>
+  </div>
+</main>
+
+ 
+</body>
+<footer>
+  &copy; Клуб всесторонних людей 2025
+</footer>
+</html>

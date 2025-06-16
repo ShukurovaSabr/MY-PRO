@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Стихи</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+article h1{
+       margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      background: #f9f5f2;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #fffaf8;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      filter: brightness(0.85);
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+      font-family: 'Georgia', serif;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #555;
+      font-family: 'Georgia', serif;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #6b3e26;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+      font-family: 'Georgia', serif;
+    }
+    .next-page:hover {
+      background-color: #8b5e3c;
+    }
+        .card a {
+  text-decoration: none;
+  color: inherit;
+}
+    footer {
+      background: #6b3e26;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+      font-family: 'Georgia', serif;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Стихи</h1>
+  <p>«Поэзия — это дыхание души, превращённое в слова.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Поэзия природы: вдохновение и связь с миром</h1>
+
+  <section>
+    <h2>Что такое поэзия природы?</h2>
+    <p>Поэзия природы — это жанр поэзии, в котором природа становится главным источником вдохновения, темой и образом. Она передает красоту окружающего мира, его величие, тайны и гармонию, а также отражает эмоциональные переживания автора, связанные с природой.</p>
+  </section>
+
+  <section>
+    <h2>История поэзии природы</h2>
+    <p>Связь человека с природой в поэзии прослеживается с древних времен. Уже в античности поэты воспевали солнце, моря и леса. В эпоху романтизма поэзия природы получила особое развитие, став выражением чувств, духовных исканий и стремления к гармонии с миром.</p>
+  </section>
+
+  <section>
+    <h2>Темы и мотивы поэзии природы</h2>
+    <ul>
+      <li>Восхищение красотой пейзажей: горы, реки, леса, цветы.</li>
+      <li>Циклы жизни и времени — смена сезонов, рождение и увядание.</li>
+      <li>Медитация о месте человека в природе и космосе.</li>
+      <li>Тайны и загадки природных явлений.</li>
+      <li>Экологическое сознание и призыв к сохранению природы.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Формы и средства выразительности</h2>
+    <p>Поэты используют разнообразные поэтические средства для передачи образов природы:</p>
+    <ul>
+      <li>Эпитеты и метафоры, создающие яркие визуальные картины.</li>
+      <li>Олицетворение природы — придание ей человеческих черт и эмоций.</li>
+      <li>Звуковые средства — аллитерация, ассонанс для передачи звуков природы.</li>
+      <li>Ритм и размер, имитирующие движение и смену настроений.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Знаменитые поэты природы</h2>
+    <p>В мировой литературе множество великих поэтов, посвятивших свои стихи природе:</p>
+    <ul>
+      <li><strong>Уильям Вордсворт (Англия):</strong> один из основателей романтизма, воспевал простые природные красоты.</li>
+      <li><strong>Иван Тургенев (Россия):</strong> описывал русскую природу с любовью и трепетом.</li>
+      <li><strong>Роберт Фрост (США):</strong> исследовал отношения человека и природы в повседневной жизни.</li>
+      <li><strong>Афанасий Фет (Россия):</strong> мастер лирической природы.</li>
+      <li><strong>Мэри Оливер (США):</strong> современная поэтесса, чьи стихотворения проникнуты глубоким уважением к природе.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Значение поэзии природы сегодня</h2>
+    <p>В эпоху глобальных экологических вызовов поэзия природы приобретает новое звучание, напоминая о важности гармонии с окружающим миром и ответственности человека за сохранение планеты.</p>
+  </section>
+
+  <section>
+    <h2>Как писать поэзию природы</h2>
+    <ul>
+      <li>Наблюдайте природу внимательно и с открытым сердцем.</li>
+      <li>Используйте образы и чувства, которые природа вызывает у вас.</li>
+      <li>Экспериментируйте с формой и ритмом, чтобы передать настроение.</li>
+      <li>Читайте классиков и современных поэтов природы для вдохновения.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Поэзия природы — это мост между человеком и миром, который помогает увидеть красоту, глубину и хрупкость нашей планеты. Она учит нас внимательности, уважению и любви к природе.</p>
+  </section>
+</article>
+
+  <div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #6b3e26;">Павел Морозов</p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель литературы, прекрасно пишет стихи и его любимая книга "Поэтический словарь" Квятковского</p>
+  </div>
+</div>
+
+</main>
+</main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+</body>
+</html>

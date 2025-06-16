@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Английский язык</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+    }
+    header {
+      background: url('https://plus.unsplash.com/premium_photo-1670552850996-e3b47528ffc0?q=80&w=1615&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.35);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #FF4500;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color: #FF4500;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+    footer {
+      background:#FF4500;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Английский язык</h1>
+  <p>«Английский — ключ к международному общению и новым возможностям.»</p>
+</header>
+
+<main>
+<a href="eng1.html">
+  <div class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1666739032615-ecbd14dfb543?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3JhbW1hcnxlbnwwfHwwfHx8MA%3D%3D" alt="Грамматика" />
+    <div class="card-content">
+      <h3>Грамматика</h3>
+      <p>Правила построения предложений и форм слов.</p>
+    </div>
+  </div>
+</a>
+
+<a href="eng2.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1598983941654-125cc1854744?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dm9jYWJ1bGFyeXxlbnwwfHwwfHx8MA%3D%3D" alt="Лексика" />
+    <div class="card-content">
+      <h3>Лексика</h3>
+      <p>Расширение словарного запаса и выражений.</p>
+    </div>
+  </div>
+</a>
+
+<a href="eng3.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVhZGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Чтение" />
+    <div class="card-content">
+      <h3>Чтение</h3>
+      <p>Понимание и анализ текстов.</p>
+    </div>
+  </div>
+</a>
+
+<a href="eng4.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Письмо" />
+    <div class="card-content">
+      <h3>Письмо</h3>
+      <p>Навыки написания писем и эссе.</p>
+    </div>
+  </div>
+</a>
+
+<a href="eng5.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1693778259110-4e2d3084746c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlzdGVuaW5nfGVufDB8fDB8fHww" alt="Аудирование" />
+    <div class="card-content">
+      <h3>Аудирование</h3>
+      <p>Понимание устной речи.</p>
+    </div>
+  </div>
+</a>
+
+<a href="eng6.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1505682614136-0a12f9f7beea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BlYWtpbmd8ZW58MHx8MHx8fDA%3D" alt="Разговорная речь" />
+    <div class="card-content">
+      <h3>Разговорная речь</h3>
+      <p>Развитие навыков общения.</p>
+    </div>
+  </div>
+</a>
+
+<a href="eng7.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1605818363303-7073f9171de9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGhvbmV0aWNzfGVufDB8fDB8fHww" alt="Фонетика" />
+    <div class="card-content">
+      <h3>Фонетика</h3>
+      <p>Произношение и интонация.</p>
+    </div>
+  </div>
+</a>
+
+<a href="eng8.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1709390658422-32086db2b80c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGlkaW9tc3xlbnwwfHwwfHx8MA%3D%3D" alt="Идиомы" />
+    <div class="card-content">
+      <h3>Идиомы</h3>
+      <p>Устойчивые выражения и фразы.</p>
+    </div>
+  </div>
+</a>
+
+
+  <div class="next-page" title="Следующая страница">
+    Следующая страница →
+  </div>
+</main>
+
+<footer>
+  &copy; Клуб всесторонних людей 2025
+</footer>
+
+</body>
+</html>

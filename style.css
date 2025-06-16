@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Marck+Script&family=Monsieur+La+Doulaise&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&family=Marck+Script&family=Monsieur+La+Doulaise&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body {
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fef6e4;
+  color: #333;
+}
+#club{
+font-family: "Caveat", cursive;
+}
+.one{
+  text-align: center;
+  font-family:"Marck Script",cursive;
+    margin-top: 150px; 
+ 
+}
+.onet{
+  text-align: center;
+  font-family:"Marck Script",cursive;
+   
+}
+
+#carouselExample {
+  max-width: 900px;     
+  margin: 30px auto;    
+}
+#carouselExample .carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;   
+  background-color: #000; 
+  display: block;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('su.png');
+   font-family: "Lobster", sans-serif;
+   font-size: 50px;
+  background-size: cover;              
+  background-repeat: no-repeat;        
+  background-position: center center; 
+  height: 100vh;                      
+  width: 100%;                         
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 2.8em;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.quote {
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-style: italic;
+  text-shadow: 1px 1px 3px #000;
+}
+
+    .subjects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      object-fit: cover;
+      
+    }
+
+    .subject-card {
+       width: 100%;
+  object-fit: contain; /* или contain, если важно показать всю картинку */
+  display: block;
+      width: 300px;
+      height: 300px;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .subject-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+
+    .subject-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .subject-card span {
+      padding: 10px 0;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #222;
+      color: #fff;
+      font-size: 0.9em;
+    }
+
+.inspiring-quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin: 30px auto;
+  max-width: 700px;
+  color: #4e342e;
+  font-family: "Playfair Display", serif;
+}
+
+.testimonials {
+  background-color: #f0f4c3;
+  padding: 40px 20px;
+  text-align: center;
+}
+.testimonial {
+  margin: 20px auto;
+  max-width: 600px;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #4e342e;
+}
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.choose-path {
+  background-color: #e0f7fa;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  color: #004d40;
+}
+.choose-path h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-family: "Lobster", cursive;
+}
+.about-club {
+  background-color: #fff8e1;
+  padding: 30px 40px;
+  margin: 20px auto;
+  max-width: 900px;
+  border: 3px solid #f4a261; 
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(244, 162, 97, 0.4); /* лёгкая тень */
+  font-family: "Marck Script",cursive;
+   font-size: 1.6rem;
+  color: #3e2723;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.about-club h2 {
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #e76f51;
+}
+/*Адаптивность моего сайта*/
+@media (max-width: 480px) {
+  .subject-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .one, .onet {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .subject-card {
+    width: 48%;
+    margin: 1%;
+  }
+
+  .one, .onet {
+    font-size: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+  .subject-card {
+    width: 30%;
+    margin: 1.5%;
+  }
+
+  .one, .onet {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .subject-card {
+    width: 22%;
+    margin: 1.5%;
+  }
+}

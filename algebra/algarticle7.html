@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Экспоненты</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+      #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f9ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+     header {
+      background: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 32, 100, 0.5);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background: #e9efff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    }
+     article h1{
+       margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #3949ab;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    footer {
+      background: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      main {
+        padding: 20px 10px;
+        border-radius: 8px;
+        box-shadow: none;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Алгебра</h1>
+  <p>«Алгебра — это язык, на котором говорит математика.»</p>
+</header>
+
+<main>
+  <article>
+  <h1>Экспоненты</h1>
+
+  <p>Экспонента — это функция вида f(x) = aˣ, где a — положительное число, не равное 1, а x — переменная. Экспоненциальные функции описывают процессы, которые растут или убывают с постоянной скоростью в процентах.</p>
+
+  <h2>Свойства экспоненты</h2>
+
+  <ul>
+    <li>f(0) = 1, так как любое число в нулевой степени равно 1.</li>
+    <li>Функция возрастает, если основание a больше 1.</li>
+    <li>Функция убывает, если основание a лежит между 0 и 1.</li>
+    <li>Экспонента не равна нулю для любых значений x.</li>
+    <li>Произведение степеней с одинаковым основанием складывает показатели: aˣ * aʸ = aˣ⁺ʸ.</li>
+  </ul>
+
+  <h2>Примеры экспоненциальных функций</h2>
+
+  <p>Функция f(x) = 2ˣ возрастает, так как основание 2 больше 1.</p>
+
+  <p>Функция f(x) = (1/2)ˣ убывает, так как основание 1/2 меньше 1.</p>
+
+  <h2>Применение экспонент</h2>
+
+  <p>Экспоненциальные функции используются для описания роста населения, радиоактивного распада, изменения инвестиций с процентами, и многих других процессов.</p>
+
+  <h2>Связь с логарифмами</h2>
+
+  <p>Логарифм — это обратная операция к экспоненте. Если y = aˣ, то x = log<sub>a</sub>(y).</p>
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #1a237e;">Иван Новиков</p>
+    <p style="font-size: 0.9rem; color: #555;"> уверен, что алгебра — это ключ к успеху в науке и жизни. Создаёт понятные и интересные материалы, чтобы каждый мог научиться решать задачи легко.</p>
+  </div>
+</div>
+  </article>
+  </main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>

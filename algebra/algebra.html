@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Алгебра</title>
+  <style>
+    
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f9ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+     header {
+      background: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 32, 100, 0.5);
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e9efff;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none; 
+      color: inherit; 
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #1a237e;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color: #3949ab;
+    }
+    footer {
+      background: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Алгебра</h1>
+  <p>«Алгебра — это язык, на котором говорит математика.»</p>
+</header>
+
+<main>
+  <a href="algarticle1.html" class="card">
+    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Линейные уравнения" />
+    <div class="card-content">
+      <h3>Линейные уравнения</h3>
+      <p>Основы работы с линейными уравнениями и их решения.</p>
+    </div>
+  </a>
+
+  <a href="algarticle2.html" class="card">
+    <img src="https://images.unsplash.com/photo-1674293924679-19e1ab501e6a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Квадратные уравнения" />
+    <div class="card-content">
+      <h3>Квадратные уравнения</h3>
+      <p>Формулы и методы решения квадратных уравнений.</p>
+    </div>
+  </a>
+
+  <a href="algarticle3.html" class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1668902826914-d1ef297cd0c8?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Функции" />
+    <div class="card-content">
+      <h3>Функции</h3>
+      <p>Определение и свойства основных функций в алгебре.</p>
+    </div>
+  </a>
+
+  <a href="algarticle4.html" class="card">
+    <img src="https://images.unsplash.com/photo-1635070041409-e63e783ce3c1?q=80&w=1379&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Полиномиальные уравнения" />
+    <div class="card-content">
+      <h3>Полиномиальные уравнения</h3>
+      <p>Методы решения и свойства полиномов.</p>
+    </div>
+  </a>
+
+  <a href="algarticle5.html" class="card">
+    <img src="https://leadingwithtrust.com/wp-content/uploads/2018/02/balance.jpg?w=640" alt="Неравенства" />
+    <div class="card-content">
+      <h3>Неравенства</h3>
+      <p>Решение и применение алгебраических неравенств.</p>
+    </div>
+  </a>
+
+  <a href="algarticle6.html" class="card">
+    <img src="https://avatars.mds.yandex.net/i?id=8d75a50afbbf557e4496b370a0be3304_l-10090660-images-thumbs&n=13" alt="Логарифмы" />
+    <div class="card-content">
+      <h3>Логарифмы</h3>
+      <p>Основные свойства и преобразования логарифмов.</p>
+    </div>
+  </a>
+
+  <a href="algarticle7.html" class="card">
+    <img src="https://avatars.mds.yandex.net/get-entity_search/4734331/1156853379/S600xU_2x" alt="Экспоненты" />
+    <div class="card-content">
+      <h3>Экспоненты</h3>
+      <p>Понятие и свойства экспоненциальных функций.</p>
+    </div>
+  </a>
+
+  <a href="algarticle8.html" class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1669077046819-49779c064034?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Многочлены" />
+    <div class="card-content">
+      <h3>Многочлены</h3>
+      <p>Операции и свойства многочленов.</p>
+    </div>
+  </a>
+ <div class="next-page" title="Следующая страница">
+    Следующая страница →
+  </div>
+</main>
+
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Геометрия</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1633493702341-4d04841df53b?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+   article h1{
+       margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #B22222;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+   
+    footer {
+      background: #B22222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      
+      }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  </head>
+<body>
+    <header>
+  <h1 id="club">Физика</h1>
+  <p>«Физика — это наука о законах природы, которые управляют вселенной.»</p>
+</header>
+<article>
+  <h1>Термодинамика</h1>
+  <p>Термодинамика — раздел физики, изучающий теплообмен и процессы, связанные с преобразованием энергии в системах, а также взаимосвязь между теплом, работой и внутренней энергией.</p>
+
+  <h2>Основные понятия термодинамики</h2>
+  <ul>
+    <li><strong>Система</strong> — часть вещества или пространства, выделенная для изучения.</li>
+    <li><strong>Окружающая среда</strong> — всё, что находится вне системы.</li>
+    <li><strong>Внутренняя энергия (U)</strong> — сумма всех видов энергии, заключённых внутри системы (кинетическая, потенциальная и др.).</li>
+    <li><strong>Работа (A)</strong> — энергия, передаваемая системой или в систему через механическое воздействие.</li>
+    <li><strong>Теплота (Q)</strong> — энергия, передаваемая за счёт теплового обмена.</li>
+  </ul>
+
+  <h2>Законы термодинамики</h2>
+
+  <h3>Первый закон термодинамики</h3>
+  <p>Выражает закон сохранения энергии для термодинамических систем:</p>
+  <p><em>Изменение внутренней энергии системы равно сумме теплоты, полученной системой, и работы, совершённой над ней.</em></p>
+  <p>Формула: <strong>ΔU = Q - A</strong>, где</p>
+  <ul>
+    <li>ΔU — изменение внутренней энергии;</li>
+    <li>Q — количество теплоты, переданное системе;</li>
+    <li>A — работа, совершённая системой.</li>
+  </ul>
+
+  <h3>Второй закон термодинамики</h3>
+  <p>Говорит, что процессы в природе имеют направленность, и невозможно создать вечный двигатель второго рода.</p>
+  <p>Существует несколько формулировок, например:</p>
+  <ul>
+    <li>Тепло не может самопроизвольно переходить от холодного тела к горячему.</li>
+    <li>Энтропия замкнутой системы либо остаётся неизменной, либо увеличивается со временем.</li>
+  </ul>
+
+  <h2>Термодинамические процессы</h2>
+  <p>Процессы, в ходе которых система меняет своё состояние, делятся на несколько видов:</p>
+  <ul>
+    <li><strong>Изохорный процесс</strong> — процесс при постоянном объёме. В системе не совершается работа (A = 0), изменение внутренней энергии равно количеству переданной теплоты: ΔU = Q.</li>
+    <li><strong>Изобарный процесс</strong> — процесс при постоянном давлении. В этом случае система может совершать работу, например, расширяясь.</li>
+    <li><strong>Изотермический процесс</strong> — процесс при постоянной температуре. Внутренняя энергия не изменяется (ΔU = 0), вся переданная теплота идёт на совершение работы: Q = A.</li>
+    <li><strong>Адиабатный процесс</strong> — процесс, при котором система не обменивается теплотой с окружающей средой (Q = 0). Все изменения внутренней энергии происходят за счёт работы системы или над системой.</li>
+  </ul>
+
+  <h2>Применения термодинамики</h2>
+  <p>Термодинамика лежит в основе работы тепловых двигателей, холодильников, кондиционеров и многих промышленных процессов. Понимание её законов позволяет эффективно использовать энергию и создавать технологичные устройства.</p>
+
+  <h2>Примеры из жизни</h2>
+  <ul>
+    <li>В автомобиле двигатель внутреннего сгорания преобразует химическую энергию топлива в механическую работу и тепло.</li>
+    <li>Холодильник отводит тепло из внутреннего пространства, поддерживая низкую температуру, благодаря работе компрессора.</li>
+    <li>При закипании воды происходит изотермический процесс, так как температура остаётся постоянной, а вода получает энергию в виде тепла.</li>
+  </ul>
+
+  <h2>Интересные факты</h2>
+  <ul>
+    <li>Термодинамика тесно связана с понятием энтропии — меры хаоса или беспорядка в системе.</li>
+    <li>На микроскопическом уровне термодинамические процессы описываются статистической механикой.</li>
+  </ul>
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://www.seekpng.com/png/full/515-5159737_kyle-headshot-portable-network-graphics.png" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color:#B22222;">Сергей Иванов </p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель физики с более чем 10-летним стажем работы в школе и вузе. Специализируется на механике, электродинамике и квантовой физике. Любит объяснять сложные темы простыми словами и вдохновлять учеников на самостоятельные исследования.
+
+</p>
+  </div>
+</div>
+
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Музыка</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8e1;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #fffde7;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color:#800080;
+    }
+       article h1{
+       margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background:#800080;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:#800080;
+    }
+    footer {
+      background:#800080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Музыка</h1>
+  <p>«Музыка — универсальный язык, объединяющий сердца и души.»</p>
+</header>
+<article>
+  <h1>Рок-музыка: история, стили и культурное значение</h1>
+
+  <section>
+    <h2>Введение в рок-музыку</h2>
+    <p>Рок-музыка — один из самых влиятельных и популярных жанров современной музыки, который возник в середине XX века. Она вобрала в себя элементы блюза, кантри, ритм-энд-блюза и других музыкальных направлений, и с тех пор эволюционировала в многочисленные стили и поджанры.</p>
+    <p>Рок не просто музыка — это целая культура с собственными традициями, стилем, философией и историей, оказавшая сильное влияние на музыку, моду, искусство и общество.</p>
+  </section>
+
+  <section>
+    <h2>История возникновения рок-музыки</h2>
+    <p>Корни рок-музыки уходят в 1940–1950-е годы, когда в США начали смешиваться различные музыкальные стили:</p>
+    <ul>
+      <li><strong>Ритм-энд-блюз (R&B)</strong> — энергичный стиль, базирующийся на блюзе и джазе, с выразительными вокалами и акцентом на ритм.</li>
+      <li><strong>Кантри</strong> — народная музыка южных штатов США, с использованием акустической гитары и характерных мелодий.</li>
+      <li><strong>Блюз</strong> — жанр афроамериканской музыки с эмоциональной вокальной подачей и мелодиями, часто выражающими печаль и борьбу.</li>
+    </ul>
+    <p>В результате смешения этих влияний появился новый, более энергичный и агрессивный стиль — рок-н-ролл. Одним из первых его символов считается Элвис Пресли, чьи выступления и музыка взорвали музыкальную сцену 1950-х годов.</p>
+  </section>
+
+  <section>
+    <h2>Основные этапы развития рок-музыки</h2>
+    <p>Рок прошёл через множество трансформаций и стал базой для множества поджанров. Основные этапы:</p>
+    <ul>
+      <li><strong>1950-е: Рок-н-ролл</strong> — энергичная музыка для молодёжи, символ свободы и бунта.</li>
+      <li><strong>1960-е: Британское вторжение и психоделический рок</strong> — появление таких групп, как The Beatles и The Rolling Stones; эксперименты с новыми звуками, расширение инструментовки.</li>
+      <li><strong>1970-е: Хард-рок и прогрессивный рок</strong> — более тяжёлое звучание, сложные музыкальные структуры, появление ярких гитарных соло. Группы: Led Zeppelin, Pink Floyd.</li>
+      <li><strong>1980-е: Глэм-рок, хэви-метал и альтернативный рок</strong> — яркая эстетика, использование электроники и усилителей, появление таких групп, как Guns N’ Roses, Metallica, R.E.M.</li>
+      <li><strong>1990-е: Гранж и альтернативный рок</strong> — возрождение простоты и эмоциональной искренности, Nirvana и Pearl Jam стали символами поколения.</li>
+      <li><strong>2000-е и далее: смешение жанров и новые направления</strong> — появление инди-рока, пост-рока, эмоционального и экспериментального рок-музыки.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Основные характеристики рок-музыки</h2>
+    <p>Рок-музыка отличается следующими признаками:</p>
+    <ul>
+      <li><strong>Инструменты</strong>: электрогитара, бас-гитара, ударные, иногда клавишные и духовые инструменты.</li>
+      <li><strong>Ритм</strong>: акцент на 4/4 такт, мощный и энергичный бит.</li>
+      <li><strong>Вокал</strong>: от мелодичного до агрессивного, часто с использованием крика или особых техник.</li>
+      <li><strong>Структура песен</strong>: куплет-припев с гитарными риффами и соло.</li>
+      <li><strong>Тематика</strong>: тексты часто затрагивают темы свободы, бунта, любви, социальных проблем и личных переживаний.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Значимые поджанры рок-музыки</h2>
+    <p>За десятилетия развития рок породил множество поджанров, среди которых:</p>
+    <ul>
+      <li><strong>Панк-рок</strong> — минималистичный и агрессивный стиль с простыми аккордами и текстами протеста.</li>
+      <li><strong>Хард-рок</strong> — мощное гитарное звучание, яркие соло и энергичные ритмы.</li>
+      <li><strong>Метал</strong> — тяжёлый звук, быстрые темпы, часто с использованием драматических вокальных техник.</li>
+      <li><strong>Прогрессивный рок</strong> — сложные музыкальные формы, элементы джаза и классики.</li>
+      <li><strong>Альтернативный рок</strong> — широкий спектр экспериментальных направлений, выходящих за рамки классического рока.</li>
+      <li><strong>Инди-рок</strong> — независимый подход к созданию музыки, часто с необычными мелодиями и звучанием.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Влияние рок-музыки на культуру и общество</h2>
+    <p>Рок-музыка стала символом молодёжной культуры, бунта и свободы. Она повлияла на моду, искусство, политику и общественные движения. В 1960–70-е годы рок-концерты и фестивали собирали сотни тысяч людей, становясь площадками для выражения идей мира, любви и протеста.</p>
+    <p>Рок-музыка также активно используется в кино, рекламе и видеоиграх, усиливая эмоциональное воздействие на аудиторию.</p>
+  </section>
+
+  <section>
+    <h2>Знаковые исполнители и группы</h2>
+    <p>Некоторые из самых влиятельных исполнителей и коллективов в истории рок-музыки:</p>
+    <ul>
+      <li>The Beatles — революционеры и новаторы в рок-музыке.</li>
+      <li>Led Zeppelin — легенды хард-рока и классического рока.</li>
+      <li>Queen — мастера эклектики и сценического шоу.</li>
+      <li>Nirvana — основатели гранжа, символ поколения X.</li>
+      <li>Pink Floyd — творцы прогрессивного рока и концептуальных альбомов.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Как начать слушать рок-музыку</h2>
+    <p>Для знакомства с роком стоит начать с классических альбомов и песен:</p>
+    <ul>
+      <li>“Hey Jude” — The Beatles</li>
+      <audio src="Beatles.mp3" controls></audio>
+      <li>“Stairway to Heaven” — Led Zeppelin</li>
+       <audio src="Led.mp3" controls></audio>
+      <li>“Bohemian Rhapsody” — Queen</li>
+       <audio src="Queen.mp3" controls></audio>
+      <li>“Smells Like Teen Spirit” — Nirvana</li>
+       <audio src="Nirvana.mp3" controls></audio>
+      <li>“Comfortably Numb” — Pink Floyd</li>
+      <audio src="Pink.mp3" controls></audio>
+    </ul>
+    <p>Исследуйте разные эпохи и поджанры, чтобы найти то, что вам ближе всего по духу и настроению.</p>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Рок-музыка — это динамичный, многогранный жанр, который продолжает развиваться и вдохновлять миллионы людей по всему миру. Она объединяет мощь, эмоции и творчество, оставаясь неотъемлемой частью музыкального наследия человечества.</p>
+  </section>
+</article>
+
+
+<main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="Aminchik.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #800080;">Амина Фарухи</p>
+    <p style="font-size: 0.9rem; color: #555;">Ученица музыкальной школы. Имеет прекрасный музыкальный вкус и глубокие знания в своём деле. Интересный факт, что она уже заканчивает музыкальную школу.Играет на фортепиано</p>
+  </div>
+</div>
+</main>
+
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+</body>
+</html>

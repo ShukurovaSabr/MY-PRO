@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Геометрия</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1633493702341-4d04841df53b?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+   article h1{
+       margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #B22222;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+   
+    footer {
+      background: #B22222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      
+      }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  </head>
+<body>
+    <header>
+  <h1 id="club">Физика</h1>
+  <p>«Физика — это наука о законах природы, которые управляют вселенной.»</p>
+</header>
+<article>
+  <h1>Квантовая механика</h1>
+  <p>Квантовая механика — раздел физики, изучающий поведение микрочастиц: электронов, фотонов, атомов и молекул. Она описывает физические процессы на уровне, где классические законы Ньютона перестают работать, и вместо них применяются принципы квантования энергии и вероятностной природы явлений.</p>
+
+  <h2>Исторический обзор</h2>
+  <p>В начале XX века классическая физика не могла объяснить некоторые явления, такие как спектры излучения атомов и фотоэффект. В 1900 году Макс Планк ввёл понятие квантов энергии, а в 1905 году Альберт Эйнштейн объяснил фотоэффект, предложив корпускулярную природу света. Позже Нильс Бор разработал квантовую модель атома, а в 1920–1930-х годах Эрвин Шрёдингер, Вернер Гейзенберг, Паули и другие создали формализмы квантовой механики.</p>
+
+  <h2>Основные принципы квантовой механики</h2>
+  <ul>
+    <li><strong>Квантование энергии:</strong> Энергия микрочастиц может принимать только дискретные значения, называемые квантами.</li>
+    <li><strong>Волновая функция:</strong> Каждая частица описывается волновой функцией ψ, которая содержит информацию о вероятности нахождения частицы в том или ином месте.</li>
+    <li><strong>Принцип неопределённости Гейзенберга:</strong> Невозможно одновременно точно измерить некоторые пары физических величин, например, положение и импульс частицы.</li>
+    <li><strong>Дуализм волна-частица:</strong> Микрочастицы обладают одновременно свойствами как волн, так и корпускул.</li>
+    <li><strong>Суперпозиция состояний:</strong> Частица может находиться одновременно в нескольких состояниях до момента измерения.</li>
+  </ul>
+
+  <h2>Волновая функция и уравнение Шрёдингера</h2>
+  <p>Волновая функция ψ — ключевой объект квантовой механики. Уравнение Шрёдингера описывает её эволюцию во времени и позволяет вычислить вероятности различных исходов экспериментов:</p>
+  <blockquote>
+    <p>iħ ∂ψ/∂t = Ĥψ</p>
+  </blockquote>
+  <p>где ħ — постоянная Планка, Ĥ — оператор гамильтониана (энергии системы). Волновая функция не является напрямую наблюдаемой, но её квадрат |ψ|² даёт вероятность обнаружить частицу в определённом месте.</p>
+
+  <h2>Принцип неопределённости</h2>
+  <p>Вернер Гейзенберг установил, что невозможно одновременно точно знать пару сопряжённых величин (например, координату и импульс):</p>
+  <blockquote>
+    <p>Δx · Δp ≥ ħ / 2</p>
+  </blockquote>
+  <p>Это фундаментальное ограничение не связано с техническими трудностями измерения, а является свойством природы на микроскопическом уровне.</p>
+
+  <h2>Квантовые состояния и спин</h2>
+  <p>Квантовая механика вводит понятие спина — внутреннего углового момента частиц, который не имеет классического аналога. Спин влияет на статистические свойства частиц и их взаимодействия.</p>
+
+  <h2>Квантовая суперпозиция и запутанность</h2>
+  <p>Квантовые системы могут находиться в суперпозициях нескольких состояний одновременно. При измерении система "коллапсирует" в одно из возможных состояний. Также существует феномен квантовой запутанности — сильной корреляции состояний двух и более частиц, даже если они находятся на большом расстоянии друг от друга.</p>
+
+  <h2>Применения квантовой механики</h2>
+  <ul>
+    <li>Создание полупроводников и микросхем, лежащих в основе современной электроники.</li>
+    <li>Разработка лазеров и оптических приборов.</li>
+    <li>Квантовые вычисления — новая область, которая обещает революционизировать обработку информации.</li>
+    <li>Квантовая криптография для сверхзащищённой передачи данных.</li>
+    <li>Фундаментальные исследования в физике частиц и космологии.</li>
+  </ul>
+
+  <h2>Заключение</h2>
+  <p>Квантовая механика — одна из самых успешных и глубоких теорий в физике. Она раскрывает тайны микромира и формирует фундамент для современных технологий и новых научных открытий. Несмотря на свою сложность, она позволяет понять, как устроен мир на самом фундаментальном уровне.</p>
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://static.tildacdn.com/tild3464-6536-4730-a266-383630326539/profile-picshadow.png" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color:#B22222;">Максим Абрамов</p>
+    <p style="font-size: 0.9rem; color: #555;">Профессионал в области физики с 8-летним педагогическим опытом. Ведёт курсы по общей физике, термодинамике и оптике. Стремится сделать занятия интерактивными и интересными, используя современные технологии и практические задания.
+
+
+
+</p>
+  </div>
+</div>
+
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+
+
+
+
+</body>
+</html>

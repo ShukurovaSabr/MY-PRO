@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Русский язык</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1523509080324-9183f313dc50?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.35);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+       article h1{
+       margin-bottom: 0.5em;
+      color: #DAA520;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #DAA520;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #DAA520;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: 	#DAA520;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: 	#DAA520;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:#DAA520;
+    }
+    footer {
+      background:	#DAA520;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Русский язык</h1>
+  <p>«Русский язык — душа народа, богатство культуры и истории.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Лексика: Словарный запас языка и его богатство</h1>
+  <p>
+    Лексика — это совокупность всех слов, существующих в языке. Она отражает мир, в котором живёт человек, передаёт его мышление, культуру, историю, эмоции и отношения. Каждое слово — это носитель смысла, образа, чувства. Слова складываются в предложения, из них формируются тексты, через которые человек общается, думает и познаёт.
+  </p>
+
+  <h2>Значение лексики в языке</h2>
+  <p>
+    Без лексики невозможно представить себе язык как средство общения. Словарный состав языка формирует основу устной и письменной речи. Благодаря лексике человек может выражать мысли, чувства, волю, желания, передавать информацию и влиять на других.
+  </p>
+  <p>
+    Богатая лексика делает речь точной, яркой, выразительной. Бедная — затрудняет понимание, делает высказывание скучным или неясным.
+  </p>
+
+  <h2>Состав лексики</h2>
+  <p>
+    Вся лексика делится на разные группы по происхождению, употреблению, стилю и значению. Основные деления:
+  </p>
+
+  <ul>
+    <li><strong>Литературная лексика</strong> — слова, принятые в официальной, деловой, научной и художественной речи.</li>
+    <li><strong>Нелитературная лексика</strong> — просторечия, жаргоны, диалектизмы, архаизмы и вульгаризмы.</li>
+    <li><strong>Активный словарь</strong> — слова, которые человек часто использует в речи.</li>
+    <li><strong>Пассивный словарь</strong> — слова, которые человек понимает, но редко употребляет.</li>
+    <li><strong>Общепотребительная лексика</strong> — слова, известные всем (например, «дом», «вода», «мама»).</li>
+    <li><strong>Специальная (терминологическая) лексика</strong> — слова, используемые в науке, технике, искусстве и т. д.</li>
+  </ul>
+
+  <h2>Лексическое значение слова</h2>
+  <p>
+    Каждое слово имеет лексическое значение — то есть смысл, который оно выражает. Иногда одно и то же слово может иметь несколько значений:
+  </p>
+  <ul>
+    <li><strong>Прямое значение</strong>: «лист дерева».</li>
+    <li><strong>Переносное значение</strong>: «лист бумаги».</li>
+  </ul>
+  <p>
+    Такие случаи называются многозначностью. Существуют также омонимы — слова, которые звучат одинаково, но не связаны по смыслу («лук» как растение и «лук» как оружие).
+  </p>
+
+  <h2>Словообразование и заимствования</h2>
+  <p>
+    Лексика постоянно пополняется за счёт:
+  </p>
+  <ul>
+    <li>Образования новых слов с помощью приставок, суффиксов и сложения (например, «самолёт», «подземный»).</li>
+    <li>Заимствований из других языков (например, «интернет», «компьютер», «барьер», «шанс»).</li>
+  </ul>
+  <p>
+    Заимствованные слова проходят адаптацию и становятся частью русского языка, иногда даже вытесняя исконно русские синонимы.
+  </p>
+
+  <h2>Лексические средства выразительности</h2>
+  <p>
+    В художественной речи используются разнообразные лексические приёмы:
+  </p>
+  <ul>
+    <li><strong>Эпитеты</strong> — образные определения («гордая тишина», «свежий ветер»).</li>
+    <li><strong>Метафоры</strong> — скрытые сравнения («море слёз», «золотые руки»).</li>
+    <li><strong>Гипербола</strong> — преувеличение («в тысячу раз сказал»).</li>
+    <li><strong>Литота</strong> — преуменьшение («маленький как мышка»).</li>
+    <li><strong>Сравнение</strong> — сопоставление двух предметов («быстрый как молния»).</li>
+  </ul>
+
+  <h2>Работа со словарями</h2>
+  <p>
+    Для изучения лексики важно обращаться к словарям:
+  </p>
+  <ul>
+    <li>Толковый словарь (например, Ожегова) — раскрывает значение слов.</li>
+    <li>Синонимический — помогает найти слова с похожим значением.</li>
+    <li>Антонимический — указывает противоположные по значению слова.</li>
+    <li>Этимологический — объясняет происхождение слов.</li>
+    <li>Фразеологический — включает устойчивые выражения и обороты.</li>
+  </ul>
+
+  <h2>Лексика и культура</h2>
+  <p>
+    Лексика отражает особенности культуры, мышления и истории народа. В языке сохраняются слова из древних эпох, названия обычаев, предметов быта, природных явлений. Изучение лексики позволяет глубже понять культуру, фольклор, художественные образы.
+  </p>
+
+  <h2>Вывод</h2>
+  <p>
+    Лексика — это живой организм, который растёт, развивается, обогащается. Она делает язык гибким, выразительным и точным. Знание лексики, её оттенков, богатства и истории позволяет свободно владеть языком, точно выражать свои мысли и понимать других. Изучение лексики — важный шаг на пути к грамотности, эрудиции и культурному развитию.
+  </p>
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://www.eurohomespb.ru/assets/files/images/zhenschina-6-min.png" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #DAA520;">Александра Смирнова</p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель русского языка, умеющий прекрасно готовить и писать стихи.Благодаря ей скоро будет добавлен раздел "Кулинария"</p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Русский язык. Все права защищены.
+</footer>
+
+</body>
+</html>

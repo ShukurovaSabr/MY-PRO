@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Танцы</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+ #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff4f4;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1540324155974-7523202daa3f?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #ffe6e6;
+    }
+        a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+   article h1{
+       margin-bottom: 0.5em;
+      color: #FF1493;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #FF1493;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #FF1493;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: 	#FF1493;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background:	#FF1493;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:	#FF1493;
+    }
+    footer {
+      background:	#FF1493;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Танцы</h1>
+  <p>«Танец — язык души, выраженный через движение и ритм.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Танец живота: Искусство грации и выразительности</h1>
+
+  <section>
+    <h2>Введение</h2>
+    <p>Танец живота — это древнее танцевальное искусство, которое зародилось на Ближнем Востоке и в Северной Африке. Известный своей плавностью и выразительными движениями бедер, живота и корпуса, этот танец отражает женственность, силу и харизму. Сегодня танец живота популярен во всем мире и используется как средство самовыражения, фитнеса и культурного обмена.</p>
+  </section>
+
+  <section>
+    <h2>История танца живота</h2>
+    <p>Происхождение танца живота восходит к древним временам — некоторые исследователи связывают его с обрядами плодородия и религиозными церемониями, где танец использовался для празднования жизни и природы. В течение столетий танец развивался и трансформировался под влиянием различных культур — арабской, турецкой, персидской и даже индийской.</p>
+    <p>В 19-20 веках танец живота получил широкое распространение благодаря восточным выставкам и кинематографу, что способствовало его популяризации на Западе.</p>
+  </section>
+
+  <section>
+    <h2>Основные техники и движения</h2>
+    <p>Танец живота отличается уникальным использованием изоляций — умением контролировать движения отдельных частей тела независимо друг от друга. Основные движения включают:</p>
+    <ul>
+      <li><strong>Шейки (Shimmies):</strong> быстрые вибрирующие движения бедер или плеч;</li>
+      <li><strong>Хивки (Hips):</strong> плавные движения бедер в разные стороны;</li>
+      <li><strong>Волны (Undulations):</strong> волнообразные движения корпуса и живота;</li>
+      <li><strong>Изоляции живота:</strong> движения вперед, назад, вверх и вниз с контролем мышц пресса;</li>
+      <li><strong>Повороты и шаги:</strong> гармоничные переходы между движениями с использованием стоп и коленей;</li>
+      <li><strong>Жесты рук и кистей:</strong> важная часть выразительности и эстетики танца.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Музыка и ритмы</h2>
+    <p>Танец живота исполняется под традиционные и современные восточные мелодии с характерными ритмами, такими как <em>макам</em> и <em>айюб</em>. Часто используется ударная музыка, барабаны и перкуссия, создавая захватывающий ритм, который задаёт темп танцу.</p>
+    <p>Музыкальные размеры могут быть сложными и включать нестандартные такты, что требует от танцора высокой концентрации и чувства ритма.</p>
+  </section>
+
+  <section>
+    <h2>Костюмы и атрибуты</h2>
+    <p>Традиционные костюмы танца живота часто включают украшенные блестками топы, юбки с разрезами, пояса с монетами и бахромой, которые подчёркивают движения тела и создают дополнительную визуальную динамику. В современных постановках используются также различные аксессуары — веера, палочки, платки, светящиеся элементы.</p>
+  </section>
+
+  <section>
+    <h2>Виды и стили танца живота</h2>
+    <p>Существует множество стилей танца живота, каждый со своими особенностями:</p>
+    <ul>
+      <li><strong>Классический восточный стиль (Ракса Шаркия):</strong> традиционный, с акцентом на плавность и выразительность;</li>
+      <li><strong>Турецкий стиль:</strong> более динамичный и энергичный, с резкими движениями и быстрыми поворотами;</li>
+      <li><strong>Либеральный стиль (Американский или кабаре):</strong> сочетает элементы восточного танца с западными влияниями, более театрализован и эффектен;</li>
+      <li><strong>Фьюжн:</strong> смешение танца живота с другими направлениями, например, балетом, джазом или контемпорари;</li>
+      <li><strong>Трайбл и трайбл-фьюжн:</strong> основаны на традиционных народных танцах с современными элементами.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Польза для здоровья</h2>
+    <p>Танец живота — это не только красивое искусство, но и отличный способ поддерживать физическую форму. Он укрепляет мышцы кора, улучшает гибкость, координацию и осанку. Кроме того, танец способствует снятию стресса и развитию уверенности в себе.</p>
+  </section>
+
+  <section>
+    <h2>Обучение и практика</h2>
+    <p>Для освоения танца живота требуется регулярная практика, изучение базовых движений и их сочетаний, а также развитие чувства ритма. Многие школы предлагают курсы для начинающих и продвинутых, включающие технику, импровизацию и постановки.</p>
+    <p>Важна также работа над выразительностью и эмоциональным контактом с музыкой и аудиторией.</p>
+  </section>
+
+  <section>
+    <h2>Современное положение и популярность</h2>
+    <p>Танец живота приобрёл огромную популярность во всем мире, вдохновляя тысячи женщин и мужчин. Он используется как в шоу и театральных постановках, так и в фитнес-программах и терапевтических практиках. Фестивали, конкурсы и международные конвенции собирают профессионалов и любителей танца со всех уголков планеты.</p>
+  </section>
+
+  <section>
+    <h2>Известные исполнители</h2>
+    <ul>
+      <li><strong>Сухейла Джамаал</strong> — одна из самых влиятельных танцовщиц и педагогов танца живота;</li>
+      <li><strong>Махмуд Реда</strong> — легендарный египетский хореограф;</li>
+      <li><strong>Тахия Карри</strong> — известная исполнительница и актриса;</li>
+      <li><strong>Джина Саад</strong> — современная звезда танца живота и фьюжн.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Танец живота — это искусство, объединяющее в себе древние традиции и современность, гармонию тела и души, технику и эмоции. Это прекрасный способ выразить свою индивидуальность, укрепить здоровье и приобщиться к богатой культуре Востока.</p>
+  </section>
+</article>
+
+
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://asiaplustj.info/sites/default/files/articles/299898/IMG_20210702_192827_098.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #FF1493;">Фарангис Касымова</p>
+    <p style="font-size: 0.9rem; color: #555;">Прима-балерина ГАТОБ им.С.Айни. Получила образование в Перми.Её танец грациозен и изящен. Преподаёт и заинтерисовывает деток разных возрастов к своему делу.</p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2025 Танцы. Все права защищены.
+</footer>
+
+</body>
+</html>

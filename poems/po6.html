@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Стихи</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+article h1{
+       margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      background: #f9f5f2;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #fffaf8;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      filter: brightness(0.85);
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+      font-family: 'Georgia', serif;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #555;
+      font-family: 'Georgia', serif;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #6b3e26;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+      font-family: 'Georgia', serif;
+    }
+    .next-page:hover {
+      background-color: #8b5e3c;
+    }
+        .card a {
+  text-decoration: none;
+  color: inherit;
+}
+    footer {
+      background: #6b3e26;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+      font-family: 'Georgia', serif;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Стихи</h1>
+  <p>«Поэзия — это дыхание души, превращённое в слова.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Поэзия чувств: язык сердца и эмоций</h1>
+
+  <section>
+    <h2>Что такое поэзия чувств?</h2>
+    <p>Поэзия чувств — это жанр, в котором главной темой становятся человеческие эмоции, переживания и внутренние состояния. Она выражает радость, любовь, грусть, страсть, тоску и другие оттенки души, позволяя читателю соприкоснуться с глубинами человеческого опыта.</p>
+  </section>
+
+  <section>
+    <h2>Истоки и развитие</h2>
+    <p>Поэзия чувств возникла вместе с самой поэзией, ведь выражение эмоций — одна из основных её функций. В эпоху романтизма она получила особое развитие, когда поэты стали уделять внимание личным переживаниям, интуиции и субъективным ощущениям.</p>
+  </section>
+
+  <section>
+    <h2>Основные темы и мотивы</h2>
+    <ul>
+      <li>Любовь во всех её проявлениях — от нежности до страсти.</li>
+      <li>Грусть и печаль, связанные с утратой и разочарованием.</li>
+      <li>Восторг, счастье и вдохновение.</li>
+      <li>Одиночество и тоска по близости.</li>
+      <li>Внутренний конфликт и душевные метания.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Язык и стиль поэзии чувств</h2>
+    <p>Для передачи эмоций поэты используют:</p>
+    <ul>
+      <li>Яркие и выразительные метафоры и сравнения.</li>
+      <li>Экспрессивную интонацию и ритм.</li>
+      <li>Личные обращения и интимный тон.</li>
+      <li>Повторения и звукописи для усиления настроения.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Знаменитые поэты чувств</h2>
+    <p>В мировой литературе множество поэтов, чьи произведения проникнуты глубокими эмоциями:</p>
+    <ul>
+      <li><strong>Александр Пушкин:</strong> мастер лирической поэзии и любовной лирики.</li>
+      <li><strong>Анна Ахматова:</strong> передавала сложные чувства утраты и тоски.</li>
+      <li><strong>Уильям Блейк:</strong> выражал страсть и духовные переживания.</li>
+      <li><strong>Эмили Дикинсон:</strong> исследовала внутренний мир и чувства одиночества.</li>
+      <li><strong>Руми:</strong> суфийский поэт, воспевавший любовь как высшее чувство.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Значение поэзии чувств</h2>
+    <p>Она помогает понять и принять свои эмоции, найти слова для того, что сложно выразить иначе. Поэзия чувств создаёт пространство для сопереживания и духовного общения.</p>
+  </section>
+
+  <section>
+    <h2>Как писать поэзию чувств</h2>
+    <ul>
+      <li>Откройтесь своим эмоциям и не бойтесь их исследовать.</li>
+      <li>Используйте образы и символы, которые резонируют с вашими переживаниями.</li>
+      <li>Читайте и анализируйте классическую и современную лирику.</li>
+      <li>Практикуйтесь в выражении чувств через разные стили и формы.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Поэзия чувств — это мост между сердцами, который объединяет людей через общие переживания и глубокое понимание внутреннего мира друг друга.</p>
+  </section>
+</article>
+
+
+
+  <div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #6b3e26;">Павел Морозов</p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель литературы, прекрасно пишет стихи и его любимая книга "Поэтический словарь" Квятковского</p>
+  </div>
+</div>
+
+</main>
+</main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+</body>
+</html>

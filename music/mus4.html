@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Музыка</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8e1;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #fffde7;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color:#800080;
+    }
+       article h1{
+       margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background:#800080;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:#800080;
+    }
+    footer {
+      background:#800080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Музыка</h1>
+  <p>«Музыка — универсальный язык, объединяющий сердца и души.»</p>
+</header>
+<article>
+  <h1>Поп-музыка: история, развитие и влияние</h1>
+
+  <section>
+    <h2>Введение в поп-музыку</h2>
+    <p>Поп-музыка — один из самых популярных и коммерчески успешных музыкальных жанров в мире. Термин «поп» происходит от английского слова «popular» — популярный. Этот жанр характеризуется мелодичностью, запоминающимися припевами, простыми структурами и широким стилевым разнообразием.</p>
+    <p>Поп-музыка постоянно меняется, отражая культурные и социальные тенденции своего времени, что позволяет ей оставаться актуальной и любимой широкой аудиторией.</p>
+  </section>
+
+  <section>
+    <h2>История и корни поп-музыки</h2>
+    <p>Корни поп-музыки уходят в середину XX века. В 1950-х и 60-х годах поп-музыка была тесно связана с рок-н-роллом и ритм-энд-блюзом. В это время появлялись артисты, чья музыка была ориентирована на массовую аудиторию и радиоэфир:</p>
+    <ul>
+      <li><strong>Элвис Пресли</strong> — один из первых поп-идолов, объединивший рок-н-ролл и поп-элементы.</li>
+      <li><strong>Битлз</strong> — их музыка сочетала мелодичность с новаторскими идеями, что сделало их лидерами поп-движения.</li>
+      <li><strong>Моттаун и соул</strong> — влияние черной музыки, которое добавило глубину и эмоциональность в поп-звучание.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Основные черты поп-музыки</h2>
+    <p>Поп-музыка выделяется следующими характеристиками:</p>
+    <ul>
+      <li><strong>Мелодичность и ритмичность</strong> — легко запоминающиеся мелодии и четкий ритм.</li>
+      <li><strong>Структура песен</strong> — чаще всего стандартная форма куплет-припев с инструментальными вставками.</li>
+      <li><strong>Тексты</strong> — обычно простые и понятные, затрагивающие темы любви, отношений, радости и жизненных переживаний.</li>
+      <li><strong>Продакшн</strong> — использование современных студийных технологий, синтезаторов, эффектов и аранжировок.</li>
+      <li><strong>Доступность</strong> — музыка создается так, чтобы нравиться максимально широкой аудитории.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Эволюция и поджанры</h2>
+    <p>С течением времени поп-музыка впитывала различные влияния и трансформировалась, породив множество поджанров:</p>
+    <ul>
+      <li><strong>Диско</strong> — танцевальный стиль 1970-х с яркими ритмами и гитарными риффами.</li>
+      <li><strong>Синти-поп</strong> — стиль 1980-х с широким применением синтезаторов и электронных инструментов.</li>
+      <li><strong>Данс-поп</strong> — энергичные треки для клубов и танцполов.</li>
+      <li><strong>Поп-рок</strong> — сочетание поп-мелодий с рок-инструментами и настроением.</li>
+      <li><strong>Тин-поп</strong> — музыка для подростковой аудитории с акцентом на легкость и молодежный стиль.</li>
+      <li><strong>Современный поп</strong> — часто смешивает элементы хип-хопа, R&B, EDM и других жанров.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Знаковые исполнители и коллективы</h2>
+    <p>Множество артистов внесли огромный вклад в развитие поп-музыки и стали культовыми фигурами:</p>
+    <ul>
+      <li>Майкл Джексон — «король поп-музыки», новатор в музыкальном видео и сценических постановках.</li>
+      <li>Мадонна — королева поп-сцены с постоянным обновлением образов и музыкальных стилей.</li>
+      <li>Мэрайя Кэри — известна своим вокальным диапазоном и балладами.</li>
+      <li>Бритни Спирс — символ поп-культуры конца 1990-х и начала 2000-х.</li>
+      <li>Тейлор Свифт — яркий представитель современной поп- и кантри-музыки.</li>
+      <li>Бейонсе — влиятельная фигура в современном попе и R&B.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Влияние поп-музыки на культуру и общество</h2>
+    <p>Поп-музыка является важной частью глобальной массовой культуры. Она оказывает влияние на моду, язык, социальные тенденции и даже политику. Поп-идолы становятся образцами для подражания миллионов людей, особенно молодежи.</p>
+    <p>Музыкальные видеоклипы, концерты и фестивали создают сообщество фанатов и способствуют распространению идей и культурных трендов.</p>
+  </section>
+
+  <section>
+    <h2>Как слушать и понимать поп-музыку</h2>
+    <p>Поп-музыка доступна на любых музыкальных платформах, от радио до стриминговых сервисов. Чтобы лучше понимать жанр, полезно:</p>
+    <ul>
+      <li>Обращать внимание на мелодии и аранжировки.</li>
+      <li>Изучать тексты песен и их темы.</li>
+      <li>Следить за новыми трендами и исполнителями.</li>
+      <li>Смотреть музыкальные клипы и живые выступления.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Поп-музыка — это динамичный и постоянно меняющийся жанр, отражающий дух времени и настроения общества. Она объединяет миллионы людей по всему миру, дарит радость и вдохновение, оставаясь одним из главных культурных феноменов современности.</p>
+  </section>
+</article>
+
+
+<main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="Aminchik.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #800080;">Амина Фарухи</p>
+    <p style="font-size: 0.9rem; color: #555;">Ученица музыкальной школы. Имеет прекрасный музыкальный вкус и глубокие знания в своём деле. Интересный факт, что она уже заканчивает музыкальную школу.Играет на фортепиано</p>
+  </div>
+</div>
+</main>
+
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+</body>
+</html>

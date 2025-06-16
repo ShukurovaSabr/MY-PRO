@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Русский язык</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1523509080324-9183f313dc50?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.35);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+       article h1{
+       margin-bottom: 0.5em;
+      color: #DAA520;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #DAA520;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #DAA520;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: 	#DAA520;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: 	#DAA520;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:#DAA520;
+    }
+    footer {
+      background:	#DAA520;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Русский язык</h1>
+  <p>«Русский язык — душа народа, богатство культуры и истории.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Литература — искусство слова</h1>
+
+  <p>
+    Литература — это вид искусства, в котором основным средством выражения мыслей, чувств и образов является слово. Литература отражает мир, человека, отношения между людьми, внутренний мир личности, идеалы и мечты. Через литературные произведения человек может осмыслить жизнь, ощутить красоту языка и прикоснуться к культуре разных эпох и народов.
+  </p>
+
+  <h2>Виды литературы</h2>
+  <p>
+    Литературу принято делить на две основные группы:
+  </p>
+  <ul>
+    <li><strong>Художественная литература</strong> — отражает жизнь в образной форме: поэзия, проза, драма.</li>
+    <li><strong>Нехудожественная (научная, публицистическая, мемуарная)</strong> — опирается на факты, исследует явления, но тоже может быть литературно оформлена.</li>
+  </ul>
+
+  <h2>Роды художественной литературы</h2>
+  <p>Художественная литература делится на три основных рода:</p>
+  <ul>
+    <li><strong>Эпос</strong> — повествование о событиях, героях, их действиях. Примеры: повесть, роман, рассказ.</li>
+    <li><strong>Лирика</strong> — передаёт чувства и переживания автора. Примеры: стихотворение, ода, элегия.</li>
+    <li><strong>Драма</strong> — произведение, написанное в форме диалога и предназначенное для постановки на сцене. Примеры: комедия, трагедия.</li>
+  </ul>
+
+  <h2>Жанры литературы</h2>
+  <p>
+    Внутри родов выделяются жанры:
+  </p>
+  <ul>
+    <li><strong>Роман</strong> — большое эпическое произведение с развитым сюжетом и множеством героев.</li>
+    <li><strong>Рассказ</strong> — краткое повествование об одном событии или герое.</li>
+    <li><strong>Стихотворение</strong> — небольшая лирическая форма, часто в рифму.</li>
+    <li><strong>Баллада</strong> — поэтический рассказ с элементами фантастики или героики.</li>
+    <li><strong>Комедия</strong> — драматический жанр с юмором и сатирой.</li>
+    <li><strong>Трагедия</strong> — драматическое произведение о серьёзных конфликтах и судьбах.</li>
+  </ul>
+
+  <h2>Функции литературы</h2>
+  <ul>
+    <li><strong>Эстетическая</strong> — формирует вкус, развивает чувство прекрасного.</li>
+    <li><strong>Познавательная</strong> — даёт знания о жизни, истории, культуре.</li>
+    <li><strong>Воспитательная</strong> — формирует личность, нравственные качества.</li>
+    <li><strong>Коммуникативная</strong> — передаёт опыт, идеи, объединяет людей.</li>
+    <li><strong>Развлекательная</strong> — даёт отдых, удовольствие, эмоциональную разрядку.</li>
+  </ul>
+
+  <h2>История русской литературы</h2>
+  <p>
+    Русская литература прошла долгий путь:
+  </p>
+  <ul>
+    <li><strong>Древнерусская литература</strong> — памятники: «Слово о полку Игореве», жития, летописи.</li>
+    <li><strong>XVIII век</strong> — эпоха классицизма. Поэты: Державин, Ломоносов.</li>
+    <li><strong>XIX век</strong> — золотой век. Пушкина, Лермонтов, Гоголь, Толстой, Достоевский, Чехов.</li>
+    <li><strong>XX век</strong> — Серебряный век поэзии (Блок, Ахматова, Маяковский), советская литература (Шолохов, Булгаков, Твардовский), диссидентская проза (Солженицын).</li>
+    <li><strong>Современная литература</strong> — множество жанров, разнообразие стилей, синтез традиций и новаторства.</li>
+  </ul>
+
+  <h2>Анализ художественного произведения</h2>
+  <p>
+    Для понимания текста важно уметь анализировать:
+  </p>
+  <ul>
+    <li><strong>Тему</strong> — о чём произведение?</li>
+    <li><strong>Идею</strong> — главный вывод, мысль автора.</li>
+    <li><strong>Конфликт</strong> — противоречие, движущая сила сюжета.</li>
+    <li><strong>Сюжет</strong> — последовательность событий.</li>
+    <li><strong>Композицию</strong> — структура (экспозиция, завязка, кульминация, развязка).</li>
+    <li><strong>Герои</strong> — их характеры, поступки, взаимоотношения.</li>
+    <li><strong>Художественные средства</strong> — эпитеты, метафоры, сравнения и т. д.</li>
+  </ul>
+
+  <h2>Литература и человек</h2>
+  <p>
+    Литература — это зеркало человеческой души. Через книги мы учимся понимать других, развиваем воображение, критическое мышление, эмоциональный интеллект. Великие произведения становятся частью культурного наследия, они формируют мировоззрение и национальное самосознание.
+  </p>
+
+  <h2>Заключение</h2>
+  <p>
+    Литература — важнейшая часть духовной жизни общества. Она хранит и передаёт человеческий опыт, вдохновляет, заставляет задуматься, помогает стать лучше. Читая литературу, мы прикасаемся к сокровищам культуры, к голосам разных эпох и к собственной душе.
+  </p>
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://www.eurohomespb.ru/assets/files/images/zhenschina-6-min.png" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #DAA520;">Александра Смирнова</p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель русского языка, умеющий прекрасно готовить и писать стихи.Благодаря ей скоро будет добавлен раздел "Кулинария"</p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Русский язык. Все права защищены.
+</footer>
+
+</body>
+</html>
+

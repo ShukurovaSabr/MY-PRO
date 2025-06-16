@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Стихи</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+article h1{
+       margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      background: #f9f5f2;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #fffaf8;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      filter: brightness(0.85);
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+      font-family: 'Georgia', serif;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #555;
+      font-family: 'Georgia', serif;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #6b3e26;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+      font-family: 'Georgia', serif;
+    }
+       pre {
+      background: #fdf5f0;
+      padding: 15px 20px;
+      border-left: 5px solid #e0c3b2;
+      white-space: pre-wrap;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1em;
+    }
+    em {
+      display: block;
+      font-style: italic;
+      color: #7d4b4b;
+      margin-top: 5px;
+    }
+    p {
+      margin-bottom: 25px;
+    }
+    .next-page:hover {
+      background-color: #8b5e3c;
+    }
+        .card a {
+  text-decoration: none;
+  color: inherit;
+}
+  p {
+    margin: 20px 0;
+  }
+  h2{
+    margin: 60px 0;
+  }
+  .term {
+    color: rgba(0,0,0,0.4);
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1.5em 0 0.3em 0;
+  }
+    footer {
+      background: #6b3e26;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+      font-family: 'Georgia', serif;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Стихи</h1>
+  <p>«Поэзия — это дыхание души, превращённое в слова.»</p>
+</header>
+<article>
+  <p>Слова — моя стихия. Когда внутри слишком много чувств, мыслей, мечтаний — они сами находят дорогу на бумагу. Я не просто пишу стихи — я проживаю их. Каждое слово рождается из глубины, из тишины и грома моего внутреннего мира. Иногда строки приходят внезапно — как вспышка, как вдох. Иногда — рождаются медленно, в раздумьях, в боли или восторге. В них — я настоящая. Без масок. Без ролей. Здесь нет вымышленных героев — здесь я, такая, какая есть: уязвимая, сильная, нежная, резкая, влюблённая в жизнь и бесконечно ищущая.</p>
+  <p>Я хочу поделиться с вами частичками своей души. Быть может, в этих стихах вы услышите своё. Быть может, они откликнутся — мягко или громко — в вашем сердце. Это не просто поэзия. Это разговор. Мой с миром. Мой с вами.</p>
+  <h2>Танец</h2>
+  <p>Танец-это движения</p>
+  <p>В которых есть чувства:</p>
+  <p>Радость и поражение-</p>
+  <p>Это дар искусства.</p>
+  <p>Имея я навыки танцора,</p>
+  <p>Меня посещает Терпсихора</p>
+  <p>И я на сцене танцую и кружусь,</p>
+  <p>Я вся в чувствах своих покажусь!</p><hr>
+  <p class="term">Терпсихора* — муза танцев в древнегреческой мифологии</p>
+</article>
+
+<article>
+  <h2>Торжественный приход весны</h2>
+  <p>Пришла весна. Афродита торжествует,</p>
+  <p>И под её улыбку всё, цветя, ликует:</p>
+  <p>Цветут деревья и глаза людей</p>
+  <p>Всем вокруг сразу стало веселей.</p>
+  <p>Каждый по натуре стал как Дионис</p>
+ <p>Ведь веселье его главный девиз.</p> 
+<p>Всех посещала Талия*, а не Мельпомена,</p>
+<p>Теперь радость грусти  замена</p><hr>
+  <p class="term">Афродита* — в древнегреческой мифологии богиня весны, вечной любви и красоты</p>
+  <p class="term">Дионис* — в древнегреческой мифологии бог веселья и виноделия</p>
+  <p class="term">Талия* — муза комедии в древнегреческой мифологии</p>
+  <p class="term">Мельпомена* — муза трагедии в древнегреческой мифологии</p>
+</article>
+
+<article>
+  <h2>Поучительный сон</h2>
+  <p>Я погрузилась в объятья Морфея</p>
+  <p>И слышу я музыку певца Орфея,</p>
+  <p>Который был сыном Каллиопы</p>
+  <p>И в его душе были жены вопли.</p>
+  <p>Когда укусила Эвридику змея,</p>
+  <p>Тут же замерла его душа.</p>
+  <p>Но не смог её вернуть с мёртвого царства</p>
+  <p>Тёмного и страшного Аида государства.</p>
+  <p>Всё потому что Орфей так Эвридику любил,</p>
+  <p>Что даже про наказ Аида забыл.</p>
+  <p>Мне тут же стало жаль Орфея</p>
+  <p>И я подошла к нему в образе феи</p>
+  <p>Сказала ему: «Не грусти!</p>
+  <p>Эвридика в твоей душе - внутри».</p>
+  <p>Утешься, поиграй на своём инструменте</p>
+  <p>И ты окажешься счастлив в моменте.</p>
+  <p>Он улыбнулся и я улыбнулась,</p>
+  <p>И я в этот миг… проснулась.</p>
+  <p>В слезах я обняла мать и отца</p>
+  <p>Как же жизнь моя хороша!</p>
+  <p>Берегите своих близких и родных</p>
+  <p>И не оставляйте их одних.</p>
+  <p>Они как лучезарный свет.</p>
+  <p>Вот вам мои друзья совет.</p><hr>
+<p class="term">Морфей* — бог сновидений в древнегреческой мифологии</p>
+<p class="term">Каллиопа* — муза эпоса в древнегреческой мифологии</p>
+<p class="term">Аид* — правитель царства мёртвых в древнегреческой мифологии</p>
+</article>
+
+<article>
+  <h2>Психея и Эрот</h2>
+  <p>Олицетворение души человека - Психея,</p>
+  <p>Живёт, со своей любовью, не сожалея</p>
+  <p>О том, что выбрала бога любви-Эрота</p>
+  <p>И перед этим раскрылись любовные ворота.</p>
+  <p>С тех пор живут они так прелестно</p>
+  <p>Ну что друзья вам стало известно,</p>
+  <p>Что конфликты – это сосуд Пандоры<sup><hr></sup></p>
+  <p>От них всегда печаль и разборы.</p>
+  <p>Живите в дружбе, согласии и мире</p>
+  <p>И не смейте видеть другого в сатире.</p><hr>
+  <p class="term">сосуд Пандоры* — источник всяких бедствий</p>
+</article>
+
+<article>
+  <h2>Семья</h2>
+  <p>Она подобна ангелочку хранителю,</p>
+  <p>Который любит, оберегает меня,</p>
+  <p>Как вы думаете, о ком я говорю,</p>
+  <p>Ну конечно, это моя семья.</p>
+  <p>Как прекрасно, что у меня есть семья,</p>
+  <p>Она поддерживает и любит меня.</p>
+  <p>С ней я буду всегда счастлива и под эгидой:</p>
+  <p>Под руководством, под верной защитой.</p>
+  <p>Это мой подарочек, которым я неимоверно дорожу,</p>
+  <p>И которым очень-очень сильно горжусь и люблю.</p>
+</article>
+
+<article>
+  <h2>Муза</h2>
+  <p>Стихотворный шедевр, научное открытие,</p>
+  <p>Мир делают прекрасней и ярче эти события.</p>
+  <p>Но как же умные учёные и талантливые поэты,</p>
+  <p>Могут сотворить шедевр и найти на вопросы ответы?</p>
+
+  <p>Может муза посещает творческого человека</p>
+  <p>Любого учёного и любого поэта:</p>
+  <p>Евтерпа - лирика вдохновит,</p>
+  <p>Клио – историка вдохновит,</p>
+  <p>Талия – юмориста рассмешит</p>
+  <p>Мельпомена – драматурга удивит.</p>
+  <p>Терпсихора – хореографу поможет,</p>
+  <p>Эрато – в любви разъяснить всё сможет,</p>
+  <p>Полигимния – поддержит, поможет стране в делах</p>
+  <p>Урания– всё расскажет о космических телах.</p>
+  <p>Каллиопа – поможет  в жанре эпоса написать</p>
+  <p>Кто знает, может музe суждено и тебя посещать?</p>
+  <p class="term">Евтерпа* - муза лирической поэзии</p>
+  <p class="term">Клио* – муза истории</p>
+  <p class="term">Талия* – муза комедии</p>
+  <p class="term">Мельпомена* – муза трагедии</p>
+  <p class="term">Терпсихора* – муза танцев</p>
+  <p class="term">Эрато* – муза любовной поэзии</p>
+  <p class="term">Полигимния* – муза гимнов</p>
+  <p class="term">Урания* – муза астрономии</p>
+  <p class="term">Каллиопа* – муза эпической поэзии</p>
+</article>
+
+<article>
+  <h2>Игра по душе</h2>
+  <p>У каждого человека есть свой талант:</p>
+  <p>Кто-то художник, кто-то музыкант</p>
+  <p>Кто-то учёный, кто-то поэт</p>
+  <p>В каждом искусстве есть своей секрет.</p>
+  <p>Чтобы овладеть искусством нужно душу вложить</p>
+  <p>Стараться, не сдаваться и очень любить</p>
+  <p>Любить, то, что делаешь каждый день</p>
+  <p>Отгоняя тоску и, конечно же, лень.</p>
+  <p>Вскоре, от любимого дела вдохновение появится у тебя:</p>
+  <p>И ты чувствуешь, что это - твоё, то, что делаешь любя</p>
+  <p>Первый твой шаг – твой рассвет</p>
+  <p>Это приносит в твою душу свет.</p>
+  <p>И ты обязательно найдёшь своё истинное призвание</p>
+  <p>Все потому что ты вложил душу, проявил старание</p>
+  <p>И если что-то получится не так, не грусти доверься музе своей</p>
+  <p>И сразу станет на душе легче и веселей.</p>
+  <p>Не сдавайся, делай то, что тебе по душе</p>
+  <p>Удивляй других и доставляй радость себе.</p>
+</article>
+<main>
+
+  <div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #6b3e26;">Сабрина Шукурова</p>
+    <p style="font-size: 0.9rem; color: #555;">Основатель клуба. Поэзия для меня — язык души и вдохновения. Через стихи я делюсь своими чувствами и мыслями, открывая мир красоты и эмоций. Спасибо, что читаете меня.</p>
+  </div>
+</div>
+
+</main>
+</main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+</body>
+</html>

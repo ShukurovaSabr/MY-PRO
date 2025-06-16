@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Музыка</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8e1;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #fffde7;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color:#800080;
+    }
+       article h1{
+       margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background:#800080;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:#800080;
+    }
+    footer {
+      background:#800080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Музыка</h1>
+  <p>«Музыка — универсальный язык, объединяющий сердца и души.»</p>
+</header>
+<article>
+  <h1>Блюз: История, особенности и влияние на музыку</h1>
+
+  <section>
+    <h2>Что такое блюз?</h2>
+    <p>Блюз — музыкальный жанр, возникший в конце XIX — начале XX века в афроамериканских общинах юга США. Он характеризуется меланхоличным настроением, выразительной мелодией и особой гармонической структурой. Блюз стал основой для многих других музыкальных стилей, включая рок-н-ролл, джаз и соул.</p>
+  </section>
+
+  <section>
+    <h2>История возникновения блюза</h2>
+    <p>Блюз зародился в условиях тяжелой жизни афроамериканцев, переживавших рабство и последующую дискриминацию. Песни часто отражали боль, страдания, тоску и надежду. Первые формы блюза основывались на духовных песнях, рабочей музыке и народных традициях.</p>
+    <p>В начале XX века блюз стал записываться на грампластинки и широко распространяться, благодаря чему получил популярность по всей стране.</p>
+  </section>
+
+  <section>
+    <h2>Основные характеристики блюза</h2>
+    <ul>
+      <li><strong>Структура 12 тактов:</strong> стандартный блюз строится на 12 тактах с повторяющейся гармонической схемой.</li>
+      <li><strong>Особые аккорды и лады:</strong> использование блюзовых гамм, с добавлением «синих нот» — уменьшенных третьей, пятой и седьмой ступеней.</li>
+      <li><strong>Тематическое содержание:</strong> тексты блюза часто рассказывают о жизненных трудностях, потерях, любви и надежде.</li>
+      <li><strong>Исполнение:</strong> выразительный вокал, импровизация, игра на гитаре, губной гармошке, фортепиано.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Инструменты в блюзе</h2>
+    <p>Главными инструментами блюза традиционно являются:</p>
+    <ul>
+      <li>Гитара (акустическая и электрическая)</li>
+      <li>Губная гармошка</li>
+      <li>Пианино</li>
+      <li>Контрабас и ударные</li>
+      <li>Саксофон и другие духовые инструменты в блюз-джазовых вариантах</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Известные исполнители блюза</h2>
+    <ul>
+      <li>Роберт Джонсон — легендарный гитарист и певец, один из основоположников дельта-блюза.</li>
+      <li>Мади Уотерс — известный исполнитель чикагского блюза.</li>
+      <li>Би Би Кинг — король блюза, гитарист с уникальным стилем игры.</li>
+      <li>Этта Джеймс — выдающаяся блюзовая и соул-певица.</li>
+      <li>Стиви Рэй Вон — мастер блюз-рока и виртуоз гитары.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Влияние блюза на музыку и культуру</h2>
+    <p>Блюз оказал огромное влияние на развитие многих музыкальных направлений, в частности:</p>
+    <ul>
+      <li>Рок-н-ролл — многие первые рок-музыканты вдохновлялись блюзом.</li>
+      <li>Джаз — элементы блюза легли в основу джазовых импровизаций и гармоний.</li>
+      <li>Соул и ритм-энд-блюз — жанры, формировавшиеся на базе блюзовой традиции.</li>
+    </ul>
+    <p>Культурно блюз стал символом преодоления трудностей и выражением человеческих чувств и эмоций.</p>
+  </section>
+
+  <section>
+    <h2>Современный блюз</h2>
+    <p>Сегодня блюз продолжает развиваться, сочетая традиции с современными музыкальными стилями. Многие современные артисты используют элементы блюза в своих композициях, добавляя новые инструменты и технологии записи.</p>
+    <p>Фестивали блюза собирают любителей со всего мира, а классические записи остаются вдохновением для музыкантов всех поколений.</p>
+  </section>
+
+  <section>
+    <h2>Как познакомиться с блюзом</h2>
+    <ul>
+      <li>Послушайте классические альбомы Роберта Джонсона и Би Би Кинга.</li>
+      <li>Изучите структуру 12-тактового блюза и научитесь играть базовые аккорды.</li>
+      <li>Посетите концерты и фестивали блюза.</li>
+      <li>Исследуйте современные вариации блюза в исполнении новых артистов.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Блюз — это не просто музыкальный жанр, это глубокое выражение человеческой души, история борьбы и надежды. Его мелодии и тексты продолжают вдохновлять и объединять людей по всему миру, делая блюз важной частью мировой музыкальной культуры.</p>
+  </section>
+</article>
+
+
+<main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="Aminchik.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #800080;">Амина Фарухи</p>
+    <p style="font-size: 0.9rem; color: #555;">Ученица музыкальной школы. Имеет прекрасный музыкальный вкус и глубокие знания в своём деле. Интересный факт, что она уже заканчивает музыкальную школу.Играет на фортепиано</p>
+  </div>
+</div>
+</main>
+
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+</body>
+</html>

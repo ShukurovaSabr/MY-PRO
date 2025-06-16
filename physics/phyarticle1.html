@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Геометрия</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1633493702341-4d04841df53b?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    
+    }
+   article h1{
+       margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #B22222;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+   
+    footer {
+      background: #B22222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      
+      }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  </head>
+<body>
+    <header>
+  <h1 id="club">Физика</h1>
+  <p>«Физика — это наука о законах природы, которые управляют вселенной.»</p>
+</header>
+<article>
+    Механика — раздел физики, изучающий движение тел и причины этого движения, а также взаимодействия между телами.
+  </p>
+
+  <section>
+    <h2>1. Введение в механику</h2>
+    <p>
+      Механика — одна из древнейших наук, её истоки уходят в работы таких великих учёных, как Галилей и Исаак Ньютон. Она играет ключевую роль в понимании законов природы, инженерии и многих технологий.
+      Механика делится на несколько основных разделов: классическая механика, кинематика, динамика, статика, гидромеханика и др.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Основные понятия и определения</h2>
+    <ul>
+      <li><strong>Тело</strong> — объект, который рассматривается в механике (материальная точка, твёрдое тело, система тел).</li>
+      <li><strong>Материальная точка</strong> — идеализированное тело с массой, но без размеров.</li>
+      <li><strong>Система отсчёта</strong> — набор координат и часов, с помощью которых измеряются положение и время.</li>
+      <li><strong>Путь</strong> — длина траектории движения тела.</li>
+      <li><strong>Перемещение</strong> — вектор, соединяющий начальное и конечное положение тела.</li>
+      <li><strong>Скорость</strong> — векторная величина, показывающая быстроту изменения положения тела.</li>
+      <li><strong>Ускорение</strong> — скорость изменения скорости тела.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Кинематика — описание движения без учёта причин</h2>
+    <p>Кинематика занимается описанием движения тел с помощью таких величин, как координаты, скорость и ускорение.</p>
+    <h3>3.1 Прямолинейное движение</h3>
+    <p>
+      При прямолинейном движении тело движется по прямой линии. Основные формулы:
+    </p>
+    <ul>
+      <li>Путь: \( s = vt \) (при равномерном движении)</li>
+      <li>Уравнение движения при равномерном ускорении: \( s = v_0 t + \frac{1}{2} a t^2 \)</li>
+    </ul>
+    <h3>3.2 Криволинейное движение</h3>
+    <p>Движение по кривой линии, например, круговое движение, где важна центростремительная сила.</p>
+  </section>
+
+  <section>
+    <h2>4. Динамика — причины движения</h2>
+    <p>Динамика изучает, как силы влияют на движение тел.</p>
+    <h3>4.1 Законы Ньютона</h3>
+    <ol>
+      <li><strong>Первый закон (закон инерции):</strong> тело сохраняет состояние покоя или равномерного прямолинейного движения, если на него не действуют силы.</li>
+      <li><strong>Второй закон:</strong> ускорение тела пропорционально приложенной силе и обратно пропорционально массе: \( \vec{F} = m \vec{a} \).</li>
+      <li><strong>Третий закон:</strong> силы действия и противодействия равны по модулю и направлены в противоположные стороны.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>5. Виды сил в механике</h2>
+    <ul>
+      <li><strong>Сила тяжести:</strong> притяжение Земли, действует вниз, равна \( F = mg \).</li>
+      <li><strong>Сила упругости:</strong> возникает при деформации тела, пропорциональна смещению (закон Гука).</li>
+      <li><strong>Сила трения:</strong> сопротивление движению при контакте поверхностей.</li>
+      <li><strong>Центростремительная сила:</strong> удерживает тело на круговой траектории.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Энергия и работа</h2>
+    <p>Механика тесно связана с понятиями работы и энергии.</p>
+    <ul>
+      <li><strong>Работа силы</strong> — произведение силы на перемещение в направлении силы: \( A = F s \cos \theta \).</li>
+      <li><strong>Кинетическая энергия:</strong> энергия движения, \( E_k = \frac{1}{2} m v^2 \).</li>
+      <li><strong>Потенциальная энергия:</strong> энергия положения, например, для силы тяжести \( E_p = mgh \).</li>
+      <li><strong>Закон сохранения энергии:</strong> полная механическая энергия системы остаётся постоянной при отсутствии внешних сил сопротивления.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Примеры задач по механике</h2>
+    <h3>7.1 Свободное падение тела</h3>
+    <p>Тело отпускают с высоты \( h \). Найти время падения и скорость перед ударом.</p>
+    <p>Решение:</p>
+    <ul>
+      <li>Ускорение свободного падения: \( g = 9.8 \, м/с^2 \).</li>
+      <li>Время падения: \( t = \sqrt{\frac{2h}{g}} \).</li>
+      <li>Скорость перед ударом: \( v = g t = \sqrt{2gh} \).</li>
+    </ul>
+
+    <h3>7.2 Движение автомобиля с ускорением</h3>
+    <p>Автомобиль разгоняется с ускорением \( a \) до скорости \( v \). Найти путь, пройденный за время \( t \).</p>
+    <p>Решение:</p>
+    <ul>
+      <li>Путь при равномерном ускорении: \( s = v_0 t + \frac{1}{2} a t^2 \), где \( v_0 \) — начальная скорость.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. Заключение</h2>
+    <p>
+      Механика — это основа не только физики, но и многих инженерных дисциплин. Понимание законов механики помогает анализировать движения и взаимодействия в природе и технике, от полёта птиц до работы машин и механизмов.
+    </p>
+    <p>
+      Освоение механики открывает путь к более сложным разделам физики — электричеству, квантовой механике и другим.
+    </p>
+  </section>
+</article>
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://www.seekpng.com/png/full/515-5159737_kyle-headshot-portable-network-graphics.png" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color:#B22222;">Сергей Иванов </p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель физики с более чем 10-летним стажем работы в школе и вузе. Специализируется на механике, электродинамике и квантовой физике. Любит объяснять сложные темы простыми словами и вдохновлять учеников на самостоятельные исследования.
+
+</p>
+  </div>
+</div>
+
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+
+
+
+
+</body>
+</html>

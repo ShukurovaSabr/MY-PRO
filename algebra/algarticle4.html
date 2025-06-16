@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Полиномиальные уравнения</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+      #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f9ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+     header {
+      background: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 32, 100, 0.5);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background: #e9efff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    }
+     article h1{
+       margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #3949ab;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    footer {
+      background: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      main {
+        padding: 20px 10px;
+        border-radius: 8px;
+        box-shadow: none;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Алгебра</h1>
+  <p>«Алгебра — это язык, на котором говорит математика.»</p>
+</header>
+
+<main>
+  <article>
+  <h1>Полиномиальные уравнения</h1>
+
+  <p>Полиномиальные уравнения — это уравнения, в которых переменная входит в виде степеней с целыми неотрицательными показателями, а коэффициенты являются числами. Такие уравнения имеют вид:</p>
+
+  <p>an xⁿ + an-1 xⁿ⁻¹ + ... + a2 x² + a1 x + a0 = 0,</p>
+
+  <p>где an, an-1, ..., a0 — коэффициенты, aₙ ≠ 0, а n — натуральное число, называемое степенью многочлена.</p>
+
+  <h2>Степень и коэффициенты</h2>
+
+  <p>Степень полиномиального уравнения равна наибольшей степени переменной x, которая входит в уравнение. Коэффициенты могут быть любыми числами — целыми, дробными, отрицательными или положительными.</p>
+
+  <h2>Решение полиномиальных уравнений</h2>
+
+  <p>Решение полиномиальных уравнений состоит в нахождении всех значений x, при которых уравнение становится верным. Методы решения зависят от степени уравнения:</p>
+
+  <ul>
+    <li>Для уравнений первой степени (линейных) решение сводится к простым вычислениям.</li>
+    <li>Для уравнений второй степени (квадратных) существует формула корней.</li>
+    <li>Уравнения более высокой степени решаются с помощью разложения на множители, теоремы Безу, теоремы Виета и других методов.</li>
+  </ul>
+
+  <h2>Теорема Виета</h2>
+
+  <p>Теорема Виета устанавливает связь между коэффициентами полинома и суммой, произведением его корней. Например, для квадратного уравнения ax² + bx + c = 0 сумма корней равна -b/a, а произведение корней — c/a.</p>
+
+  <h2>Разложение на множители</h2>
+
+  <p>Разложение многочлена на множители — важный метод для решения полиномиальных уравнений. Если многочлен можно представить в виде произведения нескольких множителей, то корни уравнения — это корни каждого из этих множителей.</p>
+
+  <h2>Число корней</h2>
+
+  <p>По фундаментальной теореме алгебры, полиномиальное уравнение степени n имеет ровно n корней (с учётом кратности) в комплексных числах.</p>
+
+  <h2>Примеры</h2>
+
+  <p>Рассмотрим уравнение x³ - 6x² + 11x - 6 = 0. Его корни — 1, 2 и 3. Это уравнение можно разложить как (x - 1)(x - 2)(x - 3) = 0.</p>
+
+  <h2>Применение</h2>
+
+  <p>Полиномиальные уравнения встречаются в разных областях науки и техники: физике, экономике, биологии. Их изучение важно для понимания многих процессов и построения моделей.</p>
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://images.squarespace-cdn.com/content/v1/5f7f7eb5889cb36dd8c93bd1/1612297832882-H55HJGH0DW6UDDF7ENFL/E.+Butler.png" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #1a237e;">Мария Шакурова</p>
+    <p style="font-size: 0.9rem; color: #555;">увлечённая педагог и наставница, которая умеет делать сложные темы алгебры доступными и интересными. Она верит, что математика — это не просто цифры, а увлекательное путешествие, в которое может отправиться каждый ученик. </p>
+  </div>
+</div>
+  </article>
+  </main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>

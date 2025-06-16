@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Геометрия</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1727522974621-c64b5ea90c0b?q=80&w=1492&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 128, 128, 0.7);
+    }
+   article h1{
+       margin-bottom: 0.5em;
+      color: #40E0D0;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #40E0D0;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #40E0D0;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #008080;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #008080;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color: #008080;
+    }
+    footer {
+      background: #008080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Геометрия</h1>
+  <p>«Геометрия — это мост между формой и пространством.»</p>
+</header>
+
+<article>
+  <h1>Треугольники</h1>
+
+  <p>Треугольник — это простейшая плоская геометрическая фигура, состоящая из трёх сторон и трёх углов. Несмотря на свою простоту, треугольники играют важную роль в геометрии, физике, архитектуре, инженерии и искусстве. Изучение треугольников позволяет понять основы геометрического мышления, развить пространственное воображение и научиться применять математические формулы в реальной жизни.</p>
+
+  <h2>Классификация треугольников</h2>
+
+  <h3>По сторонам</h3>
+  <ul>
+    <li><strong>Равносторонний треугольник</strong> — все три стороны равны. Все углы равны 60°.</li>
+    <li><strong>Равнобедренный треугольник</strong> — две стороны равны, углы при основании равны.</li>
+    <li><strong>Разносторонний треугольник</strong> — все три стороны имеют разную длину, и все углы различны.</li>
+  </ul>
+
+  <h3>По углам</h3>
+  <ul>
+    <li><strong>Остроугольный</strong> — все углы острые (менее 90°).</li>
+    <li><strong>Прямоугольный</strong> — один из углов прямой (90°).</li>
+    <li><strong>Тупоугольный</strong> — один угол тупой (больше 90°).</li>
+  </ul>
+
+  <h2>Сумма углов треугольника</h2>
+  <p>Одно из основных свойств треугольника: сумма всех его внутренних углов всегда равна <strong>180°</strong>. Это свойство справедливо для всех видов треугольников, независимо от длины сторон и величин углов.</p>
+
+  <h2>Теорема Пифагора</h2>
+  <p>Одна из самых известных теорем геометрии. Применяется к прямоугольному треугольнику:</p>
+  <blockquote>
+    <strong>c² = a² + b²</strong>
+  </blockquote>
+  <p>Где <code>c</code> — гипотенуза (сторона напротив прямого угла), а <code>a</code> и <code>b</code> — катеты. Теорема Пифагора используется в строительстве, физике, навигации и программировании.</p>
+
+  <h2>Формулы</h2>
+
+  <h3>Периметр треугольника</h3>
+  <p>Периметр — это сумма длин всех сторон:</p>
+  <pre>P = a + b + c</pre>
+
+  <h3>Площадь треугольника</h3>
+  <ul>
+    <li><strong>Через основание и высоту:</strong> <code>S = ½ × a × h</code></li>
+    <li><strong>Формула Герона:</strong> <code>S = √(p(p - a)(p - b)(p - c))</code>, где <code>p = (a + b + c)/2</code> — полупериметр.</li>
+    <li><strong>Через синус угла:</strong> <code>S = ½ × ab × sin(γ)</code></li>
+  </ul>
+
+  <h2>Центры треугольника</h2>
+  <ul>
+    <li><strong>Точка пересечения медиан</strong> — называется центроидом или центром тяжести.</li>
+    <li><strong>Точка пересечения биссектрис</strong> — центр вписанной окружности.</li>
+    <li><strong>Точка пересечения высот</strong> — ортоцентр.</li>
+    <li><strong>Точка пересечения серединных перпендикуляров</strong> — центр описанной окружности.</li>
+  </ul>
+
+  <h2>Медианы, высоты и биссектрисы</h2>
+  <p><strong>Медиана</strong> — отрезок, соединяющий вершину треугольника с серединой противоположной стороны. Все три медианы пересекаются в одной точке — центре тяжести.</p>
+  <p><strong>Высота</strong> — перпендикуляр, проведённый из вершины к противоположной стороне или её продолжению.</p>
+  <p><strong>Биссектриса</strong> — луч, делящий угол пополам. Все три биссектрисы пересекаются в центре вписанной окружности.</p>
+
+  <h2>Интересные факты</h2>
+  <ul>
+    <li>Из треугольников можно сложить любую другую геометрическую фигуру — они являются строительными блоками геометрии.</li>
+    <li>Треугольная форма часто используется в мостах и башнях из-за своей устойчивости.</li>
+    <li>В компьютерной графике объекты часто разбиваются на треугольные полигоны — это упрощает расчёты.</li>
+  </ul>
+
+  <h2>Задачи для самопроверки</h2>
+  <ol>
+    <li>В равнобедренном треугольнике основание равно 6 см, боковая сторона — 5 см. Найдите периметр.</li>
+    <li>Найдите площадь треугольника с основаниями 10 см и высотой 6 см.</li>
+    <li>В прямоугольном треугольнике катеты равны 3 см и 4 см. Найдите гипотенузу.</li>
+  </ol>
+
+  <h2>Заключение</h2>
+  <p>Треугольники — не просто фигуры из трёх сторон. Это фундамент всей геометрии и один из главных инструментов математики. Понимание свойств треугольников открывает двери к более сложным темам — тригонометрии, планиметрии, аналитической геометрии и даже физике.</p>
+</article>
+ <div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="author-photo.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #008080;">Марина Беляева</p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель геометрии, умеющий находить индивидуальный подход к каждому ученику. Объясняет фундаментальные концепции, помогает подготовиться к экзаменам и развивает любовь к математике через практические задачи и творчество.</p>
+  </div>
+</div>
+</main>
+
+<footer>
+  &copy; 2025 Геометрия. Все права защищены.
+</footer>
+
+</body>
+</html>

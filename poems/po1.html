@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Стихи</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+article h1{
+       margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      background: #f9f5f2;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #fffaf8;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      filter: brightness(0.85);
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+      font-family: 'Georgia', serif;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #555;
+      font-family: 'Georgia', serif;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #6b3e26;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+      font-family: 'Georgia', serif;
+    }
+    .next-page:hover {
+      background-color: #8b5e3c;
+    }
+        .card a {
+  text-decoration: none;
+  color: inherit;
+}
+    footer {
+      background: #6b3e26;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+      font-family: 'Georgia', serif;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Стихи</h1>
+  <p>«Поэзия — это дыхание души, превращённое в слова.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Романтическая лирика: сущность, история и влияние</h1>
+
+  <section>
+    <h2>Что такое романтическая лирика?</h2>
+    <p>Романтическая лирика — это жанр поэзии, отражающий внутренние чувства, переживания и мечты автора, характерный для эпохи романтизма, которая зародилась в конце XVIII — начале XIX века. Она передает глубокие эмоциональные состояния, стремление к свободе, природе и идеалам любви.</p>
+  </section>
+
+  <section>
+    <h2>Исторический контекст возникновения</h2>
+    <p>Романтизм возник как реакция на рационализм Просвещения и промышленную революцию. Поэты стремились выразить индивидуальность, духовные поиски и связь человека с природой. Это был период, когда чувства и воображение выходили на первый план.</p>
+    <p>В центре внимания оказались темы любви, одиночества, борьбы за свободу, бунта против общественных норм и поиска высших идеалов.</p>
+  </section>
+
+  <section>
+    <h2>Основные темы и мотивы</h2>
+    <ul>
+      <li><strong>Любовь:</strong> возвышенная, часто идеализированная, иногда трагичная.</li>
+      <li><strong>Природа:</strong> как источник вдохновения и отражение внутреннего мира.</li>
+      <li><strong>Свобода и бунт:</strong> протест против ограничений и тирании.</li>
+      <li><strong>Меланхолия и одиночество:</strong> философские размышления о жизни и судьбе.</li>
+      <li><strong>Мечты и воображение:</strong> стремление к недостижимому, фантазия.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Стиль и особенности романтической лирики</h2>
+    <p>Романтическая лирика отличается:</p>
+    <ul>
+      <li>Яркой эмоциональностью и экспрессией.</li>
+      <li>Использованием символов и метафор.</li>
+      <li>Свободной формой и разнообразием стихотворных размеров.</li>
+      <li>Личным, субъективным взглядом на мир.</li>
+      <li>Обращением к духовным и философским вопросам.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Знаменитые поэты и их произведения</h2>
+    <p>В разных странах романтическая лирика имела своих выдающихся представителей:</p>
+    <ul>
+      <li><strong>Александр Пушкин (Россия):</strong> «Я вас любил…», «Пророк».</li>
+      <li><strong>Уильям Вордсворт (Англия):</strong> «Тихая ночь», «Прелюдия».</li>
+      <li><strong>Джон Китс (Англия):</strong> «Ода греческой урне», «Ночная песня».</li>
+      <li><strong>Гёте (Германия):</strong> «Фауст», «Ночь».</li>
+      <li><strong>Фридрих Шиллер (Германия):</strong> «Песня о колоколе».</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Влияние романтической лирики</h2>
+    <p>Романтическая лирика оказала значительное влияние на развитие мировой литературы и искусства. Она вдохновила множество последующих направлений — символизм, модернизм, экспрессионизм.</p>
+    <p>Темы и мотивы романтизма остаются актуальными и сегодня, находя отражение в музыке, живописи и кинематографе.</p>
+  </section>
+
+  <section>
+    <h2>Как изучать романтическую лирику</h2>
+    <ul>
+      <li>Читайте оригинальные произведения поэтов романтизма.</li>
+      <li>Анализируйте стихи, обращая внимание на символику и эмоциональный посыл.</li>
+      <li>Пробуйте писать собственные стихи в романтическом стиле.</li>
+      <li>Изучайте исторический и культурный контекст эпохи.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Романтическая лирика — это мощное выражение человеческих чувств и мечтаний, отражение глубинной духовности и красоты мира. Она продолжает вдохновлять читателей и творцов, раскрывая перед нами богатство внутреннего мира человека.</p>
+  </section>
+</article>
+
+
+  <div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #6b3e26;">Павел Морозов</p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель литературы, прекрасно пишет стихи и его любимая книга "Поэтический словарь" Квятковского</p>
+  </div>
+</div>
+
+</main>
+</main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Геометрия</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1727522974621-c64b5ea90c0b?q=80&w=1492&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 128, 128, 0.7);
+    }
+   article h1{
+       margin-bottom: 0.5em;
+      color: #40E0D0;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #40E0D0;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #40E0D0;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #008080;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #008080;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color: #008080;
+    }
+    footer {
+      background: #008080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+  </head>
+<body>
+    <header>
+  <h1 id="club">Геометрия</h1>
+  <p>«Геометрия — это мост между формой и пространством.»</p>
+</header>
+
+ <article>
+  <h2>Точки и линии</h2>
+
+  <p>Точки и линии — это базовые понятия геометрии, без которых невозможно представить ни одну фигуру или построение. Они лежат в основе всей геометрии, поэтому очень важно хорошо понимать, что это такое и как они взаимодействуют.</p>
+
+  <h3>Что такое точка?</h3>
+  <p>Точка — это самый простой и основной элемент геометрии. Она не имеет ни длины, ни ширины, ни высоты. Точка просто обозначает положение в пространстве или на плоскости. Можно сказать, что точка — это "место", которое занимает объект.</p>
+  <p>В математике точку обычно обозначают большой буквой, например, А, В, С. Точки служат "отправной точкой" для построения линий, фигур и других объектов.</p>
+
+  <h3>Что такое линия?</h3>
+  <p>Линия — это множество точек, расположенных в определённом порядке. Линия может быть разной:</p>
+  <ul>
+    <li><strong>Прямая линия</strong> — бесконечная в обе стороны линия, которая не имеет изгибов. Её можно представить как идеально натянутую ниточку, которая продолжается в обе стороны бесконечно.</li>
+    <li><strong>Отрезок</strong> — часть прямой, ограниченная двумя точками. Представь палочку или линейку между двумя точками — это и есть отрезок.</li>
+    <li><strong>Луч</strong> — часть прямой, которая начинается в одной точке и продолжается бесконечно в одну сторону. Это как фонарный луч света, который идёт от фонаря в одном направлении.</li>
+  </ul>
+
+  <h3>Как задаются линии?</h3>
+  <p>На плоскости линии можно задать разными способами, например:</p>
+  <ul>
+    <li>Через две разные точки. Если известны координаты двух точек, то можно провести единственную прямую, которая их соединяет.</li>
+    <li>Через точку и направление. Зная одну точку на линии и направление движения, можно построить прямую.</li>
+  </ul>
+
+  <h3>Взаимное расположение линий</h3>
+  <p>Линии могут располагаться по-разному:</p>
+  <ul>
+    <li><strong>Пересекающиеся линии</strong> — такие линии имеют общую точку пересечения. Например, две улицы, которые пересекаются на перекрёстке.</li>
+    <li><strong>Параллельные линии</strong> — линии, которые никогда не пересекутся, сколько бы их не продолжали. Пример — рельсы железной дороги.</li>
+    <li><strong>Скрещивающиеся линии</strong> — линии, которые не пересекаются и не параллельны, но находятся в разных плоскостях пространства. Например, рельсы двух разных уровней, которые не пересекаются, потому что находятся на разных высотах.</li>
+  </ul>
+
+  <h3>Расстояние от точки до линии</h3>
+  <p>В геометрии часто важно уметь определить, насколько далеко точка находится от линии. Это расстояние — кратчайшее расстояние по перпендикуляру от точки до линии.</p>
+  <p>Это полезно, например, если нужно узнать, насколько близко объект расположен к границе дороги, или как далеко точка находится от какого-либо пути.</p>
+
+  <h3>Углы между линиями</h3>
+  <p>Угол между двумя линиями — это мера их наклона друг относительно друга. Он показывает, насколько одна линия отклоняется от другой.</p>
+  <p>Углы бывают разными:</p>
+  <ul>
+    <li>Острый угол — меньше 90 градусов.</li>
+    <li>Прямой угол — ровно 90 градусов.</li>
+    <li>Тупой угол — больше 90 градусов.</li>
+  </ul>
+  <p>Если линии параллельны, угол между ними равен нулю, а если линии перпендикулярны, угол равен прямому — 90 градусам.</p>
+
+  <h3>Линии в пространстве</h3>
+  <p>В пространстве линии могут быть заданы более сложным образом, поскольку у них появляется дополнительная ось — глубина.</p>
+  <p>Прямая линия в пространстве задаётся точкой и направлением, которое указывает, куда она идёт.</p>
+  <p>В пространстве линии могут пересекаться, быть параллельными или скрещивающимися, что отличает их от плоскости.</p>
+
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #008080;">Марина Беляева</p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель геометрии, умеющий находить индивидуальный подход к каждому ученику. Объясняет фундаментальные концепции, помогает подготовиться к экзаменам и развивает любовь к математике через практические задачи и творчество.</p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Геометрия. Все права защищены.
+</footer>
+
+</body>
+</html>

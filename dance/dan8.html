@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Танцы</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+ #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff4f4;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1540324155974-7523202daa3f?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #ffe6e6;
+    }
+        a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+   article h1{
+       margin-bottom: 0.5em;
+      color: #FF1493;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #FF1493;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #FF1493;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: 	#FF1493;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background:	#FF1493;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:	#FF1493;
+    }
+    footer {
+      background:	#FF1493;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Танцы</h1>
+  <p>«Танец — язык души, выраженный через движение и ритм.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Фламенко: страсть и душа испанского танца</h1>
+
+  <section>
+    <h2>Введение</h2>
+    <p>Фламенко — это не просто танец, а целый культурный феномен, который возник в южной Испании, в Андалусии. Это уникальное сочетание музыки, танца и пения, наполненное глубокими эмоциями, страстью и драматизмом. Фламенко выражает чувства радости, боли, надежды и отчаяния, передавая через движение и звук истории и судьбы народа.</p>
+  </section>
+
+  <section>
+    <h2>История и происхождение</h2>
+    <p>Происхождение фламенко связано с пересечением культур на Пиренейском полуострове: римлян, мавров, цыган, евреев и местных андалусийцев. Эти различные традиции объединились, породив уникальный стиль. Первые упоминания о фламенко относятся к XVIII веку, но корни уходят гораздо глубже — к народным песням и танцам, ритуалам и праздникам.</p>
+    <p>Особую роль в развитии фламенко сыграло цыганское население Андалусии, внесшее в танец и музыку элементы импровизации, эмоциональной экспрессии и ритмической сложности.</p>
+  </section>
+
+  <section>
+    <h2>Основные элементы фламенко</h2>
+    <p>Фламенко состоит из трёх ключевых компонентов, которые тесно переплетаются и поддерживают друг друга:</p>
+    <ul>
+      <li><strong>Кантá (cante)</strong> — пение, насыщенное эмоциональной глубиной и историей.</li>
+      <li><strong>Токе (toque)</strong> — игра на гитаре, сложная и виртуозная, создающая ритмический и мелодический фон.</li>
+      <li><strong>Баиле (baile)</strong> — танец, выражающий чувства через движения тела, рук и ног.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Стиль и техника танца</h2>
+    <p>Фламенко — это танец страсти и силы. Его техника включает:</p>
+    <ul>
+      <li><strong>Ударные движения ног (тапеа́до)</strong> — создают сложный ритм, задающий темп выступлению;</li>
+      <li><strong>Изящные и выразительные движения рук и кистей</strong> — символизируют эмоции и помогают рассказывать историю;</li>
+      <li><strong>Использование корпуса и плеч</strong> — плавные и в то же время резкие движения добавляют драматизма;</li>
+      <li><strong>Импровизация</strong> — танцоры часто импровизируют, реагируя на музыку и настроение зала;</li>
+      <li><strong>Взаимодействие с музыкантами и певцами</strong> — между всеми участниками выступления происходит живой обмен эмоциями и энергией.</li>
+    </ul>
+    <p>Костюмы для фламенко традиционно яркие и эффектные: длинные расклёшенные юбки у женщин, часто с оборками, и элегантные наряды у мужчин.</p>
+  </section>
+
+  <section>
+    <h2>Ритмы и палос</h2>
+    <p>Фламенко имеет множество ритмических структур, известных как <em>пало́с</em>. Каждый палос имеет свою мелодию, ритм и настроение. Среди самых известных — <strong>солеá</strong>, <strong>булéрия</strong>, <strong>танго</strong>, <strong>фанданго</strong> и <strong>алегрías</strong>.</p>
+    <p>Ритмы фламенко очень сложны и асимметричны, что требует от музыкантов и танцоров высокого мастерства и чувства ансамбля.</p>
+  </section>
+
+  <section>
+    <h2>Культура и значение фламенко</h2>
+    <p>Фламенко — это не просто развлечение, это образ жизни и способ выражения культурной идентичности. Танец и музыка фламенко передают целую палитру человеческих эмоций — от глубокой тоски до взрывной радости.</p>
+    <p>В 2010 году ЮНЕСКО признала фламенко нематериальным культурным наследием человечества, подчеркнув его важность и уникальность.</p>
+  </section>
+
+  <section>
+    <h2>Знаменитые исполнители и хореографы</h2>
+    <ul>
+      <li><strong>Кармен Амайя</strong> — легендарная танцовщица, известная своей энергией и техникой;</li>
+      <li><strong>Пако де Лусия</strong> — один из величайших гитаристов фламенко;</li>
+      <li><strong>Сара Баркас</strong> — современная звезда, сочетающая традиции и новаторство;</li>
+      <li><strong>Антонио Гадес</strong> — хореограф, который популяризировал фламенко в театральных постановках;</li>
+      <li><strong>Ла Чана</strong> — известная за яркий стиль и виртуозность.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Фламенко сегодня</h2>
+    <p>Современное фламенко развивается, сочетая традиции с новыми музыкальными направлениями, такими как джаз, поп и рок. Молодые исполнители экспериментируют, расширяя границы жанра, но сохраняя его душу и страсть.</p>
+    <p>Школы фламенко существуют по всему миру, и этот танец вдохновляет тысячи людей, желающих прикоснуться к искренним эмоциям и выразить себя через движение и музыку.</p>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Фламенко — это живое искусство, наполненное историей, культурой и эмоциями. Это танец, который позволяет говорить без слов, передавая всю глубину человеческих чувств. Познакомившись с фламенко, можно лучше понять не только испанскую культуру, но и богатство человеческой души.</p>
+  </section>
+</article>
+
+
+
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://asiaplustj.info/sites/default/files/articles/299898/IMG_20210702_192827_098.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #FF1493;">Фарангис Касымова</p>
+    <p style="font-size: 0.9rem; color: #555;">Прима-балерина ГАТОБ им.С.Айни. Получила образование в Перми.Её танец грациозен и изящен. Преподаёт и заинтерисовывает деток разных возрастов к своему делу.</p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2025 Танцы. Все права защищены.
+</footer>
+
+</body>
+</html>

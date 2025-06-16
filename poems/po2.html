@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Стихи</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+article h1{
+       margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      background: #f9f5f2;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Georgia', serif;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #fffaf8;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      filter: brightness(0.85);
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #6b3e26;
+      font-family: 'Georgia', serif;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #555;
+      font-family: 'Georgia', serif;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #6b3e26;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+      font-family: 'Georgia', serif;
+    }
+    .next-page:hover {
+      background-color: #8b5e3c;
+    }
+        .card a {
+  text-decoration: none;
+  color: inherit;
+}
+    footer {
+      background: #6b3e26;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+      font-family: 'Georgia', serif;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Стихи</h1>
+  <p>«Поэзия — это дыхание души, превращённое в слова.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Современная поэзия: разнообразие форм и тем</h1>
+
+  <section>
+    <h2>Что такое современная поэзия?</h2>
+    <p>Современная поэзия — это поэтическое творчество, созданное в XX и XXI веках, отражающее актуальные темы, социальные проблемы и внутренние переживания авторов. Она отличается разнообразием стилей, свободой выражения и экспериментами с формой и языком.</p>
+  </section>
+
+  <section>
+    <h2>Характерные черты современной поэзии</h2>
+    <ul>
+      <li><strong>Свобода формы:</strong> отсутствие строгих рифмовок и размеров, использование свободного стиха и прозы.</li>
+      <li><strong>Эксперименты с языком:</strong> игра словом, неологизмы, визуальная поэзия.</li>
+      <li><strong>Личное и социальное:</strong> сочетание интимных переживаний с отражением социальных и политических вопросов.</li>
+      <li><strong>Мультикультурность:</strong> влияние разных культур и языков.</li>
+      <li><strong>Интертекстуальность:</strong> отсылки к другим произведениям, цитаты и парафразы.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Основные направления и жанры</h2>
+    <p>Современная поэзия включает множество жанров и направлений, таких как:</p>
+    <ul>
+      <li><strong>Конкретная поэзия:</strong> визуальные и графические композиции из слов и букв.</li>
+      <li><strong>Спокен ворд (spoken word):</strong> поэзия, предназначенная для устного исполнения, часто с ритмом и драматизмом.</li>
+      <li><strong>Наративная поэзия:</strong> рассказы в стихах.</li>
+      <li><strong>Лирика современности:</strong> размышления о внутреннем мире, чувствах и опыте.</li>
+      <li><strong>Поэзия протеста:</strong> выражение критики общества, политики, несправедливости.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Знаменитые современные поэты</h2>
+    <p>Современную поэзию представляют поэты разных стран и культур:</p>
+    <ul>
+      <li><strong>Чарльз Буковски (США):</strong> реалистичные, порой грубые стихи о жизни и повседневности.</li>
+      <li><strong>Анна Ахматова (Россия):</strong> поздний модернизм и лирика переживаний.</li>
+      <li><strong>Пабло Неруда (Чили):</strong> романтическая и политическая поэзия.</li>
+      <li><strong>Оксана Забужко (Украина):</strong> исследование женского опыта и национальной идентичности.</li>
+      <li><strong>Сильвия Плат (США):</strong> интимная, эмоционально насыщенная поэзия.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Темы современной поэзии</h2>
+    <p>Современные поэты исследуют широкий спектр тем:</p>
+    <ul>
+      <li>Идентичность и самоопределение.</li>
+      <li>Технологии и цифровая эпоха.</li>
+      <li>Экология и изменения климата.</li>
+      <li>Любовь и одиночество.</li>
+      <li>Социальная справедливость и права человека.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Почему современная поэзия важна?</h2>
+    <p>Она помогает понять сложный мир современности через призму личного опыта и социального контекста. Современная поэзия стимулирует критическое мышление, развивает эмоциональный интеллект и вдохновляет на перемены.</p>
+  </section>
+
+  <section>
+    <h2>Как начать читать и писать современную поэзию</h2>
+    <ul>
+      <li>Читайте современных авторов в оригинале и переводах.</li>
+      <li>Посещайте поэтические вечера и фестивали.</li>
+      <li>Экспериментируйте с разными формами и стилями письма.</li>
+      <li>Обсуждайте прочитанное с другими и делитесь своими стихами.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Современная поэзия — это живая, динамичная часть культуры, которая отражает наш мир в его разнообразии и противоречиях. Она открыта для каждого, кто хочет выразить свои мысли и чувства словами.</p>
+  </section>
+</article>
+
+
+
+  <div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #6b3e26;">Павел Морозов</p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель литературы, прекрасно пишет стихи и его любимая книга "Поэтический словарь" Квятковского</p>
+  </div>
+</div>
+
+</main>
+</main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+</body>
+</html>

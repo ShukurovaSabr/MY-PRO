@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Линейные уравнения</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f9ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 32, 100, 0.5);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background: #e9efff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    }
+     article h1{
+       margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    footer {
+      background: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      main {
+        padding: 20px 10px;
+        border-radius: 8px;
+        box-shadow: none;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Алгебра</h1>
+  <p>«Алгебра — это язык, на котором говорит математика.»</p>
+</header>
+
+<main>
+  <main>
+  <article>
+  <h1>Линейное уравнение</h1>
+
+        <p>Линейное уравнение — это уравнение первой степени с одной переменной. Оно записывается в общем виде как:</p>
+
+        <p><strong>ax + b = 0</strong>,</p>
+
+        <p>где <em>a</em> и <em>b</em> — заданные числа, причём <em>a ≠ 0</em>, а <em>x</em> — переменная, значение которой нужно найти.</p>
+
+        <h2>Решение линейного уравнения</h2>
+
+        <p>Решение заключается в нахождении такого значения <em>x</em>, при котором уравнение становится верным. Чтобы решить уравнение, нужно выразить <em>x</em> через остальные известные числа.</p>
+
+        <p>Пошаговый метод решения:</p>
+
+        <ol>
+            <li>Переносим свободный член (число без <em>x</em>) на правую сторону уравнения, меняя знак. Если уравнение было <strong>ax + b = 0</strong>, оно станет <strong>ax = -b</strong>.</li>
+            <li>Делим обе части уравнения на коэффициент при <em>x</em>, то есть на <em>a</em>, чтобы получить <strong>x = -b / a</strong>.</li>
+        </ol>
+
+        <p>Таким образом, формула решения линейного уравнения — <strong>x = -b / a</strong>.</p>
+
+        <h2>Пример</h2>
+
+        <p>Рассмотрим уравнение <strong>3x + 6 = 0</strong>.</p>
+
+        <p>Шаг 1: Переносим 6 направо с противоположным знаком:</p>
+        <p><strong>3x = -6</strong>.</p>
+
+        <p>Шаг 2: Делим обе части на 3:</p>
+        <p><strong>x = -6 / 3 = -2</strong>.</p>
+
+        <p>Ответ: <strong>x = -2</strong>.</p>
+
+        <h2>Особенности и случаи</h2>
+
+        <ul>
+            <li>Если коэффициент <em>a</em> равен 0, то уравнение принимает вид <strong>b = 0</strong>. Если при этом <em>b = 0</em>, то уравнение верно при любом <em>x</em> — решений бесконечно много.</li>
+            <li>Если <em>a = 0</em>, но <em>b ≠ 0</em>, уравнение не имеет решений.</li>
+        </ul>
+
+        <h2>Практическое применение</h2>
+
+        <p>Линейные уравнения широко применяются в математике, физике, экономике и других науках для моделирования простых зависимостей между величинами. Например, если скорость постоянна, путь и время связаны линейным уравнением.</p>
+
+</main>
+    <div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://avatars.mds.yandex.net/i?id=468a8528167e58a10a1c11cad2405e7d148a2cd2-4879412-images-thumbs&n=13" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #1a237e;">Иван Иванов</p>
+    <p style="font-size: 0.9rem; color: #555;">Автор и преподаватель алгебры. Помогает понять математику легко и интересно.</p>
+  </div>
+</div>
+  </article>
+</main>
+
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+
+</body>
+</html>

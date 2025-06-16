@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Биология</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0fff4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 100, 0, 0.5);
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0, 100, 0, 0.5)
+;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0, 100, 0, 0.5);
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #f7fff9;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #2a6e3f;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #2a6e3f;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .next-page:hover {
+      background-color: #388e5a;
+    }
+    footer {
+      background: #2a6e3f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Биология</h1>
+  <p>«Жизнь — это удивительное путешествие, полное открытий и тайн.»</p>
+</header>
+
+<main>
+<main>
+  <a href="bio1.html" class="card">
+    <img src="https://avatars.mds.yandex.net/get-entity_search/1220991/1174600604/S600xU_2x" alt="Клетка" />
+    <div class="card-content">
+      <h3>Клетка</h3>
+      <p>Строение и функции клеток всех живых организмов.</p>
+    </div>
+  </a>
+  <a href="bio2.html" class="card">
+    <img src="https://avatars.mds.yandex.net/i?id=e8ebdf6b7b6ac0edd1b83764d60f1e81_l-5229243-images-thumbs&n=13" alt="Генетика" />
+    <div class="card-content">
+      <h3>Генетика</h3>
+      <p>Передача наследственной информации.</p>
+    </div>
+  </a>
+  <a href="bio3.html" class="card">
+    <img src="https://images.unsplash.com/photo-1599148401005-fe6d7497cb5e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGxhbnRzfGVufDB8fDB8fHww" alt="Растения" />
+    <div class="card-content">
+      <h3>Растения</h3>
+      <p>Мир растений и их значение в экосистеме.</p>
+    </div>
+  </a>
+  <a href="bio4.html" class="card">
+    <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Животные" />
+    <div class="card-content">
+      <h3>Животные</h3>
+      <p>Разнообразие и классификация животных.</p>
+    </div>
+  </a>
+  <a href="bio5.html" class="card">
+    <img src="https://nypost.com/wp-content/uploads/sites/2/2018/03/shutterstock_524547064.jpg?quality=75&amp;strip=all&amp;w=1024" alt="Органы человека" />
+    <div class="card-content">
+      <h3>Органы человека</h3>
+      <p>Функции и строение органов и систем организма.</p>
+    </div>
+  </a>
+  <a href="bio6.html" class="card">
+    <img src="https://images.unsplash.com/photo-1526797072-6f5b4aec8421?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Фотосинтез" />
+    <div class="card-content">
+      <h3>Фотосинтез</h3>
+      <p>Процесс преобразования энергии у растений.</p>
+    </div>
+  </a>
+  <a href="bio7.html" class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1674276860469-c7352121d20a?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Размножение" />
+    <div class="card-content">
+      <h3>Размножение</h3>
+      <p>Способы воспроизводства живых существ.</p>
+    </div>
+  </a>
+  <a href="bio8.html" class="card">
+    <img src="https://media.istockphoto.com/id/2155087160/ru/фото/businessman-holding-virtual-protect-health-and-insurance-sign-with-copy-space.jpg?s=612x612&w=0&k=20&c=qc37ZZpmVMm2LmOf29t3BFE02aN8aTj-CCu-1Z9w_-s=" alt="Иммунитет" />
+    <div class="card-content">
+      <h3>Иммунитет</h3>
+      <p>Как организм защищается от болезней.</p>
+    </div>
+  </a>
+
+  <a href="" class="next-page" title="Следующая страница">
+    Следующая страница →
+  </a>
+</main>
+</main>
+
+<footer>
+  &copy; 2025 Биология. Все права защищены.
+</footer>
+
+</body>
+</html>

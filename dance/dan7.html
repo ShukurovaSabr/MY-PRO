@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Танцы</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+ #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff4f4;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1540324155974-7523202daa3f?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #ffe6e6;
+    }
+        a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+   article h1{
+       margin-bottom: 0.5em;
+      color: #FF1493;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #FF1493;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #FF1493;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: 	#FF1493;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background:	#FF1493;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:	#FF1493;
+    }
+    footer {
+      background:	#FF1493;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Танцы</h1>
+  <p>«Танец — язык души, выраженный через движение и ритм.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Современный танец: искусство свободы и экспериментов</h1>
+
+  <section>
+    <h2>Введение</h2>
+    <p>Современный танец — это направление в танцевальном искусстве, которое появилось в начале XX века как реакция на традиционные формы классического балета и других устоявшихся танцевальных стилей. Это танец свободы, экспериментирования и эмоционального выражения, где нарушаются привычные каноны, и каждый исполнитель может выразить себя уникально.</p>
+  </section>
+
+  <section>
+    <h2>История и развитие современного танца</h2>
+    <p>Современный танец начал формироваться в США и Европе в начале 1900-х годов. Первые новаторы — такие как Изадора Дункан, Марта Грэм, Мерс Каннингем — отказывались от жестких рамок балета, обращаясь к естественным движениям тела и внутренним чувствам. Они искали новые формы выразительности, используя пластику, дыхание и энергию.</p>
+    <p>На протяжении XX века современный танец развивался, обогащаясь элементами разных культур, философскими концепциями и экспериментами с пространством, временем и взаимодействием с музыкой и сценой.</p>
+  </section>
+
+  <section>
+    <h2>Характерные особенности современного танца</h2>
+    <p>Современный танец сложно описать одними словами, ведь он постоянно меняется и расширяется. Тем не менее, можно выделить несколько ключевых особенностей:</p>
+    <ul>
+      <li>Отказ от жестких технических канонов классического балета;</li>
+      <li>Использование естественных, органичных движений;</li>
+      <li>Акцент на эмоциональное и психологическое состояние танцора;</li>
+      <li>Свобода интерпретации и импровизации;</li>
+      <li>Эксперименты с пространством, уровнем и динамикой;</li>
+      <li>Частое взаимодействие с другими видами искусства — музыкой, театром, визуальным искусством.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Техника и движение</h2>
+    <p>Техника современного танца включает множество приемов и подходов, которые могут отличаться в разных школах и направлениях. Некоторые из них:</p>
+    <ul>
+      <li><strong>Контактная импровизация:</strong> движение через физический контакт с партнером, исследование баланса и веса;</li>
+      <li><strong>Техника Марты Грэм:</strong> использование дыхания, сокращений и расслаблений мышц, выражающих внутренние чувства;</li>
+      <li><strong>Техника Лимона:</strong> акцент на дыхании, падениях и подъемах, динамичности движений;</li>
+      <li><strong>Импровизация:</strong> свободное создание движений без заранее подготовленных хореографий;</li>
+      <li><strong>Использование пола:</strong> падения, перекаты, работа с весом тела на земле.</li>
+    </ul>
+    <p>Современный танец требует от танцора не только технической подготовки, но и эмоциональной открытости и креативности.</p>
+  </section>
+
+  <section>
+    <h2>Влияние и взаимодействие с другими искусствами</h2>
+    <p>Современный танец часто переплетается с театром, визуальным искусством, мультимедиа и музыкой. Он служит средством для передачи сложных идей и эмоций, исследует темы человеческой психики, социальных проблем и философских вопросов.</p>
+    <p>На сцене современные танцоры часто взаимодействуют с декорациями, светом, видеоартом, создавая полноценные мультимедийные спектакли.</p>
+  </section>
+
+  <section>
+    <h2>Известные фигуры современного танца</h2>
+    <ul>
+      <li><strong>Марта Грэм:</strong> одна из основоположниц современного танца, создала собственную технику и школу;</li>
+      <li><strong>Мерс Каннингем:</strong> новатор хореографии, использовал случайность и технологию в танце;</li>
+      <li><strong>Пина Бауш:</strong> немецкий хореограф, известная своими эмоциональными и театрализованными постановками;</li>
+      <li><strong>Вильям Форсайт:</strong> экспериментатор, меняющий понятие о движении и пространстве;</li>
+      <li><strong>Изадора Дункан:</strong> пионер, внедривший естественные движения в танец.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Современный танец сегодня</h2>
+    <p>В наше время современный танец занимает важное место в мировой культуре. Его изучают в специализированных школах и университетах, он востребован на театральных и танцевальных фестивалях. Современные хореографы продолжают расширять границы искусства, экспериментируя с новыми формами и технологиями.</p>
+    <p>Для танцоров современный танец — это способ самовыражения, исследования собственного тела и мира вокруг.</p>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Современный танец — это живое, постоянно развивающееся искусство, объединяющее в себе свободу, эксперимент и глубину. Он дает возможность каждому танцору найти свой уникальный голос и стиль, превращая движение в мощное средство коммуникации и творчества.</p>
+  </section>
+</article>
+
+
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://asiaplustj.info/sites/default/files/articles/299898/IMG_20210702_192827_098.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #FF1493;">Фарангис Касымова</p>
+    <p style="font-size: 0.9rem; color: #555;">Прима-балерина ГАТОБ им.С.Айни. Получила образование в Перми.Её танец грациозен и изящен. Преподаёт и заинтерисовывает деток разных возрастов к своему делу.</p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2025 Танцы. Все права защищены.
+</footer>
+
+</body>
+</html>

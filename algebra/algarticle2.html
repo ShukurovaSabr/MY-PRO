@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Квадратные уравнения</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f9ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+     header {
+      background: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 32, 100, 0.5);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background: #e9efff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    }
+     article h1{
+       margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #3949ab;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    footer {
+      background: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      main {
+        padding: 20px 10px;
+        border-radius: 8px;
+        box-shadow: none;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Алгебра</h1>
+  <p>«Алгебра — это язык, на котором говорит математика.»</p>
+</header>
+<main>
+<article>
+    <h2>Квадратные уравнения</h2>
+
+    <p>Квадратные уравнения — это уравнения вида <span class="bold">ax² + bx + c = 0</span>, где <span class="bold">a</span>, <span class="bold">b</span> и <span class="bold">c</span> — это числа, а <span class="bold">a</span> не равен нулю.</p>
+
+    <p>Цель решения квадратного уравнения — найти такие значения <span class="bold">x</span>, которые делают равенство верным.</p>
+
+    <h3>Что такое дискриминант?</h3>
+
+    <p>Дискриминант — это специальное число, которое помогает понять, сколько решений будет у уравнения.</p>
+
+    <p>Формула дискриминанта: <span class="bold">D = b² - 4ac</span>.</p>
+
+    <h3>Виды решений в зависимости от дискриминанта</h3>
+
+    <ul>
+      <li>Если <span class="bold">D > 0</span>, то уравнение имеет два разных корня.</li>
+      <li>Если <span class="bold">D = 0</span>, то уравнение имеет один корень, который называют двойным.</li>
+      <li>Если <span class="bold">D < 0</span>, то уравнение не имеет действительных корней, а имеет два комплексных.</li>
+    </ul>
+
+    <h3>Как найти корни квадратного уравнения?</h3>
+
+    <p>Используем формулу:</p>
+    <p><span class="bold">x = (-b ± √D) / (2a)</span></p>
+
+    <p>Знак ± означает, что существует два варианта: с плюсом и с минусом.</p>
+
+    <h3>Пример решения</h3>
+
+    <p>Рассмотрим уравнение: <span class="bold">x² - 5x + 6 = 0</span>.</p>
+
+    <p>Вычислим дискриминант:</p>
+
+    <p><span class="bold">D = (-5)² - 4·1·6 = 25 - 24 = 1</span></p>
+
+    <p>Так как дискриминант положительный, уравнение имеет два корня.</p>
+
+    <p>Найдём корни:</p>
+
+    <p><span class="bold">x₁ = (5 + √1) / 2 = (5 + 1) / 2 = 6 / 2 = 3</span></p>
+
+    <p><span class="bold">x₂ = (5 - √1) / 2 = (5 - 1) / 2 = 4 / 2 = 2</span></p>
+
+    <p>Ответ: <span class="bold">x₁ = 3</span>, <span class="bold">x₂ = 2</span>.</p>
+
+    <h3>Для чего нужны квадратные уравнения?</h3>
+
+    <p>Квадратные уравнения применяются в разных сферах:</p>
+
+    <ul>
+      <li>В физике — для вычисления траекторий движения тел.</li>
+      <li>В экономике — для анализа функций прибыли.</li>
+      <li>В инженерии — при проектировании конструкций.</li>
+      <li>В биологии — для моделирования процессов роста.</li>
+    </ul>
+    <h3>Интересный факт</h3>
+    <p>Решение квадратных уравнений известно с древних времён — например, вавилоняне умели решать подобные задачи более 3000 лет назад.</p>
+    <h3>Вывод</h3>
+    <p>Квадратные уравнения — важный инструмент в математике и науке. Знание методов их решения помогает понимать и решать сложные задачи.</p>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #1a237e;">Иван Новиков</p>
+    <p style="font-size: 0.9rem; color: #555;">уверен, что алгебра — это ключ к успеху в науке и жизни. Создаёт понятные и интересные материалы, чтобы каждый мог научиться решать задачи легко.</p>
+  </div>
+</div>
+  </article>
+  </main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+
+</body>
+</html>

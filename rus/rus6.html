@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Русский язык</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1523509080324-9183f313dc50?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.35);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+       article h1{
+       margin-bottom: 0.5em;
+      color: #DAA520;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #DAA520;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #DAA520;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: 	#DAA520;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: 	#DAA520;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:#DAA520;
+    }
+    footer {
+      background:	#DAA520;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Русский язык</h1>
+  <p>«Русский язык — душа народа, богатство культуры и истории.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Фонетика: наука о звуках речи</h1>
+
+  <p>
+    Фонетика — это раздел лингвистики, изучающий звуки речи, их образование, восприятие, акустические характеристики, а также правила их сочетания в языке. Она помогает понять, как именно произносятся слова, какие звуки существуют в языке и как они взаимодействуют между собой.
+  </p>
+
+  <h2>Разделы фонетики</h2>
+  <p>Фонетику принято делить на несколько основных направлений:</p>
+  <ul>
+    <li><strong>Артикуляционная фонетика</strong> — изучает, как звуки образуются речевыми органами человека.</li>
+    <li><strong>Акустическая фонетика</strong> — исследует физические характеристики звуков: частоту, амплитуду, длительность.</li>
+    <li><strong>Аудитивная фонетика</strong> — изучает, как звуки воспринимаются слухом и обрабатываются мозгом.</li>
+    <li><strong>Функциональная фонетика</strong> — исследует, как звуки функционируют в системе языка (например, фонемы).</li>
+  </ul>
+
+  <h2>Звуки речи</h2>
+  <p>
+    В русском языке все звуки делятся на <strong>гласные</strong> и <strong>согласные</strong>. Гласные образуются с голосом и без преград в речевом тракте, согласные — с участием преград (губы, зубы, язык).
+  </p>
+
+  <h3>Гласные звуки</h3>
+  <p>
+    В русском языке 6 гласных фонем: [а], [о], [у], [ы], [э], [и]. В позиции под ударением они произносятся отчётливо, а без ударения — редуцируются, то есть звучат не так чётко. Пример: в слове «молоко» только третий слог под ударением, а первые два произносятся слабее.
+  </p>
+
+  <h3>Согласные звуки</h3>
+  <p>
+    Согласные делятся по следующим признакам:
+  </p>
+  <ul>
+    <li><strong>По способу образования</strong>: смычные (п, б), щелевые (с, з), аффрикаты (ц, ч).</li>
+    <li><strong>По месту образования</strong>: губные (м, п, б), зубные (т, д), небные (к, г).</li>
+    <li><strong>По участию голоса</strong>: звонкие (б, г, д), глухие (п, к, т).</li>
+    <li><strong>По твердости-мягкости</strong>: твёрдые [т], мягкие [т’].</li>
+  </ul>
+
+  <h2>Фонема и звук</h2>
+  <p>
+    <strong>Фонема</strong> — это минимальная звуковая единица языка, которая способна различать слова. Например, слова «лук» и «луг» различаются одной фонемой. Фонема может иметь разные варианты произношения (аллофоны), но смысл остаётся тем же.
+  </p>
+
+  <h2>Фонетические процессы</h2>
+  <p>
+    В живой речи происходят разнообразные фонетические явления:
+  </p>
+  <ul>
+    <li><strong>Асимиляция</strong> — уподобление одного звука другому: [сд] → [зд] в «сдача».</li>
+    <li><strong>Аккомодация</strong> — частичное приспособление звука: [пи] и [п’и] в зависимости от контекста.</li>
+    <li><strong>Редукция</strong> — ослабление звучания безударных гласных.</li>
+    <li><strong>Протеза</strong> — появление звука в начале слова: «восемь» → [в’ос’им’].</li>
+    <li><strong>Элизия</strong> — выпадение звука: «честно сказать» → [чеснə сказать].</li>
+  </ul>
+
+  <h2>Интонация</h2>
+  <p>
+    Интонация — это совокупность мелодики, ударения, пауз и темпа речи. Она помогает выражать эмоции, намерения, различать вопросительное и утвердительное предложение. Например: «Ты пришёл?» (вопрос) и «Ты пришёл.» (утверждение) произносятся с разной интонацией.
+  </p>
+
+  <h2>Слог</h2>
+  <p>
+    Слог — это минимальная произносительная единица. Основой слога всегда является гласный звук. Слова могут состоять из одного или нескольких слогов: «дом» — один слог, «молоко» — три слога.
+  </p>
+
+  <h2>Ударение</h2>
+  <p>
+    Ударение — это выделение одного слога в слове с помощью силы, высоты тона и длительности. В русском языке ударение разноместное и подвижное: «зáмок» (здание) и «замóк» (на двери) — разные слова. Ударение влияет не только на звучание, но и на значение слова.
+  </p>
+
+  <h2>Письменность и фонетика</h2>
+  <p>
+    Русская орфография не всегда точно передаёт звучание слов, поэтому изучение фонетики помогает лучше понимать правописание. Например, слово «счастье» произносится как [щас’т’йи], хотя пишется с буквой «ч».
+  </p>
+
+  <h2>Фонетический разбор</h2>
+  <p>
+    Фонетический разбор слова включает:
+  </p>
+  <ul>
+    <li>Разделение на слоги.</li>
+    <li>Определение ударного слога.</li>
+    <li>Запись всех звуков, включая их характеристику.</li>
+    <li>Количество букв и звуков (они не всегда совпадают).</li>
+  </ul>
+  <p>Пример: «ёлка» — 2 слога, ударение на первый, звуки: [й’ɵлкə].</p>
+
+  <h2>Заключение</h2>
+  <p>
+    Фонетика — это основа языка. Она даёт нам понимание того, как слова звучат, как мы их воспринимаем и произносим. Без фонетики невозможно овладеть правильным произношением, орфоэпией и грамотной устной речью. Изучение фонетики помогает говорить чётко, красиво и уверенно.
+  </p>
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://www.eurohomespb.ru/assets/files/images/zhenschina-6-min.png" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #DAA520;">Александра Смирнова</p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель русского языка, умеющий прекрасно готовить и писать стихи.Благодаря ей скоро будет добавлен раздел "Кулинария"</p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Русский язык. Все права защищены.
+</footer>
+
+</body>
+</html>
+

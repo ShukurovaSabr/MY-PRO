@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Геометрия</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1633493702341-4d04841df53b?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+   article h1{
+       margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #B22222;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+   
+    footer {
+      background: #B22222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      
+      }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  </head>
+<body>
+    <header>
+  <h1 id="club">Физика</h1>
+  <p>«Физика — это наука о законах природы, которые управляют вселенной.»</p>
+</header>
+<article>
+  <h1>Ядерная физика</h1>
+  <p>Ядерная физика — раздел физики, изучающий строение, свойства и взаимодействия ядер атомов. Она занимается изучением процессов, происходящих внутри атомного ядра, а также их практическим применением в энергетике, медицине и науке.</p>
+
+  <h2>Строение атомного ядра</h2>
+  <p>Атомное ядро состоит из протонов и нейтронов, которые называются нуклонами. Протоны имеют положительный электрический заряд, а нейтроны — электрически нейтральны. Общее число нуклонов в ядре называется массовым числом, а количество протонов — атомным номером, определяющим химический элемент.</p>
+
+  <h2>Силы в ядре</h2>
+  <p>Основной силой, удерживающей нуклоны вместе, является сильное ядерное взаимодействие — оно намного сильнее электромагнитного отталкивания между положительно заряженными протонами, но действует на очень малых расстояниях, порядка размера ядра (примерно 1–3 ферми, или 10⁻¹⁵ метра).</p>
+
+  <h2>Радиоактивность и виды излучений</h2>
+  <p>Некоторые ядра нестабильны и распадаются, испуская радиоактивное излучение. Существуют три основных вида радиоактивного излучения:</p>
+  <ul>
+    <li><strong>Альфа-излучение:</strong> поток тяжелых заряженных частиц (альфа-частиц — ядер гелия).</li>
+    <li><strong>Бета-излучение:</strong> поток электронов или позитронов, возникающих при бета-распаде.</li>
+    <li><strong>Гамма-излучение:</strong> высокоэнергетическое электромагнитное излучение, испускаемое при переходах ядер из возбужденных состояний.</li>
+  </ul>
+
+  <h2>Ядерные реакции</h2>
+  <p>В ядерных реакциях ядра меняются, поглощая или испуская частицы. Основные виды ядерных реакций:</p>
+  <ul>
+    <li><strong>Ядерное деление:</strong> распад тяжелых ядер на два или несколько более легких фрагментов с выделением энергии.</li>
+    <li><strong>Ядерный синтез:</strong> слияние легких ядер с образованием более тяжелых и выделением огромного количества энергии.</li>
+    <li><strong>Захват нейтронов:</strong> процесс, при котором ядро захватывает нейтрон и становится более тяжелым или радиоактивным.</li>
+  </ul>
+
+  <h2>Применение ядерной физики</h2>
+  <ul>
+    <li><strong>Атомная энергетика:</strong> производство электроэнергии в ядерных реакторах на основе деления урана или плутония.</li>
+    <li><strong>Медицина:</strong> применение радиоактивных изотопов для диагностики (например, ПЭТ-сканирование) и лечения (радиотерапия).</li>
+    <li><strong>Научные исследования:</strong> изучение фундаментальных частиц и взаимодействий в ускорителях, ядерный синтез в лабораторных условиях.</li>
+    <li><strong>Промышленность:</strong> контроль качества материалов с помощью радиационных методов, радиационная стерилизация.</li>
+  </ul>
+
+  <h2>Безопасность и воздействие</h2>
+  <p>Ядерная энергия обладает высокой энергетической плотностью, но с ней связаны риски радиационного загрязнения и ядерных аварий. Поэтому безопасность и контроль за использованием ядерных технологий имеют критическое значение для здоровья людей и экологии.</p>
+
+  <h2>Современные перспективы</h2>
+  <p>Исследования в области термоядерного синтеза и развитие ядерных реакторов нового поколения направлены на создание более безопасных, эффективных и экологически чистых источников энергии. Также развивается квантовая ядерная физика и ядерная медицина, расширяя горизонты применения знаний о ядре.</p>
+
+  <h2>Заключение</h2>
+  <p>Ядерная физика — это ключ к пониманию фундаментальных процессов природы и мощный инструмент для технологического прогресса. Она требует ответственного подхода и открывает множество возможностей для науки, техники и жизни общества.</p>
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://static.tildacdn.com/tild3464-6536-4730-a266-383630326539/profile-picshadow.png" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color:#B22222;">Максим Абрамов</p>
+    <p style="font-size: 0.9rem; color: #555;">Профессионал в области физики с 8-летним педагогическим опытом. Ведёт курсы по общей физике, термодинамике и оптике. Стремится сделать занятия интерактивными и интересными, используя современные технологии и практические задания.
+
+
+
+</p>
+  </div>
+</div>
+
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Музыка</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8e1;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #fffde7;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color:#800080;
+    }
+       article h1{
+       margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background:#800080;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:#800080;
+    }
+    footer {
+      background:#800080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Музыка</h1>
+  <p>«Музыка — универсальный язык, объединяющий сердца и души.»</p>
+</header>
+<article>
+  <h1>Электронная музыка: история, жанры и влияние</h1>
+
+  <section>
+    <h2>Введение в электронную музыку</h2>
+    <p>Электронная музыка — это жанр, основанный на создании и обработке звуков с помощью электронных инструментов и технологий. Этот стиль охватывает широкий спектр музыкальных направлений, от танцевальных треков до экспериментальных звуковых ландшафтов.</p>
+    <p>Современная электронная музыка тесно связана с технологическим развитием и является неотъемлемой частью музыкальной культуры XXI века.</p>
+  </section>
+
+  <section>
+    <h2>История возникновения и развития</h2>
+    <p>Истоки электронной музыки уходят в начало XX века, когда появились первые синтезаторы и эксперименты со звуком:</p>
+    <ul>
+      <li>В 1920–30-х годах создавались первые электронные инструменты, такие как терменвокс и онтарион.</li>
+      <li>1950–60-е — развитие студийной электронной музыки и использование магнитофонных лент для обработки звуков.</li>
+      <li>1970-е — появление коммерчески доступных синтезаторов и драм-машин, начало формирования жанров техно и хаус.</li>
+      <li>1980-е — рост популярности электронных жанров благодаря развитию цифровых технологий и MIDI-протокола.</li>
+      <li>1990-е и далее — взрывное развитие различных направлений электронной музыки и её интеграция с попом, хип-хопом и другими жанрами.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Основные характеристики электронной музыки</h2>
+    <p>Электронная музыка отличается следующими признаками:</p>
+    <ul>
+      <li><strong>Использование синтезаторов</strong> и семплов для создания звуков.</li>
+      <li><strong>Программируемые ритмы</strong> и ударные партии с помощью драм-машин.</li>
+      <li><strong>Цифровая обработка звука</strong> — эффекты реверберации, задержки, фильтрации и другие.</li>
+      <li><strong>Акцент на ритм и атмосферу</strong> — часто танцевальный, гипнотический и эмоциональный звук.</li>
+      <li><strong>Экспериментальность</strong> и возможность создания новых звуковых текстур.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Основные жанры электронной музыки</h2>
+    <p>Электронная музыка включает множество поджанров, каждый из которых имеет свои особенности:</p>
+    <ul>
+      <li><strong>Техно</strong> — минималистичные и повторяющиеся ритмы, часто с индустриальным звучанием.</li>
+      <li><strong>Хаус</strong> — более мелодичный и танцевальный стиль с четким четырехчетвертным битом.</li>
+      <li><strong>Транс</strong> — мелодичные и атмосферные композиции с постепенным наращиванием интенсивности.</li>
+      <li><strong>Драм-н-бейс</strong> — быстрый и энергичный стиль с синкопированными ритмами и басом.</li>
+      <li><strong>Эмбиент</strong> — спокойная, атмосферная музыка для релаксации и фона.</li>
+      <li><strong>Дабстеп</strong> — агрессивные басовые линии и разрывной ритм.</li>
+      <li><strong>Экспериментальная электронная музыка</strong> — инновационные звуковые эксперименты и новаторские подходы.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Знаковые исполнители и диджеи</h2>
+    <p>В мире электронной музыки есть множество легендарных артистов, повлиявших на развитие жанра:</p>
+    <ul>
+      <li>Жан-Мишель Жарр — один из первопроходцев электронной музыки.</li>
+      <li>Крафтверк — немецкая группа, заложившая основы техно и электронной культуры.</li>
+      <li>Тиесто — знаменитый диджей и продюсер в стиле транса и EDM.</li>
+      <li>Deadmau5 — влиятельный современный продюсер и исполнитель.</li>
+      <li>Aphex Twin — известен своими экспериментальными композициями.</li>
+      <li>Daft Punk — культовый дуэт, смешивающий хаус, диско и электронику.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Влияние электронной музыки на современную культуру</h2>
+    <p>Электронная музыка оказала огромное влияние на музыкальную индустрию, клубную культуру и массовые мероприятия. Фестивали электронной музыки собирают сотни тысяч поклонников по всему миру, а диджеи стали настоящими звездами.</p>
+    <p>Кроме того, электронные технологии и подходы к созданию музыки проникли во многие другие жанры, расширяя возможности артистов и меняя звучание современной музыки.</p>
+  </section>
+
+  <section>
+    <h2>Как начать слушать электронную музыку</h2>
+    <p>Для знакомства с электронной музыкой полезно начать с самых известных направлений и исполнителей, а затем исследовать поджанры:</p>
+    <ul>
+      <li>Послушайте альбомы Жан-Мишеля Жарра и Крафтверка.</li>
+      <li>Ознакомьтесь с треками Тиесто, Daft Punk и Deadmau5.</li>
+      <li>Посетите локальные клубы или фестивали электронной музыки.</li>
+      <li>Изучайте поджанры на музыкальных платформах и YouTube.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Электронная музыка — это динамичная, инновационная и многогранная область музыки, которая постоянно развивается вместе с технологиями. Она объединяет в себе как танцевальные, так и экспериментальные направления, влияя на культуру и искусство по всему миру.</p>
+  </section>
+</article>
+
+<main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="Aminchik.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #800080;">Амина Фарухи</p>
+    <p style="font-size: 0.9rem; color: #555;">Ученица музыкальной школы. Имеет прекрасный музыкальный вкус и глубокие знания в своём деле. Интересный факт, что она уже заканчивает музыкальную школу.Играет на фортепиано</p>
+  </div>
+</div>
+</main>
+
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+</body>
+</html>

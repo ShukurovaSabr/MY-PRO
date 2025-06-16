@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Функции</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+      #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f9ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+  header {
+      background: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 32, 100, 0.5);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background: #e9efff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    }
+     article h1{
+       margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #3949ab;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    footer {
+      background: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      main {
+        padding: 20px 10px;
+        border-radius: 8px;
+        box-shadow: none;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Алгебра</h1>
+  <p>«Алгебра — это язык, на котором говорит математика.»</p>
+</header>
+<article>
+  <h1>Функции</h1>
+
+  <p>Функция — это математическая зависимость, которая каждому значению из одного множества ставит в соответствие ровно одно значение из другого множества. Проще говоря, функция связывает переменную с её значением по определённому правилу.</p>
+
+  <h2>Область определения и область значений</h2>
+  <p>Область определения функции — это множество всех допустимых значений переменной, для которых функция определена и имеет смысл. Например, для функции, задаваемой дробью, область определения исключает значения, при которых знаменатель равен нулю.</p>
+  <p>Область значений — это множество всех значений, которые функция может принимать при изменении переменной из области определения.</p>
+
+  <h2>Обозначение функции</h2>
+  <p>Функцию обычно обозначают буквой f. Запись вида y = f(x) означает, что значение y зависит от переменной x и вычисляется по заданному правилу или формуле.</p>
+
+  <h2>Примеры функций</h2>
+  <p>Рассмотрим функцию f(x) = 3x + 5. Для любого числа x мы можем вычислить значение функции, подставляя x в формулу. Например, если x равно 2, то f(2) равно 3 умножить на 2 плюс 5, то есть 11.</p>
+  <p>Другой пример — функция f(x) = x², которая возводит число в квадрат. Если x равно 4, то значение функции будет 16.</p>
+
+  <h2>Виды функций</h2>
+  <p>Существует множество видов функций: линейные, квадратичные, показательные, логарифмические и другие. Каждая из них описывает определённый тип зависимости между переменной и значением функции.</p>
+  <p>Линейная функция имеет вид f(x) = ax + b, где a и b — числа. Она задаёт прямую линию на графике.</p>
+  <p>Квадратичная функция задаётся формулой f(x) = ax² + bx + c и имеет график в виде параболы.</p>
+
+  <h2>Применение функций</h2>
+  <p>Функции используются во многих областях науки и техники для описания и анализа процессов и явлений. Например, функции применяются для моделирования движения, роста населения, финансовых процессов и многого другого.</p>
+  <p>Понимание функций помогает предсказывать результаты и строить математические модели реальных задач.</p>
+</article>
+
+
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://avatars.mds.yandex.net/i?id=b6377c50ec34e2fd8ebdff6b11d26d9460be7249-4034137-images-thumbs&n=13" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #1a237e;">Вера Золотухина</p>
+    <p style="font-size: 0.9rem; color: #555;">Всегда готова поделиться интересными приёмами и лайфхаками для решения уравнений и неравенств. Верит, что математика — это весело!
+
+</p>
+  </div>
+</div>
+  </article>
+  </main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+
+</body>
+</html>

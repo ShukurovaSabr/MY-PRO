@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Английский язык</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+    }
+    header {
+      background: url('https://plus.unsplash.com/premium_photo-1670552850996-e3b47528ffc0?q=80&w=1615&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.35);
+    }
+    article h1{
+       margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #FF4500;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #FF4500;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color: #FF4500;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+    footer {
+      background:#FF4500;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Английский язык</h1>
+  <p>«Английский — ключ к международному общению и новым возможностям.»</p>
+</header>
+<article>
+  <h2>Лексика: Как учить английские слова легко и навсегда</h2>
+
+  <p>Словарный запас — это твой ключ к пониманию и свободной речи. Без лексики ты не сможешь построить ни одно предложение, даже если знаешь всю грамматику. В этой статье ты узнаешь:</p>
+
+  <ul>
+    <li>📘 Где брать новые слова</li>
+    <li>🧠 Как их легко запоминать</li>
+    <li>🗣 Как превращать слова в речь</li>
+    <li>📒 Как вести свой словарь</li>
+    <li>🛠 Полезные техники и лайфхаки</li>
+  </ul>
+
+  <h3>1. Где брать слова?</h3>
+  <p>Ты можешь учить слова из:</p>
+  <ul>
+    <li>📖 Учебников и упражнений</li>
+    <li>🎬 Фильмов и сериалов (с субтитрами!)</li>
+    <li>🎧 Песен и аудиокниг</li>
+    <li>📱 Приложений, например Duolingo, Quizlet</li>
+    <li>📃 Коротких текстов и диалогов (как в твоих мини-сайтах!)</li>
+  </ul>
+
+  <blockquote>
+    <strong>Важно:</strong> не просто читать, а <em>выписывать</em> и <em>использовать</em> слова!
+  </blockquote>
+
+  <h3>2. Как запоминать слова?</h3>
+  <p>Вот 3 проверенные техники:</p>
+
+  <ol>
+    <li>
+      <strong>Ассоциации:</strong> придумай смешную картинку.  
+      <br />Например: <em>apple</em> — представь огромное яблоко с глазами.
+    </li>
+    <li>
+      <strong>Карточки:</strong> на одной стороне — слово, на другой — перевод.  
+      Используй Quizlet, Anki или просто бумагу.
+    </li>
+    <li>
+      <strong>Метод 5 повторений:</strong>  
+      учи слово, затем повторяй через 5 минут, 1 час, 1 день, 1 неделю и 1 месяц.
+    </li>
+  </ol>
+
+  <h3>3. Как использовать слова?</h3>
+  <p>Просто знать слово мало. Его надо использовать в жизни:</p>
+  <ul>
+    <li>Составляй <strong>свои предложения</strong> с новыми словами</li>
+    <li>Пиши <strong>мини-истории</strong> на 3–5 предложений</li>
+    <li>Задавай себе вопросы: <em>What is it? What can it do?</em></li>
+    <li>Придумывай <strong>сценки</strong> (например, в кафе, магазине)</li>
+  </ul>
+
+  <h3>4. Веди свой словарь</h3>
+  <p>У тебя должен быть личный словарь. Он может быть:</p>
+  <ul>
+    <li>📝 В тетради</li>
+    <li>📱 В телефоне (приложения или заметки)</li>
+    <li>🧠 В голове (но это только после повторений!)</li>
+  </ul>
+
+  <p>Записывай туда:</p>
+  <ul>
+    <li>Слово на английском</li>
+    <li>Транскрипцию (например: <em>apple ['æpl]</em>)</li>
+    <li>Перевод</li>
+    <li>Пример предложения</li>
+  </ul>
+
+  <h3>5. Самые важные слова — начни с них!</h3>
+  <p>Вот список базовой лексики, без которой не обойтись:</p>
+
+  <table border="1" cellpadding="6">
+    <thead>
+      <tr>
+        <th>Слово</th>
+        <th>Перевод</th>
+        <th>Пример</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>book</td>
+        <td>книга</td>
+        <td>This is my favourite book.</td>
+      </tr>
+      <tr>
+        <td>school</td>
+        <td>школа</td>
+        <td>I go to school every day.</td>
+      </tr>
+      <tr>
+        <td>happy</td>
+        <td>счастливый</td>
+        <td>I am happy today!</td>
+      </tr>
+      <tr>
+        <td>to eat</td>
+        <td>есть</td>
+        <td>I like to eat apples.</td>
+      </tr>
+      <tr>
+        <td>to play</td>
+        <td>играть</td>
+        <td>They play football after school.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>6. Лайфхаки для тебя</h3>
+  <ul>
+    <li>Повесь на стену любимые слова с рисунками</li>
+    <li>Поставь цель: 10 слов в день — и через месяц у тебя будет 300!</li>
+    <li>Говори с зеркалом — повторяй слова вслух</li>
+    <li>Придумывай стишки и рифмы (это работает!)</li>
+  </ul>
+
+  <h3>Вывод</h3>
+  <p>Запоминать английские слова — это не скучная зубрёжка, а интересное и творческое дело. У тебя уже есть талант, и если ты будешь заниматься с любовью, твоя лексика будет богатой, как у настоящих носителей языка. 🧠💬</p>
+</article>
+
+<main>
+
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="author-photo.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #FF4500;">Сабрина Шукурова</p>
+    <p style="font-size: 0.9rem; color: #555;">Основатель клуба «Всесторонних людей». Я создаю эти материалы, чтобы учёба стала для Вас вдохновляющим и интересным путешествием. Добро пожаловать в наш клуб!</p>
+  </div>
+</main>
+
+ 
+</body>
+<footer>
+  &copy; Клуб всесторонних людей 2025
+</footer>
+</html>

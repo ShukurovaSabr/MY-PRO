@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Русский язык</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1523509080324-9183f313dc50?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.35);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: 	#DAA520;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: 	#DAA520;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:#DAA520;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+    footer {
+      background:	#DAA520;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Русский язык</h1>
+  <p>«Русский язык — душа народа, богатство культуры и истории.»</p>
+</header>
+
+<main>
+<a href="rus1.html" class="card-link">
+  <div class="card">
+    <img src="https://a.d-cd.net/5133466s-960.jpg" alt="Орфография" />
+    <div class="card-content">
+      <h3>Орфография</h3>
+      <p>Правила правильного написания слов.</p>
+    </div>
+  </div>
+</a>
+
+<a href="rus2.html" class="card-link">
+  <div class="card">
+    <img src="https://nauka.club/wp-content/auploads/849592/pravila_napisaniya_punktuacii.jpg" alt="Пунктуация" />
+    <div class="card-content">
+      <h3>Пунктуация</h3>
+      <p>Знаки препинания и их использование.</p>
+    </div>
+  </div>
+</a>
+
+<a href="rus3.html" class="card-link">
+  <div class="card">
+    <img src="https://avatars.mds.yandex.net/i?id=ba5a9b3ccbd9c1f52416c6f584b717027123f23b-5547280-images-thumbs&n=13" alt="Лексика" />
+    <div class="card-content">
+      <h3>Лексика</h3>
+      <p>Словарный запас и значение слов.</p>
+    </div>
+  </div>
+</a>
+
+<a href="rus4.html" class="card-link">
+  <div class="card">
+    <img src="https://avatars.mds.yandex.net/i?id=57f6a35c5369b26ddbbe890875c93f1960e91778-9690550-images-thumbs&n=13" alt="Грамматика" />
+    <div class="card-content">
+      <h3>Грамматика</h3>
+      <p>Строение предложений и части речи.</p>
+    </div>
+  </div>
+</a>
+
+<a href="rus5.html" class="card-link">
+  <div class="card">
+    <img src="https://avatars.mds.yandex.net/i?id=f0d0bdc448df91184f28ea4f93cfb70eff2cc2e0-5150959-images-thumbs&n=13" alt="Синтаксис" />
+    <div class="card-content">
+      <h3>Синтаксис</h3>
+      <p>Связь слов в предложении.</p>
+    </div>
+  </div>
+</a>
+
+<a href="rus6.html" class="card-link">
+  <div class="card">
+    <img src="https://avatars.mds.yandex.net/i?id=07d4ffc5ffbe7f49302282bd37852b55_sr-4387671-images-thumbs&n=13" alt="Фонетика" />
+    <div class="card-content">
+      <h3>Фонетика</h3>
+      <p>Звуки речи и их особенности.</p>
+    </div>
+  </div>
+</a>
+
+<a href="rus7.html" class="card-link">
+  <div class="card">
+    <img src="https://avatars.mds.yandex.net/i?id=4a275867ed336366afcdfa69f96d02ed0e012715-5253503-images-thumbs&n=13" alt="Морфология" />
+    <div class="card-content">
+      <h3>Морфология</h3>
+      <p>Изучение форм слов и их изменений.</p>
+    </div>
+  </div>
+</a>
+
+<a href="rus8.html" class="card-link">
+  <div class="card">
+    <img src="https://avatars.mds.yandex.net/i?id=0816b634f18fb2c86b2ffa70cefcdc613b8ff1ce-5233182-images-thumbs&n=13" alt="Литература" />
+    <div class="card-content">
+      <h3>Литература</h3>
+      <p>Классика и современная проза и поэзия.</p>
+    </div>
+  </div>
+</a>
+
+  
+  <div class="next-page" title="Следующая страница">
+    Следующая страница →
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Русский язык. Все права защищены.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Музыка</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8e1;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+     article h1{
+       margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #800080;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #fffde7;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color:#800080;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background:#800080;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:#800080;
+    }
+    footer {
+      background:#800080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Музыка</h1>
+  <p>«Музыка — универсальный язык, объединяющий сердца и души.»</p>
+</header>
+
+<main>
+<a href="mus1.html">
+  <div class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1664303098722-7e5287a4693b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xhc3NpY2FsJTIwbXVzaWN8ZW58MHx8MHx8fDA%3D" alt="Классическая музыка" />
+    <div class="card-content">
+      <h3>Классическая музыка</h3>
+      <p>Великие произведения великих композиторов.</p>
+    </div>
+  </div>
+</a>
+
+<a href="mus2.html">
+  <div class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1682614336946-c0d8ec83cf57?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8amF6enxlbnwwfHwwfHx8MA%3D%3D" alt="Джаз" />
+    <div class="card-content">
+      <h3>Джаз</h3>
+      <p>Импровизация и свобода музыкального выражения.</p>
+    </div>
+  </div>
+</a>
+
+<a href="mus3.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9jayUyMG11c2ljfGVufDB8fDB8fHww" alt="Рок" />
+    <div class="card-content">
+      <h3>Рок</h3>
+      <p>Энергия и драйв гитарных рифов и мощного ритма.</p>
+    </div>
+  </div>
+</a>
+
+<a href="mus4.html">
+  <div class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1683121128953-9a7f08b82198?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cG9wJTIwbXVzaWN8ZW58MHx8MHx8fDA%3D" alt="Поп-музыка" />
+    <div class="card-content">
+      <h3>Поп-музыка</h3>
+      <p>Мелодии, запоминающиеся с первого слушания.</p>
+    </div>
+  </div>
+</a>
+
+<a href="mus5.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1619558041249-0523903712e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZWxlY3RyaWMlMjBtdXNpY3xlbnwwfHwwfHx8MA%3D%3D" alt="Электронная музыка" />
+    <div class="card-content">
+      <h3>Электронная музыка</h3>
+      <p>Современные звуки и ритмы цифровой эпохи.</p>
+    </div>
+  </div>
+</a>
+
+<a href="mus6.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1578763748270-d3b2ae8035c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9sa3xlbnwwfHwwfHx8MA%3D%3D" alt="Фолк" />
+    <div class="card-content">
+      <h3>Фолк</h3>
+      <p>Народные мелодии и традиции разных культур.</p>
+    </div>
+  </div>
+</a>
+
+<a href="mus7.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1556639073-c1d487e00b67?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ymx1ZXN8ZW58MHx8MHx8fDA%3D" alt="Блюз" />
+    <div class="card-content">
+      <h3>Блюз</h3>
+      <p>Меланхоличные мелодии и душевные тексты.</p>
+    </div>
+  </div>
+</a>
+
+<a href="mus8.html">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8fDA%3D" alt="Регги" />
+    <div class="card-content">
+      <h3>Моя любимая музыка</h3>
+      <p>Любимая музыка создателя клуба</p>
+      
+    </div>
+  </div>
+</a>
+
+
+  <div class="next-page" title="Следующая страница">
+    Следующая страница →
+  </div>
+</main>
+
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+</body>
+</html>

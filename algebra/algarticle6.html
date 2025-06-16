@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Логарифмы</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f9ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+      #club{
+      font-family: "Caveat", cursive;
+}
+    header {
+      background: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 32, 100, 0.5);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background: #e9efff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    }
+     article h1{
+       margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #3949ab;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    footer {
+      background: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      main {
+        padding: 20px 10px;
+        border-radius: 8px;
+        box-shadow: none;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Алгебра</h1>
+  <p>«Алгебра — это язык, на котором говорит математика.»</p>
+</header>
+
+<main>
+  <article>
+  <h1>Логарифмы</h1>
+
+  <p>Логарифм — это операция, обратная возведению в степень. Логарифм числа по основанию показывает, в какую степень нужно возвести основание, чтобы получить это число.</p>
+
+  <p>Обозначается как log<sub>a</sub>(b), что читается как логарифм числа b по основанию a.</p>
+
+  <h2>Определение логарифма</h2>
+
+  <p>Если aⁿ = b, где a > 0, a ≠ 1, b > 0, то <strong>log<sub>a</sub>(b) = n</strong>.</p>
+
+  <h2>Свойства логарифмов</h2>
+
+  <ul>
+    <li>log<sub>a</sub>(xy) = log<sub>a</sub>(x) + log<sub>a</sub>(y)</li>
+    <li>log<sub>a</sub>(x/y) = log<sub>a</sub>(x) - log<sub>a</sub>(y)</li>
+    <li>log<sub>a</sub>(xⁿ) = n · log<sub>a</sub>(x)</li>
+    <li>log<sub>a</sub>(a) = 1</li>
+    <li>log<sub>a</sub>(1) = 0</li>
+  </ul>
+
+  <h2>Изменение основания логарифма</h2>
+
+  <p>Если нужно вычислить логарифм по другому основанию, используется формула:</p>
+
+  <p>log<sub>a</sub>(b) = log<sub>c</sub>(b) / log<sub>c</sub>(a)</p>
+
+  <h2>Примеры</h2>
+
+  <p>Вычислим log<sub>2</sub>(8). Поскольку 2³ = 8, логарифм равен 3.</p>
+
+  <p>Вычислим log<sub>10</sub>(1000). Поскольку 10³ = 1000, логарифм равен 3.</p>
+
+  <h2>Применение</h2>
+
+  <p>Логарифмы используются в различных областях: в науке, технике, информатике для решения уравнений, связанных с ростом, затуханием, а также для вычислений с большими числами и обработки данных.</p>
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://avatars.mds.yandex.net/i?id=468a8528167e58a10a1c11cad2405e7d148a2cd2-4879412-images-thumbs&n=13" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #1a237e;">Иван Иванов</p>
+    <p style="font-size: 0.9rem; color: #555;">Автор и преподаватель алгебры. Помогает понять математику легко и интересно.</p>
+  </div>
+</div>
+  </article>
+  </main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Нерaвенства</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f9ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+      #club{
+      font-family: "Caveat", cursive;
+}
+  header {
+      background: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 32, 100, 0.5);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background: #e9efff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    }
+     article h1{
+       margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #1a237e;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #3949ab;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    footer {
+      background: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      main {
+        padding: 20px 10px;
+        border-radius: 8px;
+        box-shadow: none;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Алгебра</h1>
+  <p>«Алгебра — это язык, на котором говорит математика.»</p>
+</header>
+
+<main>
+  <article>
+  <h1>Нерaвенства</h1>
+
+  <p>Нерaвенства — это математические выражения, в которых две величины сравниваются с помощью знаков «больше», «меньше», «больше или равно», «меньше или равно». Нерaвенства используются для описания условий и ограничений в задачах.</p>
+
+  <h2>Основные виды нерaвенств</h2>
+
+  <p>Существует несколько основных видов нерaвенств:</p>
+
+  <ul>
+    <li>Линейные нерaвенства — с переменными в первой степени.</li>
+    <li>Квадратные нерaвенства — с переменными во второй степени.</li>
+    <li>Рациональные нерaвенства — с дробями, где в числителе и знаменателе могут быть выражения с переменными.</li>
+  </ul>
+
+  <h2>Решение нерaвенств</h2>
+
+  <p>Решение нерaвенств заключается в нахождении всех значений переменной, при которых нерaвенство верно. Для этого используют различные методы, включая анализ знаков выражения, графический метод и подстановку значений.</p>
+
+  <h2>Правила работы с нерaвенствами</h2>
+
+  <ul>
+    <li>При умножении или делении обеих частей нерaвенства на отрицательное число знак нерaвенства меняется на противоположный.</li>
+    <li>Можно переносить части нерaвенства так же, как и в уравнениях, учитывая правила знаков.</li>
+  </ul>
+
+  <h2>Примеры</h2>
+
+  <p>Рассмотрим нерaвенство 2x - 5 > 1. Решение:</p>
+  <p>2x > 6,</p>
+  <p>x > 3.</p>
+
+  <p>Другой пример: x² - 4 ≤ 0.</p>
+  <p>Это означает, что x² ≤ 4, значит x принадлежит интервалу от -2 до 2 включительно.</p>
+
+  <h2>Применение нерaвенств</h2>
+
+  <p>Нерaвенства широко применяются в математике, физике, экономике и инженерии для описания ограничений и условий. Например, они используются при оптимизации, в финансовом моделировании и решении задач с ограничениями.</p>
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #1a237e;">Иван Новиков</p>
+    <p style="font-size: 0.9rem; color: #555;"> уверен, что алгебра — это ключ к успеху в науке и жизни. Создаёт понятные и интересные материалы, чтобы каждый мог научиться решать задачи легко.</p>
+  </div>
+</div>
+  </main>
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>

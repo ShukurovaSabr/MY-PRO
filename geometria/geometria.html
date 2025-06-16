@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Геометрия</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1727522974621-c64b5ea90c0b?q=80&w=1492&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 128, 128, 0.7);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #008080;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #008080;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color: #008080;
+    }
+    footer {
+      background: #008080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Геометрия</h1>
+  <p>«Геометрия — это мост между формой и пространством.»</p>
+</header>
+
+<main>
+  <div class="card">
+    <a href="geoarticle1.html">
+      <img src="https://i.ytimg.com/vi/3wFb67Mops0/maxresdefault.jpg" alt="Треугольники" />
+      <div class="card-content">
+        <h3>Треугольники</h3>
+        <p>Типы, свойства и теоремы о треугольниках.</p>
+      </div>
+    </a>
+  </div>
+  <div class="card">
+    <a href="geoarticle2.html">
+      <img src="https://images.unsplash.com/photo-1514285490982-4130e9aefedb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Круги" />
+      <div class="card-content">
+        <h3>Круги</h3>
+        <p>Радиусы, диаметр и окружность.</p>
+      </div>
+    </a>
+  </div>
+  <div class="card">
+    <a href="geoarticle3.html">
+      <img src="https://plus.unsplash.com/premium_photo-1668942572685-4e5f682040cc?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Многоугольники" />
+      <div class="card-content">
+        <h3>Многоугольники</h3>
+        <p>Виды многоугольников и их свойства.</p>
+      </div>
+    </a>
+  </div>
+  <div class="card">
+    <a href="geoarticle4.html">
+      <img src="https://avatars.mds.yandex.net/i?id=6c6a036a611de42620cdf27103156167aa6ba722-3563775-images-thumbs&n=13" alt="Параллелепипеды" />
+      <div class="card-content">
+        <h3>Параллелепипеды</h3>
+        <p>Объем и площади граней.</p>
+      </div>
+    </a>
+  </div>
+  <div class="card">
+    <a href="geoarticle5.html">
+      <img src="https://images.unsplash.com/photo-1541451378359-acdede43fdf4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJlY3RhbmdsZXN8ZW58MHx8MHx8fDA%3D" alt="Прямоугольники" />
+      <div class="card-content">
+        <h3>Прямоугольники</h3>
+        <p>Параметры и свойства прямоугольников.</p>
+      </div>
+    </a>
+  </div>
+  <div class="card">
+    <a href="geoarticle6.html">
+      <img src="https://дмш-самрина.рф/800/600/http/lh3.googleusercontent.com/-_S7vJcGlhdc/Yap2R6JtGOI/AAAAAAAADfw/erBd97GkS2EUtRBs-wN3pvmCiktf8Dh7gCNcBGAsYHQ/w1200-h630-p-k-no-nu/image.png" alt="Объемы тел" />
+      <div class="card-content">
+        <h3>Объемы тел</h3>
+        <p>Формулы для вычисления объемов фигур.</p>
+      </div>
+    </a>
+  </div>
+  <div class="card">
+    <a href="geoarticle7.html">
+      <img src="https://avatars.mds.yandex.net/i?id=af441b9a4550a4d828be1c090d4f516a26d3cb33-3919804-images-thumbs&n=13" alt="Векторы в геометрии" />
+      <div class="card-content">
+        <h3>Векторы в геометрии</h3>
+        <p>Направления и длины в пространстве.</p>
+      </div>
+    </a>
+  </div>
+  <div class="card">
+    <a href="geoarticle8.html">
+      <img src="https://avatars.mds.yandex.net/i?id=541825ce0e897ec1f9c5a93636994f125d0aef4c-6996969-images-thumbs&n=13" alt="Точки и линии" />
+      <div class="card-content">
+        <h3>Точки и линии</h3>
+        <p>Основы построения и взаимного расположения.</p>
+      </div>
+    </a>
+  </div>
+  
+  <div class="next-page" title="Следующая страница">
+    Следующая страница →
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Геометрия. Все права защищены.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Геометрия</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1633493702341-4d04841df53b?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+   article h1{
+       margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+    .card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: #B22222;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: #B22222;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+   
+    footer {
+      background: #B22222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      
+      }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  </head>
+<body>
+    <header>
+  <h1 id="club">Физика</h1>
+  <p>«Физика — это наука о законах природы, которые управляют вселенной.»</p>
+</header>
+<article>
+  <h1>Оптика</h1>
+  <p>Оптика — раздел физики, изучающий свойства света, его распространение, отражение, преломление и взаимодействие с веществом.</p>
+
+  <h2>Основные понятия оптики</h2>
+  <ul>
+    <li><strong>Свет</strong> — электромагнитное излучение, воспринимаемое глазом человека.</li>
+    <li><strong>Источник света</strong> — тело или устройство, испускающее световые волны.</li>
+    <li><strong>Прямолинейное распространение света</strong> — свет распространяется прямолинейно в однородной среде.</li>
+    <li><strong>Отражение света</strong> — возвращение светового луча от поверхности назад в среду.</li>
+    <li><strong>Преломление света</strong> — изменение направления светового луча при переходе из одной среды в другую.</li>
+  </ul>
+
+  <h2>Законы отражения и преломления</h2>
+
+  <h3>Закон отражения</h3>
+  <p>Угол отражения равен углу падения:</p>
+  <ul>
+    <li>Угол между падающим лучом и нормалью к поверхности равен углу между отражённым лучом и той же нормалью.</li>
+  </ul>
+
+  <h3>Закон преломления (закон Снеллиуса)</h3>
+  <p>Отношение синусов углов падения и преломления равно отношению скоростей света в двух средах или обратному отношению их показателей преломления:</p>
+  <p><em>n₁ sin θ₁ = n₂ sin θ₂</em>,</p>
+  <ul>
+    <li>где n₁ и n₂ — показатели преломления первой и второй среды,</li>
+    <li>θ₁ — угол падения, θ₂ — угол преломления.</li>
+  </ul>
+
+  <h2>Типы изображений в оптике</h2>
+  <ul>
+    <li><strong>Действительное изображение</strong> — образ, который можно проецировать на экран. Формируется реальными лучами, пересекающимися после прохождения через оптическую систему.</li>
+    <li><strong>Мнимое изображение</strong> — образ, который нельзя проецировать на экран, он возникает из-за визуального продолжения лучей.</li>
+  </ul>
+
+  <h2>Оптические приборы</h2>
+  <ul>
+    <li><strong>Линзы</strong> — прозрачные тела с одной или двумя сферическими поверхностями, изменяющие направление световых лучей. Бывают выпуклые (собирающие) и вогнутые (рассеивающие).</li>
+    <li><strong>Зеркала</strong> — отражающие поверхности, бывают плоские, выпуклые и вогнутые.</li>
+    <li><strong>Призма</strong> — прозрачное тело с плоскими гранями, способное разлагать свет на спектр.</li>
+    <li><strong>Микроскопы и телескопы</strong> — приборы для увеличения изображений удалённых или маленьких объектов.</li>
+  </ul>
+
+  <h2>Явления в оптике</h2>
+  <ul>
+    <li><strong>Интерференция</strong> — сложение световых волн, приводящее к усилению или ослаблению света.</li>
+    <li><strong>Дифракция</strong> — огибание света вокруг препятствий и распространение в тени.</li>
+    <li><strong>Поляризация</strong> — упорядоченное направление колебаний световой волны.</li>
+  </ul>
+
+  <h2>Применение оптики</h2>
+  <p>Оптика применяется в создании очков, фотоаппаратов, лазеров, оптоволоконных коммуникаций, медицины (лазерная хирургия) и в различных научных исследованиях.</p>
+
+  <h2>Примеры из жизни</h2>
+  <ul>
+    <li>Рассвет и закат — явления преломления и рассеяния света в атмосфере.</li>
+    <li>Работа очков и контактных линз — коррекция направления световых лучей для чёткого зрения.</li>
+    <li>Спектр радуги — разложение света через капли воды по законам преломления и отражения.</li>
+  </ul>
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://marketing-2b.com/wp-content/uploads/2018/10/Для-круглых-фото-1024x1024.png" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color:#B22222;">Вероника Сергеева</p>Доктор физико-математических наук, преподаватель с глубоким пониманием теоретических и прикладных аспектов физики. Особое внимание уделяет экспериментальной работе и развитию критического мышления у студентов.
+    <p style="font-size: 0.9rem; color: #555;">
+
+</p>
+  </div>
+</div>
+
+<footer>
+  &copy; Клуб всесторонних людей, 2025
+</footer>
+
+
+
+
+</body>
+</html>

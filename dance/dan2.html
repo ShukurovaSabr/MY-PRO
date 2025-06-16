@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Танцы</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+ #club{
+      font-family: "Caveat", cursive;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff4f4;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1540324155974-7523202daa3f?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #ffe6e6;
+    }
+        a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+   article h1{
+       margin-bottom: 0.5em;
+      color: #FF1493;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #FF1493;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #FF1493;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    article ul {
+      padding-left: 20px;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: 	#FF1493;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background:	#FF1493;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:	#FF1493;
+    }
+    footer {
+      background:	#FF1493;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Танцы</h1>
+  <p>«Танец — язык души, выраженный через движение и ритм.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Хип-хоп: История, Культура и Танец</h1>
+  
+  <section>
+    <h2>Введение</h2>
+    <p>Хип-хоп — это многогранная культурная и музыкальная субкультура, которая возникла в 1970-х годах в бедных районах Нью-Йорка, преимущественно в Бронксе. Она включает в себя музыку, танец, граффити и стиль одежды, став символом самовыражения и протеста молодежи. Хип-хоп – это не просто жанр музыки, это стиль жизни, способ общения и выражения своих чувств и мыслей через творчество.</p>
+  </section>
+
+  <section>
+    <h2>История возникновения хип-хопа</h2>
+    <p>Корни хип-хопа уходят в афроамериканские и латиноамериканские общины Нью-Йорка. DJ Kool Herc, один из первопроходцев хип-хопа, придумал уникальную технику “брейк-бит”, выделяя наиболее энергичные фрагменты музыки для танцоров. В этот период появились такие элементы, как рэп, брейк-данс, граффити и диджеинг, которые сформировали основу культуры.</p>
+    <p>В 1980-е годы хип-хоп приобрел популярность и стал мощной культурной силой, отражая социальные и политические проблемы городских районов, включая бедность, расизм и насилие.</p>
+  </section>
+
+  <section>
+    <h2>Музыкальные особенности</h2>
+    <p>Хип-хоп-музыка строится на ритмичных, часто повторяющихся битах, с использованием семплов из других песен, электронных эффектов и глубоких басов. Главной особенностью является рэп — речитативный стиль исполнения, в котором слова часто насыщены социальным подтекстом, рассказом о жизни и борьбе.</p>
+    <p>Производство треков основывается на диджеинге, использовании драм-машин и сэмплеров, что позволяет создавать уникальные звуковые пейзажи.</p>
+  </section>
+
+  <section>
+    <h2>Танец в хип-хоп культуре</h2>
+    <p>Хип-хоп танец — это динамичные, экспрессивные движения, часто включающие элементы брейк-данса, поппинга, локинга и других стилей. Танцоры используют тело как инструмент выражения ритма, эмоций и стиля. Танец часто исполняется в баттлах — танцевальных соревнованиях, где участники соревнуются в мастерстве и креативности.</p>
+    <p>Танцевальные движения включают волны, изоляции, прыжки, вращения, а также импровизацию и взаимодействие с партнером или аудиторией.</p>
+  </section>
+
+  <section>
+    <h2>Граффити и визуальное искусство</h2>
+    <p>Граффити — один из важных элементов хип-хоп культуры. Это форма уличного искусства, позволяющая выразить индивидуальность и протест через яркие и сложные рисунки на стенах городских зданий. Несмотря на неоднозначное отношение общества, граффити считается способом самовыражения и социальной критики.</p>
+  </section>
+
+  <section>
+    <h2>Стиль одежды</h2>
+    <p>Хип-хоп стиль одежды включает свободные и удобные вещи: широкие штаны, худи, кроссовки, бейсболки и массивные украшения. Этот стиль подчеркивает индивидуальность и принадлежность к субкультуре.</p>
+  </section>
+
+  <section>
+    <h2>Социальное и культурное значение</h2>
+    <p>Хип-хоп стал голосом маргинализированных групп, отражая их переживания и борясь с несправедливостью. Эта культура дает возможность молодым людям выразить свои мысли и чувства, находить поддержку и строить сообщество.</p>
+    <p>Сегодня хип-хоп распространился по всему миру и стал частью глобальной культуры, влияя на музыку, моду, танцы и искусство.</p>
+  </section>
+
+  <section>
+    <h2>Известные артисты и танцоры</h2>
+    <ul>
+      <li><strong>Grandmaster Flash</strong> — пионер диджеинга и хип-хопа;</li>
+      <li><strong>Run-D.M.C.</strong> — одна из первых популярных хип-хоп групп;</li>
+      <li><strong>Тупак Шакур</strong> и <strong>Notorious B.I.G.</strong> — легендарные рэперы;</li>
+      <li><strong>Тони Хок</strong> — танцор и хореограф;</li>
+      <li><strong>Лорин Хилл</strong> — известная исполнительница, объединившая хип-хоп и соул.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Обучение хип-хоп танцу</h2>
+    <p>Для изучения хип-хоп танца важно развивать чувство ритма, координацию и гибкость. Начинают обычно с базовых движений, постепенно переходя к более сложным элементам и стилям. Важную роль играет практика в группах и участие в баттлах, которые помогают развивать уверенность и креативность.</p>
+  </section>
+
+  <section>
+    <h2>Влияние на современную культуру</h2>
+    <p>Хип-хоп оказал огромное влияние на современную музыку, моду, искусство и даже бизнес. Его элементы можно встретить в рекламных кампаниях, кино и видеоиграх. Многие мировые звезды начали свою карьеру именно с хип-хопа, а культура продолжает вдохновлять новые поколения.</p>
+  </section>
+
+  <section>
+    <h2>Заключение</h2>
+    <p>Хип-хоп — это мощное культурное движение, которое выходит далеко за рамки музыки и танца. Это способ говорить о жизни, бороться с несправедливостью и создавать новые формы творчества. Его энергия, стиль и дух свободы продолжают вдохновлять людей по всему миру.</p>
+  </section>
+</article>
+
+
+
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://asiaplustj.info/sites/default/files/articles/299898/IMG_20210702_192827_098.jpg" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #FF1493;">Фарангис Касымова</p>
+    <p style="font-size: 0.9rem; color: #555;">Прима-балерина ГАТОБ им.С.Айни. Получила образование в Перми.Её танец грациозен и изящен. Преподаёт и заинтерисовывает деток разных возрастов к своему делу.</p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2025 Танцы. Все права защищены.
+</footer>
+
+</body>
+</html>

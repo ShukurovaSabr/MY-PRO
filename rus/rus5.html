@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Русский язык</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+     #club{
+      font-family: "Caveat", cursive;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1523509080324-9183f313dc50?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.35);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e6f0ff;
+    }
+       article h1{
+       margin-bottom: 0.5em;
+      color: #DAA520;
+    }
+    article h2 {
+      margin-bottom: 0.5em;
+      color: #DAA520;
+    }
+    article h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #DAA520;
+    }
+    article p, article ul {
+      margin-bottom: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5em;
+      color: 	#DAA520;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .next-page {
+      width: 280px;
+      height: 160px;
+      background: 	#DAA520;
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .next-page:hover {
+      background-color:#DAA520;
+    }
+    footer {
+      background:	#DAA520;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .card, .next-page {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="club">Русский язык</h1>
+  <p>«Русский язык — душа народа, богатство культуры и истории.»</p>
+</header>
+
+<main>
+<article>
+  <h1>Синтаксис: наука о построении предложений</h1>
+  <p>
+    Синтаксис — это раздел грамматики, изучающий строение словосочетаний и предложений, а также способы соединения слов в осмысленные структуры. Если морфология занимается отдельными словами и их формами, то синтаксис исследует, как эти слова складываются в целостную мысль.
+  </p>
+
+  <h2>Основные задачи синтаксиса</h2>
+  <p>
+    Синтаксис отвечает на вопросы: как образуется предложение, какие бывают типы предложений, каковы правила соединения слов в словосочетания, как слова взаимодействуют в речи. Это позволяет нам строить логичные, понятные высказывания, соблюдая нормы языка.
+  </p>
+
+  <h2>Словосочетание</h2>
+  <p>
+    Словосочетание — это грамматически и смыслово связанная пара слов, одна из которых главная, а вторая — зависимая. Примеры: «читать книгу», «громкий голос», «идти быстро». Словосочетания бывают:
+  </p>
+  <ul>
+    <li><strong>Согласованные</strong> — зависимое слово согласуется с главным: «новая книга».</li>
+    <li><strong>Управляемые</strong> — главное слово требует определённого падежа: «читать (что?) книгу».</li>
+    <li><strong>Примыкание</strong> — зависимое слово неизменяемо: «говорить тихо».</li>
+  </ul>
+
+  <h2>Предложение</h2>
+  <p>
+    Предложение — основная синтаксическая единица, выражающая законченную мысль. Оно может быть как простым (с одной грамматической основой), так и сложным (с несколькими основами).
+  </p>
+
+  <h3>Простое предложение</h3>
+  <p>
+    Состоит из одной грамматической основы: «Птицы поют». Простые предложения бывают:
+  </p>
+  <ul>
+    <li><strong>Распространённые</strong> — с второстепенными членами: «Птицы поют в саду».</li>
+    <li><strong>Нераспространённые</strong> — только подлежащее и сказуемое: «Снег идёт».</li>
+    <li><strong>Полные</strong> и <strong>неполные</strong> — в неполных некоторые члены пропущены, но смысл ясен: «Я люблю музыку, а он — спорт».</li>
+  </ul>
+
+  <h3>Сложное предложение</h3>
+  <p>
+    Включает два или более простых, связанных по смыслу и грамматически:
+  </p>
+  <ul>
+    <li><strong>Сложносочинённые</strong> — части равноправны: «Солнце светит, и птицы поют».</li>
+    <li><strong>Сложноподчинённые</strong> — одна часть зависит от другой: «Когда светит солнце, птицы поют».</li>
+    <li><strong>Бессоюзные</strong> — без союзов, но с интонацией: «Солнце светит — птицы поют».</li>
+  </ul>
+
+  <h2>Члены предложения</h2>
+  <ul>
+    <li><strong>Подлежащее</strong> — кто? что? — «Книга лежит».</li>
+    <li><strong>Сказуемое</strong> — что делает? каков? — «Книга лежит на столе».</li>
+    <li><strong>Дополнение</strong> — на что? кого? — «Читаю книгу».</li>
+    <li><strong>Определение</strong> — какой? чей? — «Интересная книга».</li>
+    <li><strong>Обстоятельство</strong> — где? когда? как? — «Читаю утром».</li>
+  </ul>
+
+  <h2>Порядок слов</h2>
+  <p>
+    В русском языке порядок слов относительно свободен. Однако существует нейтральный порядок: подлежащее + сказуемое + второстепенные члены. Инверсия (перестановка) слов позволяет менять акценты и придавать речи выразительность: «Книгу он прочитал» — акцент на «книгу».
+  </p>
+
+  <h2>Обособленные члены</h2>
+  <p>
+    Обособление — это выделение второстепенных членов предложения (причастных и деепричастных оборотов, уточнений, приложений и т. д.). Пример: «Мальчик, стоящий у окна, задумался». Такие элементы выделяются запятыми и добавляют подробности.
+  </p>
+
+  <h2>Сложные конструкции</h2>
+  <p>
+    В синтаксисе важны также:
+  </p>
+  <ul>
+    <li><strong>Прямая и косвенная речь</strong>: «Он сказал: “Я приду”» vs «Он сказал, что придёт».</li>
+    <li><strong>Обращения</strong>: «Мама, посмотри!»</li>
+    <li><strong>Вводные слова</strong>: «К счастью, всё получилось».</li>
+  </ul>
+
+  <h2>Связь синтаксиса с пунктуацией</h2>
+  <p>
+    Пунктуация напрямую зависит от синтаксической структуры. Запятые, тире, двоеточия помогают отразить логику высказывания. Например, при сложносочинённом предложении между частями ставится запятая: «Он зашёл, и началась встреча».
+  </p>
+
+  <h2>Ошибки в синтаксисе</h2>
+  <p>
+    Нарушения в синтаксисе приводят к неясности или абсурду: несогласованность членов предложения, лишние или отсутствующие запятые, неправильный порядок слов. Пример ошибки: «Он видел человека, которого вчера не было» — смысл непонятен.
+  </p>
+
+  <h2>Синтаксис и выразительность речи</h2>
+  <p>
+    С помощью синтаксиса можно сделать речь более выразительной. Например, короткие предложения создают эффект динамики, а длинные — рассуждения. Инверсии, вводные слова и обращения придают речи живость и интонационное разнообразие.
+  </p>
+
+  <h2>Заключение</h2>
+  <p>
+    Синтаксис — важнейшая часть грамматики, обеспечивающая логичность, связность и выразительность речи. Он помогает нам точно формулировать мысли, строить грамотные фразы и воспринимать чужую речь без искажений. Изучение синтаксиса — это ключ к настоящей языковой культуре.
+  </p>
+</article>
+
+</main>
+<div style="display: flex; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+  <img src="https://www.eurohomespb.ru/assets/files/images/zhenschina-6-min.png" alt="Фото автора" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;" />
+  <div>
+    <p style="margin-bottom: 4px; font-weight: bold; color: #DAA520;">Александра Смирнова</p>
+    <p style="font-size: 0.9rem; color: #555;">Опытный преподаватель русского языка, умеющий прекрасно готовить и писать стихи.Благодаря ей скоро будет добавлен раздел "Кулинария"</p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Русский язык. Все права защищены.
+</footer>
+
+</body>
+</html>
